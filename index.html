@@ -1,0 +1,426 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>QPI — Quarterback Performance Index</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="brand">
+        <div class="brand-mark">QPI</div>
+
+        <div>
+            <h1>Quarterback Performance Index</h1>
+            <p>2026 · Through Week 3</p>
+        </div>
+    </div>
+
+    <nav>
+        <button class="nav-button active" data-view="rankings">
+            Rankings
+        </button>
+
+        <button class="nav-button" data-view="methodology">
+            Methodology
+        </button>
+    </nav>
+
+</header>
+
+
+<main>
+
+<section id="rankings-view">
+
+    <div class="hero">
+
+        <div>
+            <span class="eyebrow">
+                QPI v1.0
+            </span>
+
+            <h2>
+                2026 Quarterback Rankings
+            </h2>
+
+            <p>
+                A transparent, opponent-aware measure of
+                college quarterback performance.
+            </p>
+        </div>
+
+        <div class="hero-stat">
+            <span id="qb-count">—</span>
+            <small>ranked quarterbacks</small>
+        </div>
+
+    </div>
+
+
+    
+    <div
+        id="top-three"
+        class="top-three"
+    ></div>
+
+<div class="controls">
+
+        <input
+            id="search"
+            type="text"
+            placeholder="Search QB or team..."
+        >
+
+    </div>
+
+
+    <div class="table-wrap">
+
+        <table id="leaderboard">
+
+            <thead>
+
+                <tr>
+                    <th>Rank</th>
+                    <th>Quarterback</th>
+                    <th>Team</th>
+                    <th>QPI</th>
+                    <th>Passing</th>
+                    <th>Rushing</th>
+                    <th>Sample</th>
+                </tr>
+
+            </thead>
+
+            <tbody></tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+
+<section
+    id="player-view"
+    class="hidden"
+>
+
+    <button id="back-button">
+        ← Back to rankings
+    </button>
+
+    <div id="player-content"></div>
+
+</section>
+
+
+
+<section
+    id="methodology-view"
+    class="hidden"
+>
+
+    <span class="eyebrow">
+        QPI v1.0
+    </span>
+
+    <h2>
+        How QPI Works
+    </h2>
+
+    <p class="method-intro">
+        QPI is a transparent, opponent-aware measure of
+        observed college quarterback performance.
+        It is designed to explain not just who performed well,
+        but how they did it.
+    </p>
+
+
+    <div class="method-section">
+
+        <h3>What QPI measures</h3>
+
+        <p>
+            QPI rewards quarterbacks who consistently produce
+            efficient offense while accounting for opponent
+            strength, sacks, and rushing contribution.
+        </p>
+
+    </div>
+
+
+    <div class="method-section">
+
+        <h3>Passing Performance</h3>
+
+        <p>
+            QPI evaluates four dimensions of passing:
+        </p>
+
+        <div class="method-pill-grid">
+
+            <div class="method-pill">
+                <strong>Success</strong>
+                <span>
+                    How consistently the passing offense
+                    stays on schedule and produces successful plays.
+                </span>
+            </div>
+
+            <div class="method-pill">
+                <strong>Efficiency</strong>
+                <span>
+                    Passing efficiency adjusted for the
+                    quality of defenses faced.
+                </span>
+            </div>
+
+            <div class="method-pill">
+                <strong>TD Creation</strong>
+                <span>
+                    Passing touchdown production relative
+                    to opponent strength.
+                </span>
+            </div>
+
+            <div class="method-pill">
+                <strong>Sack Avoidance</strong>
+                <span>
+                    How effectively the quarterback avoids
+                    drive-killing sacks.
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="method-section">
+
+        <h3>Rushing Value</h3>
+
+        <p>
+            QPI also credits quarterbacks for the scoring value
+            they create as runners. It uses situational rushing
+            value rather than simply rewarding raw rushing yards.
+        </p>
+
+    </div>
+
+
+    <div class="method-section">
+
+        <h3>Opponent Context</h3>
+
+        <p>
+            Passing efficiency and touchdown creation are adjusted
+            using opponent defensive strength. That means the same
+            box-score performance can be valued differently depending
+            on the quality of the defense it came against.
+        </p>
+
+    </div>
+
+
+    <div class="method-section">
+
+        <h3>How the model was built</h3>
+
+        <p>
+            QPI's formula was derived from recent historical
+            college football performance data and tested on seasons
+            excluded from model training.
+        </p>
+
+        <p>
+            The formula is fixed for QPI v1.0. Future methodology
+            changes will be released as new versions rather than
+            silently changing the meaning of previous rankings.
+        </p>
+
+    </div>
+
+
+    <div class="method-section">
+
+        <h3>Weekly rankings</h3>
+
+        <p>
+            QPI rankings begin after Week 3. A quarterback must have
+            at least 30 season passing attempts and at least two QPI
+            context games to appear in the rankings.
+        </p>
+
+        <p>
+            Players with fewer than 50 passing attempts are marked
+            as a limited sample rather than removed from the leaderboard.
+        </p>
+
+    </div>
+
+
+    <div class="method-section">
+
+        <h3>What QPI is not</h3>
+
+        <p>
+            QPI is not a projection, recruiting rating, NFL scouting
+            grade, or attempt to perfectly isolate the quarterback
+            from his teammates and scheme.
+        </p>
+
+        <p>
+            It measures what happened on the field and provides a
+            consistent statistical framework for comparing those
+            performances.
+        </p>
+
+    </div>
+
+
+    <details class="technical-methodology">
+
+        <summary>
+            Technical Methodology
+        </summary>
+
+        <div class="technical-content">
+
+            <h3>QPI v1.0 Formula</h3>
+
+            <p>
+                The public component scores are percentile-based,
+                allowing different types of quarterback performance
+                to be combined on a common scale.
+            </p>
+
+
+            <div class="formula-grid">
+
+                <div class="formula-card">
+
+                    <h3>Passing Score</h3>
+
+                    <div class="formula-row">
+                        <span>Success</span>
+                        <strong>37.7%</strong>
+                    </div>
+
+                    <div class="formula-row">
+                        <span>
+                            Opponent-adjusted efficiency
+                        </span>
+                        <strong>37.0%</strong>
+                    </div>
+
+                    <div class="formula-row">
+                        <span>
+                            TD creation
+                        </span>
+                        <strong>12.7%</strong>
+                    </div>
+
+                    <div class="formula-row">
+                        <span>
+                            Sack avoidance
+                        </span>
+                        <strong>12.6%</strong>
+                    </div>
+
+                </div>
+
+
+                <div class="formula-card">
+
+                    <h3>Overall QPI</h3>
+
+                    <div class="formula-row">
+                        <span>Passing</span>
+                        <strong>82.5%</strong>
+                    </div>
+
+                    <div class="formula-row">
+                        <span>Rushing</span>
+                        <strong>17.5%</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <h3>Interception Avoidance</h3>
+
+            <p>
+                Interception avoidance is displayed on player profiles
+                but carries no independent QPI v1.0 weight. During model
+                development, it did not add meaningful explanatory value
+                after the other passing components were included.
+            </p>
+
+
+            <h3>Validation</h3>
+
+            <p>
+                QPI was tested by repeatedly fitting the model while
+                withholding an entire season, then evaluating it on the
+                unseen season. The model structure remained stable across
+                those tests.
+            </p>
+
+
+            <h3>Current limitations</h3>
+
+            <ul class="technical-list">
+
+                <li>
+                    QPI does not completely separate quarterback
+                    performance from receivers, offensive line play,
+                    scheme, and other supporting factors.
+                </li>
+
+                <li>
+                    Some opponent adjustments are more developed than
+                    others.
+                </li>
+
+                <li>
+                    QPI v1.0 does not yet include a fully validated
+                    opponent adjustment for every FCS game.
+                </li>
+
+                <li>
+                    QPI does not perform film-based play attribution
+                    or scouting evaluation.
+                </li>
+
+            </ul>
+
+        </div>
+
+    </details>
+
+</section>
+
+
+</main>
+
+
+<script src="data.js"></script>
+<script src="data.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

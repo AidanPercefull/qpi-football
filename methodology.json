@@ -1,0 +1,65 @@
+{
+  "name": "Quarterback Performance Index",
+  "abbreviation": "QPI",
+  "version": "1.0",
+  "purpose": "A transparent, opponent-aware college football quarterback performance rating.",
+  "description": "QPI measures observed quarterback performance rather than future talent or projection.",
+  "formula": {
+    "passing": {
+      "success": 0.377,
+      "efficiency": 0.37,
+      "td_creation": 0.127,
+      "sack_avoidance": 0.126
+    },
+    "overall": {
+      "passing": 0.825,
+      "rushing": 0.175
+    }
+  },
+  "display_only": [
+    "INT Avoidance"
+  ],
+  "weekly_eligibility": {
+    "first_published_week": 3,
+    "minimum_full_attempts": 30,
+    "minimum_context_games": 2,
+    "limited_sample_threshold": 50
+  },
+  "context_game": {
+    "minimum_pass_attempts": 10,
+    "requires_comparable_defensive_rating": true
+  },
+  "opponent_adjustment": {
+    "efficiency": "Adjusted using opponent defensive SP+.",
+    "td_creation": "Adjusted using opponent defensive SP+."
+  },
+  "validation": {
+    "leave_one_season_out": {
+      "2023": {
+        "overall_r2": 0.626,
+        "overall_correlation": 0.906
+      },
+      "2024": {
+        "overall_r2": 0.739,
+        "overall_correlation": 0.881
+      },
+      "2025": {
+        "overall_r2": 0.662,
+        "overall_correlation": 0.89
+      }
+    }
+  },
+  "external_checks": {
+    "qpi_vs_qbr_spearman": 0.756,
+    "qpi_vs_exact_ppa_spearman": 0.912,
+    "passing_vs_pass_ppa_spearman": 0.894,
+    "passing_vs_ncaa_efficiency_spearman": 0.868
+  },
+  "limitations": [
+    "QPI is a performance metric, not a projection.",
+    "QPI does not fully isolate the quarterback from teammates and scheme.",
+    "FCS games without a comparable defensive rating are excluded from QPI v1.0 context calculations.",
+    "QPI does not currently perform play-level credit allocation like film-based grading systems."
+  ],
+  "model_development": "Derived from recent historical college football performance data and validated on seasons excluded from model training."
+}
