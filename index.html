@@ -5,7 +5,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>QPI — Quarterback Performance Index</title>
+<title>Percera — Contextual Quarterback Index</title>
+
+<meta name="description" content="Percera is an independent college football analytics platform. Explore CQI, the Contextual Quarterback Index, for transparent, opponent-aware quarterback rankings.">
+<meta property="og:title" content="Percera — Contextual Quarterback Index">
+<meta property="og:description" content="Transparent, opponent-aware college quarterback rankings from Percera.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://perceraanalytics.com/">
+<meta name="theme-color" content="#2563eb">
 
 <link rel="stylesheet" href="styles.css">
 
@@ -16,11 +23,11 @@
 <header class="site-header">
 
     <div class="brand">
-        <div class="brand-mark">QPI</div>
+        <div class="brand-mark" aria-hidden="true">P</div>
 
         <div>
-            <h1>Quarterback Performance Index</h1>
-            <p>2026 · Through Week 3</p>
+            <h1>Percera</h1>
+            <p>College Football Analytics</p>
         </div>
     </div>
 
@@ -45,16 +52,16 @@
 
         <div>
             <span class="eyebrow">
-                QPI v1.0
+                CQI v1.0 · 2026 Through Week 3
             </span>
 
             <h2>
-                2026 Quarterback Rankings
+                Contextual Quarterback Index
             </h2>
 
             <p>
-                A transparent, opponent-aware measure of
-                college quarterback performance.
+                Percera's transparent, opponent-aware measure of
+                observed college quarterback performance.
             </p>
         </div>
 
@@ -93,7 +100,7 @@
                     <th>Rank</th>
                     <th>Quarterback</th>
                     <th>Team</th>
-                    <th>QPI</th>
+                    <th>CQI</th>
                     <th>Passing</th>
                     <th>Rushing</th>
                     <th>Sample</th>
@@ -131,15 +138,15 @@
 >
 
     <span class="eyebrow">
-        QPI v1.0
+        CQI v1.0
     </span>
 
     <h2>
-        How QPI Works
+        How CQI Works
     </h2>
 
     <p class="method-intro">
-        QPI is a transparent, opponent-aware measure of
+        CQI is Percera's transparent, opponent-aware measure of
         observed college quarterback performance.
         It is designed to explain not just who performed well,
         but how they did it.
@@ -148,10 +155,10 @@
 
     <div class="method-section">
 
-        <h3>What QPI measures</h3>
+        <h3>What CQI measures</h3>
 
         <p>
-            QPI rewards quarterbacks who consistently produce
+            CQI rewards quarterbacks who consistently produce
             efficient offense while accounting for opponent
             strength, sacks, and rushing contribution.
         </p>
@@ -164,7 +171,7 @@
         <h3>Passing Performance</h3>
 
         <p>
-            QPI evaluates four dimensions of passing:
+            CQI evaluates four dimensions of passing:
         </p>
 
         <div class="method-pill-grid">
@@ -211,7 +218,7 @@
         <h3>Rushing Value</h3>
 
         <p>
-            QPI also credits quarterbacks for the scoring value
+            CQI also credits quarterbacks for the scoring value
             they create as runners. It uses situational rushing
             value rather than simply rewarding raw rushing yards.
         </p>
@@ -238,13 +245,13 @@
         <h3>How the model was built</h3>
 
         <p>
-            QPI's formula was derived from recent historical
+            CQI's formula was derived from recent historical
             college football performance data and tested on seasons
             excluded from model training.
         </p>
 
         <p>
-            The formula is fixed for QPI v1.0. Future methodology
+            The formula is fixed for CQI v1.0. Future methodology
             changes will be released as new versions rather than
             silently changing the meaning of previous rankings.
         </p>
@@ -257,8 +264,8 @@
         <h3>Weekly rankings</h3>
 
         <p>
-            QPI rankings begin after Week 3. A quarterback must have
-            at least 30 season passing attempts and at least two QPI
+            CQI rankings begin after Week 3. A quarterback must have
+            at least 30 season passing attempts and at least two CQI
             context games to appear in the rankings.
         </p>
 
@@ -272,10 +279,10 @@
 
     <div class="method-section">
 
-        <h3>What QPI is not</h3>
+        <h3>What CQI is not</h3>
 
         <p>
-            QPI is not a projection, recruiting rating, NFL scouting
+            CQI is not a projection, recruiting rating, NFL scouting
             grade, or attempt to perfectly isolate the quarterback
             from his teammates and scheme.
         </p>
@@ -297,7 +304,7 @@
 
         <div class="technical-content">
 
-            <h3>QPI v1.0 Formula</h3>
+            <h3>CQI v1.0 Formula</h3>
 
             <p>
                 The public component scores are percentile-based,
@@ -343,7 +350,7 @@
 
                 <div class="formula-card">
 
-                    <h3>Overall QPI</h3>
+                    <h3>Overall CQI</h3>
 
                     <div class="formula-row">
                         <span>Passing</span>
@@ -364,7 +371,7 @@
 
             <p>
                 Interception avoidance is displayed on player profiles
-                but carries no independent QPI v1.0 weight. During model
+                but carries no independent CQI v1.0 weight. During model
                 development, it did not add meaningful explanatory value
                 after the other passing components were included.
             </p>
@@ -373,7 +380,7 @@
             <h3>Validation</h3>
 
             <p>
-                QPI was tested by repeatedly fitting the model while
+                CQI was tested by repeatedly fitting the model while
                 withholding an entire season, then evaluating it on the
                 unseen season. The model structure remained stable across
                 those tests.
@@ -385,7 +392,7 @@
             <ul class="technical-list">
 
                 <li>
-                    QPI does not completely separate quarterback
+                    CQI does not completely separate quarterback
                     performance from receivers, offensive line play,
                     scheme, and other supporting factors.
                 </li>
@@ -396,12 +403,12 @@
                 </li>
 
                 <li>
-                    QPI v1.0 does not yet include a fully validated
+                    CQI v1.0 does not yet include a fully validated
                     opponent adjustment for every FCS game.
                 </li>
 
                 <li>
-                    QPI does not perform film-based play attribution
+                    CQI does not perform film-based play attribution
                     or scouting evaluation.
                 </li>
 
@@ -415,10 +422,17 @@
 
 
 </main>
+<footer class="site-footer">
+    <div class="footer-brand">
+        <strong>Percera</strong>
+        <span>Independent college football analytics.</span>
+    </div>
+    <div class="footer-meta">
+        <span>CQI · Contextual Quarterback Index</span>
+        <span>perceraanalytics.com</span>
+    </div>
+</footer>
 
-
-<script src="data.js"></script>
-<script src="data.js"></script>
 <script src="data.js"></script>
 <script src="app.js"></script>
 

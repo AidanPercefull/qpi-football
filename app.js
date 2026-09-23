@@ -132,7 +132,7 @@ function renderTopThree() {
                     </div>
 
                     <div class="label">
-                        QPI #${player.rank}
+                        CQI #${player.rank}
                     </div>
 
                     <div class="leader-team-row">
@@ -159,7 +159,7 @@ function renderTopThree() {
                         </strong>
 
                         <span>
-                            QPI
+                            CQI
                         </span>
 
                     </div>
@@ -386,9 +386,9 @@ function showPlayer(slug) {
                 </h2>
 
                 <p>
-                    QPI rank #${player.rank}
+                    CQI rank #${player.rank}
                     · ${player.sample.full_attempts} attempts
-                    · ${player.sample.context_games} QPI games
+                    · ${player.sample.context_games} CQI games
 
                     ${
                         player.sample.flag
@@ -407,7 +407,7 @@ function showPlayer(slug) {
             <div class="score-card">
 
                 <span>
-                    QPI
+                    CQI
                 </span>
 
                 <strong>

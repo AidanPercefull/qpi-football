@@ -1,9 +1,9 @@
 {
-  "name": "Quarterback Performance Index",
-  "abbreviation": "QPI",
+  "name": "Contextual Quarterback Index",
+  "abbreviation": "CQI",
   "version": "1.0",
-  "purpose": "A transparent, opponent-aware college football quarterback performance rating.",
-  "description": "QPI measures observed quarterback performance rather than future talent or projection.",
+  "purpose": "A transparent, opponent-aware college football quarterback performance rating from Percera.",
+  "description": "CQI measures observed quarterback performance rather than future talent or projection.",
   "formula": {
     "passing": {
       "success": 0.377,
@@ -56,10 +56,10 @@
     "passing_vs_ncaa_efficiency_spearman": 0.868
   },
   "limitations": [
-    "QPI is a performance metric, not a projection.",
-    "QPI does not fully isolate the quarterback from teammates and scheme.",
-    "FCS games without a comparable defensive rating are excluded from QPI v1.0 context calculations.",
-    "QPI does not currently perform play-level credit allocation like film-based grading systems."
+    "CQI is a performance metric, not a projection.",
+    "CQI does not fully isolate the quarterback from teammates and scheme.",
+    "FCS games without a comparable defensive rating are excluded from CQI v1.0 context calculations.",
+    "CQI does not currently perform play-level credit allocation like film-based grading systems."
   ],
   "model_development": "Derived from recent historical college football performance data and validated on seasons excluded from model training."
 }

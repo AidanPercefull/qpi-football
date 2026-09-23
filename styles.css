@@ -1421,3 +1421,81 @@ tbody tr:hover {
     }
 
 }
+
+
+/* ==========================================================
+   PERCERA BRAND LAYER
+   Public brand: Percera | Metric: CQI
+   ========================================================== */
+
+.brand-mark {
+    border-radius: 11px;
+    font-size: 22px;
+    letter-spacing: -.05em;
+    box-shadow: 0 7px 18px rgba(37,99,235,.18);
+}
+
+.brand h1 {
+    font-size: 19px;
+    letter-spacing: -.025em;
+    font-weight: 800;
+}
+
+.brand p {
+    font-size: 12px;
+    letter-spacing: .015em;
+}
+
+.hero .eyebrow {
+    letter-spacing: .105em;
+}
+
+.hero h2 {
+    max-width: 760px;
+}
+
+.site-footer {
+    width: min(1180px, 92vw);
+    margin: 0 auto;
+    padding: 26px 0 38px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    color: var(--muted);
+    font-size: 12px;
+}
+
+.footer-brand,
+.footer-meta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-brand strong {
+    color: var(--text);
+    font-size: 14px;
+}
+
+.footer-meta {
+    justify-content: flex-end;
+}
+
+.footer-meta span + span::before {
+    content: "·";
+    margin-right: 10px;
+    color: #98a2b3;
+}
+
+@media (max-width: 650px) {
+    .site-footer {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .footer-meta {
+        justify-content: flex-start;
+    }
+}

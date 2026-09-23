@@ -12,7 +12,7 @@
       "qpi": 89.0,
       "passing": 89.8,
       "rushing": 85.2,
-      "sample": "64 att / 2 QPI games",
+      "sample": "64 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -23,7 +23,7 @@
       "qpi": 88.0,
       "passing": 86.7,
       "rushing": 94.1,
-      "sample": "82 att / 3 QPI games",
+      "sample": "82 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -34,7 +34,7 @@
       "qpi": 87.7,
       "passing": 90.6,
       "rushing": 74.1,
-      "sample": "62 att / 2 QPI games",
+      "sample": "62 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -45,7 +45,7 @@
       "qpi": 85.6,
       "passing": 87.0,
       "rushing": 79.3,
-      "sample": "45 att / 2 QPI games",
+      "sample": "45 att / 2 CQI games",
       "sample_flag": "Limited sample"
     },
     {
@@ -56,7 +56,7 @@
       "qpi": 85.3,
       "passing": 96.6,
       "rushing": 31.9,
-      "sample": "51 att / 2 QPI games",
+      "sample": "51 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -67,7 +67,7 @@
       "qpi": 83.2,
       "passing": 87.9,
       "rushing": 60.7,
-      "sample": "81 att / 2 QPI games",
+      "sample": "81 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -78,7 +78,7 @@
       "qpi": 82.0,
       "passing": 93.9,
       "rushing": 25.9,
-      "sample": "79 att / 2 QPI games",
+      "sample": "79 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -89,7 +89,7 @@
       "qpi": 81.7,
       "passing": 90.5,
       "rushing": 40.0,
-      "sample": "73 att / 3 QPI games",
+      "sample": "73 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -100,7 +100,7 @@
       "qpi": 81.1,
       "passing": 80.0,
       "rushing": 85.9,
-      "sample": "74 att / 2 QPI games",
+      "sample": "74 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -111,7 +111,7 @@
       "qpi": 80.0,
       "passing": 81.6,
       "rushing": 72.6,
-      "sample": "110 att / 3 QPI games",
+      "sample": "110 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -122,7 +122,7 @@
       "qpi": 79.7,
       "passing": 78.7,
       "rushing": 84.4,
-      "sample": "80 att / 2 QPI games",
+      "sample": "80 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -133,7 +133,7 @@
       "qpi": 79.7,
       "passing": 81.7,
       "rushing": 70.4,
-      "sample": "101 att / 2 QPI games",
+      "sample": "101 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -144,7 +144,7 @@
       "qpi": 78.9,
       "passing": 85.6,
       "rushing": 47.4,
-      "sample": "79 att / 3 QPI games",
+      "sample": "79 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -155,7 +155,7 @@
       "qpi": 78.5,
       "passing": 94.2,
       "rushing": 4.4,
-      "sample": "115 att / 4 QPI games",
+      "sample": "115 att / 4 CQI games",
       "sample_flag": ""
     },
     {
@@ -166,7 +166,7 @@
       "qpi": 78.4,
       "passing": 79.5,
       "rushing": 73.3,
-      "sample": "77 att / 2 QPI games",
+      "sample": "77 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -177,7 +177,7 @@
       "qpi": 76.3,
       "passing": 86.6,
       "rushing": 27.4,
-      "sample": "85 att / 2 QPI games",
+      "sample": "85 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -188,7 +188,7 @@
       "qpi": 75.8,
       "passing": 90.5,
       "rushing": 6.7,
-      "sample": "64 att / 3 QPI games",
+      "sample": "64 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -199,7 +199,7 @@
       "qpi": 74.6,
       "passing": 73.3,
       "rushing": 80.7,
-      "sample": "94 att / 2 QPI games",
+      "sample": "94 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -210,7 +210,7 @@
       "qpi": 74.5,
       "passing": 69.8,
       "rushing": 97.0,
-      "sample": "83 att / 3 QPI games",
+      "sample": "83 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -221,7 +221,7 @@
       "qpi": 74.2,
       "passing": 70.7,
       "rushing": 90.4,
-      "sample": "73 att / 2 QPI games",
+      "sample": "73 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -232,7 +232,7 @@
       "qpi": 73.3,
       "passing": 67.8,
       "rushing": 99.3,
-      "sample": "38 att / 2 QPI games",
+      "sample": "38 att / 2 CQI games",
       "sample_flag": "Limited sample"
     },
     {
@@ -243,7 +243,7 @@
       "qpi": 72.4,
       "passing": 74.5,
       "rushing": 62.2,
-      "sample": "93 att / 3 QPI games",
+      "sample": "93 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -254,7 +254,7 @@
       "qpi": 72.3,
       "passing": 66.7,
       "rushing": 98.5,
-      "sample": "65 att / 2 QPI games",
+      "sample": "65 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -265,7 +265,7 @@
       "qpi": 72.2,
       "passing": 76.7,
       "rushing": 51.1,
-      "sample": "98 att / 3 QPI games",
+      "sample": "98 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -276,7 +276,7 @@
       "qpi": 71.5,
       "passing": 82.9,
       "rushing": 17.8,
-      "sample": "64 att / 2 QPI games",
+      "sample": "64 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -287,7 +287,7 @@
       "qpi": 71.3,
       "passing": 67.8,
       "rushing": 87.4,
-      "sample": "58 att / 2 QPI games",
+      "sample": "58 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -298,7 +298,7 @@
       "qpi": 70.8,
       "passing": 68.2,
       "rushing": 83.0,
-      "sample": "105 att / 3 QPI games",
+      "sample": "105 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -309,7 +309,7 @@
       "qpi": 70.3,
       "passing": 64.1,
       "rushing": 100.0,
-      "sample": "83 att / 2 QPI games",
+      "sample": "83 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -320,7 +320,7 @@
       "qpi": 69.9,
       "passing": 70.5,
       "rushing": 67.4,
-      "sample": "111 att / 3 QPI games",
+      "sample": "111 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -331,7 +331,7 @@
       "qpi": 69.4,
       "passing": 70.5,
       "rushing": 64.4,
-      "sample": "86 att / 2 QPI games",
+      "sample": "86 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -342,7 +342,7 @@
       "qpi": 69.2,
       "passing": 69.9,
       "rushing": 65.9,
-      "sample": "88 att / 2 QPI games",
+      "sample": "88 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -353,7 +353,7 @@
       "qpi": 69.0,
       "passing": 81.6,
       "rushing": 9.6,
-      "sample": "87 att / 2 QPI games",
+      "sample": "87 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -364,7 +364,7 @@
       "qpi": 68.9,
       "passing": 70.1,
       "rushing": 63.0,
-      "sample": "101 att / 2 QPI games",
+      "sample": "101 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -375,7 +375,7 @@
       "qpi": 68.7,
       "passing": 78.9,
       "rushing": 20.7,
-      "sample": "115 att / 2 QPI games",
+      "sample": "115 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -386,7 +386,7 @@
       "qpi": 67.8,
       "passing": 79.0,
       "rushing": 14.8,
-      "sample": "75 att / 3 QPI games",
+      "sample": "75 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -397,7 +397,7 @@
       "qpi": 67.7,
       "passing": 66.0,
       "rushing": 75.6,
-      "sample": "90 att / 2 QPI games",
+      "sample": "90 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -408,7 +408,7 @@
       "qpi": 66.8,
       "passing": 65.1,
       "rushing": 74.8,
-      "sample": "64 att / 3 QPI games",
+      "sample": "64 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -419,7 +419,7 @@
       "qpi": 66.1,
       "passing": 69.6,
       "rushing": 49.6,
-      "sample": "75 att / 3 QPI games",
+      "sample": "75 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -430,7 +430,7 @@
       "qpi": 65.9,
       "passing": 59.2,
       "rushing": 97.8,
-      "sample": "93 att / 3 QPI games",
+      "sample": "93 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -441,7 +441,7 @@
       "qpi": 64.7,
       "passing": 70.5,
       "rushing": 37.0,
-      "sample": "73 att / 2 QPI games",
+      "sample": "73 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -452,7 +452,7 @@
       "qpi": 63.8,
       "passing": 65.4,
       "rushing": 56.3,
-      "sample": "91 att / 3 QPI games",
+      "sample": "91 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -463,7 +463,7 @@
       "qpi": 61.4,
       "passing": 71.8,
       "rushing": 12.6,
-      "sample": "96 att / 2 QPI games",
+      "sample": "96 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -474,7 +474,7 @@
       "qpi": 61.4,
       "passing": 69.8,
       "rushing": 21.9,
-      "sample": "80 att / 2 QPI games",
+      "sample": "80 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -485,7 +485,7 @@
       "qpi": 60.8,
       "passing": 63.5,
       "rushing": 48.1,
-      "sample": "87 att / 2 QPI games",
+      "sample": "87 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -496,7 +496,7 @@
       "qpi": 60.5,
       "passing": 53.7,
       "rushing": 92.6,
-      "sample": "64 att / 2 QPI games",
+      "sample": "64 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -507,7 +507,7 @@
       "qpi": 60.3,
       "passing": 70.2,
       "rushing": 13.3,
-      "sample": "67 att / 2 QPI games",
+      "sample": "67 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -518,7 +518,7 @@
       "qpi": 59.5,
       "passing": 53.1,
       "rushing": 89.6,
-      "sample": "79 att / 3 QPI games",
+      "sample": "79 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -529,7 +529,7 @@
       "qpi": 59.0,
       "passing": 59.2,
       "rushing": 57.8,
-      "sample": "97 att / 3 QPI games",
+      "sample": "97 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -540,7 +540,7 @@
       "qpi": 58.8,
       "passing": 60.0,
       "rushing": 53.3,
-      "sample": "70 att / 3 QPI games",
+      "sample": "70 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -551,7 +551,7 @@
       "qpi": 57.8,
       "passing": 63.4,
       "rushing": 31.1,
-      "sample": "94 att / 2 QPI games",
+      "sample": "94 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -562,7 +562,7 @@
       "qpi": 57.4,
       "passing": 57.1,
       "rushing": 59.3,
-      "sample": "62 att / 2 QPI games",
+      "sample": "62 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -573,7 +573,7 @@
       "qpi": 57.2,
       "passing": 49.6,
       "rushing": 93.3,
-      "sample": "98 att / 3 QPI games",
+      "sample": "98 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -584,7 +584,7 @@
       "qpi": 56.9,
       "passing": 52.5,
       "rushing": 77.8,
-      "sample": "69 att / 2 QPI games",
+      "sample": "69 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -595,7 +595,7 @@
       "qpi": 56.8,
       "passing": 51.4,
       "rushing": 82.2,
-      "sample": "71 att / 2 QPI games",
+      "sample": "71 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -606,7 +606,7 @@
       "qpi": 56.7,
       "passing": 51.0,
       "rushing": 83.7,
-      "sample": "81 att / 2 QPI games",
+      "sample": "81 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -617,7 +617,7 @@
       "qpi": 56.6,
       "passing": 48.5,
       "rushing": 94.8,
-      "sample": "109 att / 2 QPI games",
+      "sample": "109 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -628,7 +628,7 @@
       "qpi": 55.8,
       "passing": 50.6,
       "rushing": 80.0,
-      "sample": "75 att / 3 QPI games",
+      "sample": "75 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -639,7 +639,7 @@
       "qpi": 55.2,
       "passing": 53.0,
       "rushing": 65.2,
-      "sample": "74 att / 2 QPI games",
+      "sample": "74 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -650,7 +650,7 @@
       "qpi": 55.1,
       "passing": 63.8,
       "rushing": 14.1,
-      "sample": "71 att / 3 QPI games",
+      "sample": "71 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -661,7 +661,7 @@
       "qpi": 54.7,
       "passing": 64.4,
       "rushing": 8.9,
-      "sample": "76 att / 2 QPI games",
+      "sample": "76 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -672,7 +672,7 @@
       "qpi": 52.5,
       "passing": 49.2,
       "rushing": 68.1,
-      "sample": "88 att / 2 QPI games",
+      "sample": "88 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -683,7 +683,7 @@
       "qpi": 51.6,
       "passing": 51.0,
       "rushing": 54.1,
-      "sample": "71 att / 3 QPI games",
+      "sample": "71 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -694,7 +694,7 @@
       "qpi": 50.8,
       "passing": 61.3,
       "rushing": 1.5,
-      "sample": "92 att / 2 QPI games",
+      "sample": "92 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -705,7 +705,7 @@
       "qpi": 50.5,
       "passing": 50.1,
       "rushing": 52.6,
-      "sample": "96 att / 2 QPI games",
+      "sample": "96 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -716,7 +716,7 @@
       "qpi": 50.5,
       "passing": 60.5,
       "rushing": 3.0,
-      "sample": "108 att / 2 QPI games",
+      "sample": "108 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -727,7 +727,7 @@
       "qpi": 50.5,
       "passing": 57.1,
       "rushing": 19.3,
-      "sample": "89 att / 2 QPI games",
+      "sample": "89 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -738,7 +738,7 @@
       "qpi": 50.4,
       "passing": 58.6,
       "rushing": 11.9,
-      "sample": "120 att / 3 QPI games",
+      "sample": "120 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -749,18 +749,18 @@
       "qpi": 50.2,
       "passing": 51.1,
       "rushing": 45.9,
-      "sample": "129 att / 2 QPI games",
+      "sample": "129 att / 2 CQI games",
       "sample_flag": ""
     },
     {
       "rank": 69,
       "player": "Luke Weaver",
       "slug": "luke-weaver",
-      "team": "San Jos\u00e9 State",
+      "team": "San José State",
       "qpi": 50.1,
       "passing": 49.8,
       "rushing": 51.9,
-      "sample": "143 att / 3 QPI games",
+      "sample": "143 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -771,7 +771,7 @@
       "qpi": 50.0,
       "passing": 47.2,
       "rushing": 63.7,
-      "sample": "104 att / 3 QPI games",
+      "sample": "104 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -782,7 +782,7 @@
       "qpi": 50.0,
       "passing": 53.5,
       "rushing": 33.3,
-      "sample": "52 att / 2 QPI games",
+      "sample": "52 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -793,7 +793,7 @@
       "qpi": 49.8,
       "passing": 47.3,
       "rushing": 61.5,
-      "sample": "129 att / 3 QPI games",
+      "sample": "129 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -804,7 +804,7 @@
       "qpi": 49.5,
       "passing": 53.8,
       "rushing": 29.6,
-      "sample": "48 att / 2 QPI games",
+      "sample": "48 att / 2 CQI games",
       "sample_flag": "Limited sample"
     },
     {
@@ -815,7 +815,7 @@
       "qpi": 49.5,
       "passing": 39.7,
       "rushing": 95.6,
-      "sample": "63 att / 2 QPI games",
+      "sample": "63 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -826,7 +826,7 @@
       "qpi": 49.3,
       "passing": 41.4,
       "rushing": 86.7,
-      "sample": "114 att / 2 QPI games",
+      "sample": "114 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -837,7 +837,7 @@
       "qpi": 47.8,
       "passing": 45.9,
       "rushing": 57.0,
-      "sample": "40 att / 2 QPI games",
+      "sample": "40 att / 2 CQI games",
       "sample_flag": "Limited sample"
     },
     {
@@ -848,7 +848,7 @@
       "qpi": 46.5,
       "passing": 41.1,
       "rushing": 71.9,
-      "sample": "92 att / 2 QPI games",
+      "sample": "92 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -859,7 +859,7 @@
       "qpi": 46.3,
       "passing": 54.8,
       "rushing": 5.9,
-      "sample": "65 att / 2 QPI games",
+      "sample": "65 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -870,7 +870,7 @@
       "qpi": 46.2,
       "passing": 54.3,
       "rushing": 8.1,
-      "sample": "45 att / 2 QPI games",
+      "sample": "45 att / 2 CQI games",
       "sample_flag": "Limited sample"
     },
     {
@@ -881,7 +881,7 @@
       "qpi": 46.1,
       "passing": 47.6,
       "rushing": 39.3,
-      "sample": "84 att / 2 QPI games",
+      "sample": "84 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -892,7 +892,7 @@
       "qpi": 45.6,
       "passing": 45.4,
       "rushing": 46.7,
-      "sample": "97 att / 2 QPI games",
+      "sample": "97 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -903,7 +903,7 @@
       "qpi": 45.5,
       "passing": 38.8,
       "rushing": 77.0,
-      "sample": "84 att / 2 QPI games",
+      "sample": "84 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -914,7 +914,7 @@
       "qpi": 44.6,
       "passing": 48.7,
       "rushing": 25.2,
-      "sample": "99 att / 3 QPI games",
+      "sample": "99 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -925,7 +925,7 @@
       "qpi": 43.4,
       "passing": 38.0,
       "rushing": 68.9,
-      "sample": "83 att / 2 QPI games",
+      "sample": "83 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -936,7 +936,7 @@
       "qpi": 42.8,
       "passing": 40.1,
       "rushing": 55.6,
-      "sample": "95 att / 2 QPI games",
+      "sample": "95 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -947,7 +947,7 @@
       "qpi": 41.4,
       "passing": 31.5,
       "rushing": 88.1,
-      "sample": "85 att / 2 QPI games",
+      "sample": "85 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -958,7 +958,7 @@
       "qpi": 41.4,
       "passing": 41.3,
       "rushing": 41.5,
-      "sample": "103 att / 2 QPI games",
+      "sample": "103 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -969,7 +969,7 @@
       "qpi": 40.0,
       "passing": 43.5,
       "rushing": 23.7,
-      "sample": "65 att / 2 QPI games",
+      "sample": "65 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -980,7 +980,7 @@
       "qpi": 39.1,
       "passing": 33.3,
       "rushing": 66.7,
-      "sample": "35 att / 2 QPI games",
+      "sample": "35 att / 2 CQI games",
       "sample_flag": "Limited sample"
     },
     {
@@ -991,7 +991,7 @@
       "qpi": 39.0,
       "passing": 31.1,
       "rushing": 76.3,
-      "sample": "72 att / 3 QPI games",
+      "sample": "72 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -1002,7 +1002,7 @@
       "qpi": 39.0,
       "passing": 32.5,
       "rushing": 69.6,
-      "sample": "82 att / 2 QPI games",
+      "sample": "82 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1013,7 +1013,7 @@
       "qpi": 36.9,
       "passing": 44.3,
       "rushing": 2.2,
-      "sample": "77 att / 2 QPI games",
+      "sample": "77 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1024,7 +1024,7 @@
       "qpi": 36.8,
       "passing": 25.7,
       "rushing": 88.9,
-      "sample": "82 att / 3 QPI games",
+      "sample": "82 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -1035,7 +1035,7 @@
       "qpi": 36.4,
       "passing": 35.5,
       "rushing": 40.7,
-      "sample": "78 att / 2 QPI games",
+      "sample": "78 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1046,7 +1046,7 @@
       "qpi": 35.8,
       "passing": 34.5,
       "rushing": 42.2,
-      "sample": "102 att / 2 QPI games",
+      "sample": "102 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1057,7 +1057,7 @@
       "qpi": 35.4,
       "passing": 35.2,
       "rushing": 36.3,
-      "sample": "63 att / 2 QPI games",
+      "sample": "63 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1068,7 +1068,7 @@
       "qpi": 35.1,
       "passing": 23.2,
       "rushing": 91.1,
-      "sample": "53 att / 2 QPI games",
+      "sample": "53 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1079,7 +1079,7 @@
       "qpi": 34.7,
       "passing": 21.6,
       "rushing": 96.3,
-      "sample": "53 att / 2 QPI games",
+      "sample": "53 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1090,7 +1090,7 @@
       "qpi": 34.6,
       "passing": 32.3,
       "rushing": 45.2,
-      "sample": "57 att / 2 QPI games",
+      "sample": "57 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1101,7 +1101,7 @@
       "qpi": 33.5,
       "passing": 23.9,
       "rushing": 78.5,
-      "sample": "75 att / 2 QPI games",
+      "sample": "75 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1112,7 +1112,7 @@
       "qpi": 33.4,
       "passing": 38.3,
       "rushing": 10.4,
-      "sample": "100 att / 2 QPI games",
+      "sample": "100 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1123,7 +1123,7 @@
       "qpi": 32.9,
       "passing": 33.5,
       "rushing": 30.4,
-      "sample": "107 att / 3 QPI games",
+      "sample": "107 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -1134,7 +1134,7 @@
       "qpi": 31.5,
       "passing": 35.8,
       "rushing": 11.1,
-      "sample": "78 att / 2 QPI games",
+      "sample": "78 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1145,7 +1145,7 @@
       "qpi": 30.9,
       "passing": 25.9,
       "rushing": 54.8,
-      "sample": "53 att / 2 QPI games",
+      "sample": "53 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1156,7 +1156,7 @@
       "qpi": 30.4,
       "passing": 33.5,
       "rushing": 15.6,
-      "sample": "75 att / 2 QPI games",
+      "sample": "75 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1167,7 +1167,7 @@
       "qpi": 29.4,
       "passing": 31.7,
       "rushing": 18.5,
-      "sample": "108 att / 2 QPI games",
+      "sample": "108 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1178,7 +1178,7 @@
       "qpi": 29.2,
       "passing": 35.2,
       "rushing": 0.7,
-      "sample": "97 att / 2 QPI games",
+      "sample": "97 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1189,7 +1189,7 @@
       "qpi": 29.1,
       "passing": 20.1,
       "rushing": 71.1,
-      "sample": "55 att / 2 QPI games",
+      "sample": "55 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1200,7 +1200,7 @@
       "qpi": 28.8,
       "passing": 24.2,
       "rushing": 50.4,
-      "sample": "137 att / 3 QPI games",
+      "sample": "137 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -1211,7 +1211,7 @@
       "qpi": 28.8,
       "passing": 31.4,
       "rushing": 16.3,
-      "sample": "62 att / 2 QPI games",
+      "sample": "62 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1222,7 +1222,7 @@
       "qpi": 28.4,
       "passing": 26.8,
       "rushing": 35.6,
-      "sample": "65 att / 3 QPI games",
+      "sample": "65 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -1233,7 +1233,7 @@
       "qpi": 28.2,
       "passing": 28.5,
       "rushing": 26.7,
-      "sample": "64 att / 2 QPI games",
+      "sample": "64 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1244,7 +1244,7 @@
       "qpi": 27.7,
       "passing": 24.4,
       "rushing": 43.7,
-      "sample": "37 att / 2 QPI games",
+      "sample": "37 att / 2 CQI games",
       "sample_flag": "Limited sample"
     },
     {
@@ -1255,7 +1255,7 @@
       "qpi": 27.4,
       "passing": 29.7,
       "rushing": 17.0,
-      "sample": "69 att / 3 QPI games",
+      "sample": "69 att / 3 CQI games",
       "sample_flag": ""
     },
     {
@@ -1266,7 +1266,7 @@
       "qpi": 26.8,
       "passing": 23.3,
       "rushing": 43.0,
-      "sample": "135 att / 4 QPI games",
+      "sample": "135 att / 4 CQI games",
       "sample_flag": ""
     },
     {
@@ -1277,7 +1277,7 @@
       "qpi": 26.7,
       "passing": 24.2,
       "rushing": 38.5,
-      "sample": "72 att / 2 QPI games",
+      "sample": "72 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1288,7 +1288,7 @@
       "qpi": 25.3,
       "passing": 24.7,
       "rushing": 28.1,
-      "sample": "70 att / 2 QPI games",
+      "sample": "70 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1299,7 +1299,7 @@
       "qpi": 24.4,
       "passing": 10.1,
       "rushing": 91.9,
-      "sample": "67 att / 2 QPI games",
+      "sample": "67 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1310,7 +1310,7 @@
       "qpi": 24.3,
       "passing": 25.2,
       "rushing": 20.0,
-      "sample": "79 att / 2 QPI games",
+      "sample": "79 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1321,7 +1321,7 @@
       "qpi": 24.1,
       "passing": 12.0,
       "rushing": 81.5,
-      "sample": "66 att / 2 QPI games",
+      "sample": "66 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1332,7 +1332,7 @@
       "qpi": 22.6,
       "passing": 20.0,
       "rushing": 34.8,
-      "sample": "103 att / 2 QPI games",
+      "sample": "103 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1343,7 +1343,7 @@
       "qpi": 21.8,
       "passing": 14.0,
       "rushing": 58.5,
-      "sample": "60 att / 2 QPI games",
+      "sample": "60 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1354,7 +1354,7 @@
       "qpi": 21.6,
       "passing": 18.9,
       "rushing": 34.1,
-      "sample": "119 att / 2 QPI games",
+      "sample": "119 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1365,7 +1365,7 @@
       "qpi": 21.5,
       "passing": 18.1,
       "rushing": 37.8,
-      "sample": "52 att / 2 QPI games",
+      "sample": "52 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1376,7 +1376,7 @@
       "qpi": 21.3,
       "passing": 15.5,
       "rushing": 48.9,
-      "sample": "42 att / 2 QPI games",
+      "sample": "42 att / 2 CQI games",
       "sample_flag": "Limited sample"
     },
     {
@@ -1387,7 +1387,7 @@
       "qpi": 21.1,
       "passing": 16.2,
       "rushing": 44.4,
-      "sample": "61 att / 2 QPI games",
+      "sample": "61 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1398,7 +1398,7 @@
       "qpi": 20.9,
       "passing": 18.5,
       "rushing": 32.6,
-      "sample": "92 att / 2 QPI games",
+      "sample": "92 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1409,7 +1409,7 @@
       "qpi": 18.4,
       "passing": 16.2,
       "rushing": 28.9,
-      "sample": "67 att / 2 QPI games",
+      "sample": "67 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1420,7 +1420,7 @@
       "qpi": 18.2,
       "passing": 16.9,
       "rushing": 24.4,
-      "sample": "51 att / 2 QPI games",
+      "sample": "51 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1431,7 +1431,7 @@
       "qpi": 16.5,
       "passing": 7.2,
       "rushing": 60.0,
-      "sample": "36 att / 2 QPI games",
+      "sample": "36 att / 2 CQI games",
       "sample_flag": "Limited sample"
     },
     {
@@ -1442,7 +1442,7 @@
       "qpi": 16.4,
       "passing": 18.8,
       "rushing": 5.2,
-      "sample": "54 att / 2 QPI games",
+      "sample": "54 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1453,7 +1453,7 @@
       "qpi": 15.8,
       "passing": 18.4,
       "rushing": 3.7,
-      "sample": "45 att / 2 QPI games",
+      "sample": "45 att / 2 CQI games",
       "sample_flag": "Limited sample"
     },
     {
@@ -1464,7 +1464,7 @@
       "qpi": 12.6,
       "passing": 13.7,
       "rushing": 7.4,
-      "sample": "86 att / 2 QPI games",
+      "sample": "86 att / 2 CQI games",
       "sample_flag": ""
     },
     {
@@ -1475,7 +1475,7 @@
       "qpi": 9.8,
       "passing": 7.0,
       "rushing": 23.0,
-      "sample": "40 att / 2 QPI games",
+      "sample": "40 att / 2 CQI games",
       "sample_flag": "Limited sample"
     },
     {
@@ -1486,7 +1486,7 @@
       "qpi": NaN,
       "passing": NaN,
       "rushing": 21.9,
-      "sample": "58 att / 2 QPI games",
+      "sample": "58 att / 2 CQI games",
       "sample_flag": ""
     }
   ]
