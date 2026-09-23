@@ -12,7 +12,16 @@
 <meta property="og:description" content="Transparent, opponent-aware college quarterback rankings from Percera.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://perceraanalytics.com/">
-<meta name="theme-color" content="#2563eb">
+<meta property="og:image" content="https://perceraanalytics.com/assets/percera-og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Percera — Contextual Quarterback Index">
+<meta name="twitter:description" content="Same game. More context. A clearer picture. Explore CQI from Percera.">
+<meta name="twitter:image" content="https://perceraanalytics.com/assets/percera-og.png">
+<meta name="theme-color" content="#0B1F3B">
+<link rel="canonical" href="https://perceraanalytics.com/">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/percera-favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/percera-favicon-192.png">
+<link rel="apple-touch-icon" href="assets/percera-favicon-192.png">
 
 <link rel="stylesheet" href="styles.css">
 
@@ -22,14 +31,14 @@
 
 <header class="site-header">
 
-    <div class="brand">
-        <div class="brand-mark" aria-hidden="true">P</div>
-
-        <div>
-            <h1>Percera</h1>
-            <p>College Football Analytics</p>
-        </div>
-    </div>
+    <a class="brand" href="/" aria-label="Percera home">
+        <img
+            src="assets/percera-wordmark-transparent.png"
+            class="brand-wordmark"
+            alt="Percera"
+        >
+        <span class="brand-subtitle">College Football Analytics</span>
+    </a>
 
     <nav>
         <button class="nav-button active" data-view="rankings">
@@ -50,7 +59,7 @@
 
     <div class="hero">
 
-        <div>
+        <div class="hero-copy">
             <span class="eyebrow">
                 CQI v1.0 · 2026 Through Week 3
             </span>
@@ -59,7 +68,11 @@
                 Contextual Quarterback Index
             </h2>
 
-            <p>
+            <p class="hero-tagline">
+                Same game. More context. A clearer picture.
+            </p>
+
+            <p class="hero-description">
                 Percera's transparent, opponent-aware measure of
                 observed college quarterback performance.
             </p>
@@ -113,6 +126,22 @@
         </table>
 
     </div>
+
+    <section class="brand-story" aria-label="About Percera">
+        <div>
+            <span class="eyebrow">About Percera</span>
+            <h3>College football analytics built around context.</h3>
+            <p>
+                Percera builds transparent tools for evaluating college football
+                performance beyond the surface-level box score. CQI is the first
+                model in a broader analytics platform for players, teams, rosters,
+                and the transfer era.
+            </p>
+        </div>
+        <div class="brand-story-mark" aria-hidden="true">
+            <img src="assets/percera-favicon-192.png" alt="">
+        </div>
+    </section>
 
 </section>
 
@@ -424,11 +453,12 @@
 </main>
 <footer class="site-footer">
     <div class="footer-brand">
-        <strong>Percera</strong>
+        <img src="assets/percera-wordmark-transparent.png" alt="Percera" class="footer-wordmark">
         <span>Independent college football analytics.</span>
     </div>
     <div class="footer-meta">
         <span>CQI · Contextual Quarterback Index</span>
+        <span>Data sourced from CollegeFootballData.com</span>
         <span>perceraanalytics.com</span>
     </div>
 </footer>
