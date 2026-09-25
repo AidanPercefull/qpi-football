@@ -5225,30 +5225,13 @@ h3 {
 
 
 /* ==========================================================
-   PERCERA RANKINGS TOOLS
+   PERCERA CLEAN RANKINGS INTERACTIONS
    ========================================================== */
 
+
+/* ---------- SEARCH + CONFERENCE ---------- */
+
 .controls {
-
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    gap:
-        12px;
-}
-
-
-#search {
-
-    width:
-        min(100%, 380px);
-}
-
-
-.rankings-toolbar {
 
     display:
         flex;
@@ -5260,14 +5243,21 @@ h3 {
         wrap;
 
     gap:
-        10px;
-
-    margin-top:
-        2px;
+        12px;
 }
 
 
-.ranking-filter-group {
+#search {
+
+    flex:
+        1 1 300px;
+
+    max-width:
+        380px;
+}
+
+
+.conference-filter-bar {
 
     display:
         flex;
@@ -5280,10 +5270,13 @@ h3 {
 }
 
 
-.ranking-filter-group label {
+.conference-filter-bar label {
 
     padding-left:
         2px;
+
+    color:
+        var(--muted);
 
     font-size:
         9px;
@@ -5296,19 +5289,16 @@ h3 {
 
     text-transform:
         uppercase;
-
-    color:
-        var(--muted);
 }
 
 
-.ranking-filter-group select {
+.conference-filter-bar select {
 
     height:
-        40px;
+        42px;
 
     min-width:
-        128px;
+        170px;
 
     padding:
         0 34px
@@ -5341,14 +5331,7 @@ h3 {
 }
 
 
-.ranking-filter-group select:hover {
-
-    border-color:
-        #b9b3a8;
-}
-
-
-.ranking-filter-group select:focus {
+.conference-filter-bar select:focus {
 
     outline:
         none;
@@ -5362,152 +5345,137 @@ h3 {
 }
 
 
-.rankings-reset {
+/* ---------- SORTABLE HEADERS ---------- */
 
-    height:
-        40px;
+#leaderboard th.sortable-header {
 
-    padding:
-        0 16px;
+    position:
+        relative;
 
-    border:
-        1px solid
-        var(--border);
-
-    border-radius:
-        6px;
-
-    background:
-        transparent;
-
-    color:
-        var(--muted);
-
-    font-family:
-        inherit;
-
-    font-size:
-        10px;
-
-    font-weight:
-        750;
+    padding-right:
+        27px;
 
     cursor:
         pointer;
 
+    user-select:
+        none;
+
     transition:
-        background .12s ease,
         color .12s ease,
-        border-color .12s ease;
+        background .12s ease;
 }
 
 
-.rankings-reset:hover {
+#leaderboard th.sortable-header:hover {
 
     background:
-        white;
+        rgba(12, 35, 64, .04);
 
     color:
         var(--brand-navy);
-
-    border-color:
-        #b9b3a8;
 }
 
 
-.rankings-summary {
+#leaderboard th.sortable-header::after {
 
-    display:
-        flex;
+    content:
+        "↕";
 
-    align-items:
-        baseline;
+    position:
+        absolute;
 
-    gap:
-        5px;
-
-    padding:
-        0 2px
+    right:
         10px;
 
-    color:
-        var(--muted);
+    top:
+        50%;
+
+    transform:
+        translateY(-52%);
+
+    opacity:
+        .32;
 
     font-size:
-        10px;
-}
-
-
-.rankings-summary strong {
-
-    color:
-        var(--brand-navy);
-
-    font-size:
-        12px;
+        11px;
 
     font-weight:
-        850;
+        700;
 }
 
 
-.rankings-summary small {
+#leaderboard th.sort-active {
 
     color:
-        #9a958c;
+        var(--brand-navy);
+}
+
+
+#leaderboard th.sort-active.sort-asc::after {
+
+    content:
+        "↑";
+
+    opacity:
+        1;
+
+    color:
+        var(--accent);
+}
+
+
+#leaderboard th.sort-active.sort-desc::after {
+
+    content:
+        "↓";
+
+    opacity:
+        1;
+
+    color:
+        var(--accent);
 }
 
 
 @media (
-    max-width: 700px
+    max-width: 650px
 ) {
 
-    .rankings-toolbar {
+    .controls {
 
-        display:
-            grid;
-
-        grid-template-columns:
-            repeat(
-                2,
-                minmax(0, 1fr)
-            );
+        align-items:
+            stretch;
     }
 
 
-    .ranking-filter-group select {
+    #search {
 
         width:
             100%;
 
-        min-width:
-            0;
+        max-width:
+            none;
     }
 
 
-    .rankings-reset {
+    .conference-filter-bar {
 
         width:
             100%;
     }
 
-}
 
+    .conference-filter-bar select {
 
-@media (
-    max-width: 430px
-) {
-
-    .rankings-toolbar {
-
-        grid-template-columns:
-            1fr;
+        width:
+            100%;
     }
 
 }
 
 
 /* ==========================================================
-   END PERCERA RANKINGS TOOLS
+   END PERCERA CLEAN RANKINGS INTERACTIONS
    ========================================================== */
 

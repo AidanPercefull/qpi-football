@@ -1,30 +1,41 @@
 
 /* ==========================================================
-   PERCERA RANKINGS TOOLS
+   PERCERA CLEAN RANKINGS INTERACTIONS
    ========================================================== */
 
 (() => {
 
-    // -------------------------------------------------------
-    // DATA
-    // -------------------------------------------------------
+    const conferenceMap =
+        {"Air Force": "Mountain West", "Akron": "Mid-American", "Alabama": "SEC", "App State": "Sun Belt", "Arizona": "Big 12", "Arizona State": "Big 12", "Arkansas": "SEC", "Arkansas State": "Sun Belt", "Army": "American Athletic", "Auburn": "SEC", "Ball State": "Mid-American", "Baylor": "Big 12", "Boise State": "Pac-12", "Boston College": "ACC", "Bowling Green": "Mid-American", "Buffalo": "Mid-American", "BYU": "Big 12", "California": "ACC", "Central Michigan": "Mid-American", "Charlotte": "American Athletic", "Cincinnati": "Big 12", "Clemson": "ACC", "Coastal Carolina": "Sun Belt", "Colorado": "Big 12", "Colorado State": "Pac-12", "Delaware": "Conference USA", "Duke": "ACC", "East Carolina": "American Athletic", "Eastern Michigan": "Mid-American", "Florida": "SEC", "Florida Atlantic": "American Athletic", "Florida International": "Conference USA", "Florida State": "ACC", "Fresno State": "Pac-12", "Georgia": "SEC", "Georgia Southern": "Sun Belt", "Georgia State": "Sun Belt", "Georgia Tech": "ACC", "Hawai'i": "Mountain West", "Houston": "Big 12", "Illinois": "Big Ten", "Indiana": "Big Ten", "Iowa": "Big Ten", "Iowa State": "Big 12", "Jacksonville State": "Conference USA", "James Madison": "Sun Belt", "Kansas": "Big 12", "Kansas State": "Big 12", "Kennesaw State": "Conference USA", "Kent State": "Mid-American", "Kentucky": "SEC", "Liberty": "Conference USA", "Louisiana": "Sun Belt", "Louisiana Tech": "Sun Belt", "Louisville": "ACC", "LSU": "SEC", "Marshall": "Sun Belt", "Maryland": "Big Ten", "Massachusetts": "Mid-American", "Memphis": "American Athletic", "Miami": "ACC", "Miami (OH)": "Mid-American", "Michigan": "Big Ten", "Michigan State": "Big Ten", "Middle Tennessee": "Conference USA", "Minnesota": "Big Ten", "Mississippi State": "SEC", "Missouri": "SEC", "Missouri State": "Conference USA", "Navy": "American Athletic", "NC State": "ACC", "Nebraska": "Big Ten", "Nevada": "Mountain West", "New Mexico": "Mountain West", "New Mexico State": "Conference USA", "North Carolina": "ACC", "North Dakota State": "Mountain West", "Northern Illinois": "Mountain West", "North Texas": "American Athletic", "Northwestern": "Big Ten", "Notre Dame": "FBS Independents", "Ohio": "Mid-American", "Ohio State": "Big Ten", "Oklahoma": "SEC", "Oklahoma State": "Big 12", "Old Dominion": "Sun Belt", "Ole Miss": "SEC", "Oregon": "Big Ten", "Oregon State": "Pac-12", "Penn State": "Big Ten", "Pittsburgh": "ACC", "Purdue": "Big Ten", "Rice": "American Athletic", "Rutgers": "Big Ten", "Sacramento State": "Mid-American", "Sam Houston": "Conference USA", "San Diego State": "Pac-12", "San José State": "Mountain West", "SMU": "ACC", "South Alabama": "Sun Belt", "South Carolina": "SEC", "Southern Miss": "Sun Belt", "South Florida": "American Athletic", "Stanford": "ACC", "Syracuse": "ACC", "TCU": "Big 12", "Temple": "American Athletic", "Tennessee": "SEC", "Texas": "SEC", "Texas A&M": "SEC", "Texas State": "Pac-12", "Texas Tech": "Big 12", "Toledo": "Mid-American", "Troy": "Sun Belt", "Tulane": "American Athletic", "Tulsa": "American Athletic", "UAB": "American Athletic", "UCF": "Big 12", "UCLA": "Big Ten", "UConn": "FBS Independents", "UL Monroe": "Sun Belt", "UNLV": "Mountain West", "USC": "Big Ten", "Utah": "Big 12", "Utah State": "Pac-12", "UTEP": "Mountain West", "UTSA": "American Athletic", "Vanderbilt": "SEC", "Virginia": "ACC", "Virginia Tech": "ACC", "Wake Forest": "ACC", "Washington": "Big Ten", "Washington State": "Pac-12", "Western Kentucky": "Conference USA", "Western Michigan": "Mid-American", "West Virginia": "Big 12", "Wisconsin": "Big Ten", "Wyoming": "Mountain West"};
 
-    const data =
+
+    const rankingsData =
         window.CQI_LEADERBOARD
         ||
         window.QPI_LEADERBOARD;
 
 
+    const profiles =
+        window.CQI_PLAYERS
+        ||
+        window.QPI_PLAYERS
+        ||
+        {};
+
+
     if (
-        !data
+        !rankingsData
         ||
         !Array.isArray(
-            data.quarterbacks
+            rankingsData.quarterbacks
         )
+        ||
+        typeof renderLeaderboard
+            !== "function"
     ) {
 
         console.warn(
-            "Percera rankings tools: leaderboard data missing."
+            "Percera rankings controls could not initialize."
         );
 
         return;
@@ -32,45 +43,15 @@
 
 
     const allPlayers = [
-        ...data.quarterbacks
+        ...rankingsData.quarterbacks
     ];
 
 
-    const controlsHost =
-        document.querySelector(
-            ".controls"
-        );
-
-
-    const leaderboard =
+    const table =
         document.getElementById(
             "leaderboard"
         );
 
-
-    if (
-        !controlsHost
-        ||
-        !leaderboard
-        ||
-        typeof renderLeaderboard !== "function"
-    ) {
-
-        console.warn(
-            "Percera rankings tools: required page elements missing."
-        );
-
-        return;
-    }
-
-
-    // -------------------------------------------------------
-    // REMOVE OLD SEARCH LISTENER SAFELY
-    //
-    // Clone the current search box.
-    // This preserves its design/ID but removes the old
-    // app.js input listener so filters do not fight it.
-    // -------------------------------------------------------
 
     const oldSearch =
         document.getElementById(
@@ -78,55 +59,115 @@
         );
 
 
-    let searchInput = null;
-
-
-    if (oldSearch) {
-
-        searchInput =
-            oldSearch.cloneNode(
-                true
-            );
-
-
-        oldSearch.replaceWith(
-            searchInput
-        );
+    if (
+        !table
+        ||
+        !oldSearch
+    ) {
+        return;
     }
 
 
     // -------------------------------------------------------
-    // HELPERS
+    // Replace search input with an identical clone.
+    //
+    // This removes the original standalone app.js listener
+    // so search + conference + sorting all use one pipeline.
     // -------------------------------------------------------
 
-    function numericValue(
-        player,
-        keys
+    const searchInput =
+        oldSearch.cloneNode(
+            true
+        );
+
+
+    oldSearch.replaceWith(
+        searchInput
+    );
+
+
+    // -------------------------------------------------------
+    // STATE
+    // -------------------------------------------------------
+
+    let sortKey =
+        "rank";
+
+
+    let direction =
+        "asc";
+
+
+    // -------------------------------------------------------
+    // VALUE HELPERS
+    // -------------------------------------------------------
+
+    function numberOrNull(
+        value
     ) {
 
-        for (const key of keys) {
+        if (
+            value === null
+            ||
+            value === undefined
+            ||
+            value === ""
+        ) {
+            return null;
+        }
 
-            const value =
-                player[
-                    key
-                ];
+
+        const n =
+            Number(
+                value
+            );
 
 
-            if (
-                value !== null
-                &&
-                value !== undefined
-                &&
-                value !== ""
-                &&
-                !Number.isNaN(
-                    Number(value)
-                )
-            ) {
+        return Number.isFinite(n)
+            ? n
+            : null;
+    }
 
-                return Number(
+
+    function profileFor(
+        player
+    ) {
+
+        if (
+            player.slug
+            &&
+            profiles[
+                player.slug
+            ]
+        ) {
+
+            return profiles[
+                player.slug
+            ];
+        }
+
+
+        return {};
+    }
+
+
+    function firstNumber(
+        values
+    ) {
+
+        for (
+            const value
+            of values
+        ) {
+
+            const n =
+                numberOrNull(
                     value
                 );
+
+
+            if (n !== null) {
+                return n;
             }
         }
 
@@ -135,479 +176,509 @@
     }
 
 
-    function currentMovement(
+    function cqiValue(
         player
     ) {
 
-        const weekly =
-            window.CQI_WEEKLY_HISTORY;
-
-
-        if (
-            !weekly
-            ||
-            !weekly.weeks
-            ||
-            weekly.latest_week === null
-            ||
-            weekly.latest_week === undefined
-        ) {
-
-            return null;
-        }
-
-
-        const latest =
-            weekly.weeks[
-                String(
-                    weekly.latest_week
-                )
-            ] || [];
-
-
-        const record =
-            latest.find(
-                row =>
-                    row.player === player.player
-                    &&
-                    row.team === player.team
+        const profile =
+            profileFor(
+                player
             );
 
 
-        if (
-            !record
-            ||
-            record.rank_change === null
-            ||
-            record.rank_change === undefined
-        ) {
+        return firstNumber([
+            player.cqi,
+            player.qpi,
+            player.CQI,
+            player.QPI,
 
-            return null;
+            profile.cqi,
+            profile.qpi,
+            profile.CQI,
+            profile.QPI
+        ]);
+    }
+
+
+    function passingValue(
+        player
+    ) {
+
+        const profile =
+            profileFor(
+                player
+            );
+
+
+        return firstNumber([
+            player.passing,
+            player.Passing,
+
+            profile.passing,
+            profile.Passing,
+
+            profile.components
+                ? profile.components.passing
+                : null,
+
+            profile.components
+                ? profile.components.efficiency
+                : null
+        ]);
+    }
+
+
+    function rushingValue(
+        player
+    ) {
+
+        const profile =
+            profileFor(
+                player
+            );
+
+
+        return firstNumber([
+            player.rushing,
+            player.Rushing,
+
+            profile.rushing,
+            profile.Rushing,
+
+            profile.components
+                ? profile.components.rushing
+                : null
+        ]);
+    }
+
+
+    function movementValue(
+        player
+    ) {
+
+        const direct =
+            firstNumber([
+                player.rank_change,
+                player.movement
+            ]);
+
+
+        if (
+            direct !== null
+        ) {
+            return direct;
         }
 
 
-        return Number(
-            record.rank_change
-        );
-    }
-
-
-    function sampleStatus(
-        player
-    ) {
-
-        const flag =
-            String(
-                player.sample_flag
-                || ""
-            )
-            .toLowerCase();
-
-
         if (
-            flag.includes(
-                "limited"
-            )
+            typeof latestMovementRecord
+            === "function"
         ) {
 
-            return "limited";
+            const record =
+                latestMovementRecord(
+                    player
+                );
+
+
+            if (record) {
+
+                return firstNumber([
+                    record.rank_change,
+                    record.movement
+                ]);
+            }
         }
 
 
-        return "established";
+        return null;
     }
 
 
-    function playerCQI(
+    function conferenceFor(
         player
     ) {
 
-        return numericValue(
-            player,
-            [
-                "cqi",
-                "qpi",
-                "CQI",
-                "QPI"
+        return (
+            player.conference
+            ||
+            player.Conference
+            ||
+            conferenceMap[
+                player.team
             ]
+            ||
+            "Other"
         );
     }
 
 
-    function playerPassing(
-        player
+    function valueFor(
+        player,
+        key
     ) {
 
-        return numericValue(
-            player,
-            [
-                "passing",
-                "Passing"
-            ]
-        );
-    }
+        if (
+            key === "rank"
+        ) {
+
+            return numberOrNull(
+                player.rank
+            );
+        }
 
 
-    function playerRushing(
-        player
-    ) {
+        if (
+            key === "cqi"
+        ) {
 
-        return numericValue(
-            player,
-            [
-                "rushing",
-                "Rushing"
-            ]
-        );
+            return cqiValue(
+                player
+            );
+        }
+
+
+        if (
+            key === "passing"
+        ) {
+
+            return passingValue(
+                player
+            );
+        }
+
+
+        if (
+            key === "rushing"
+        ) {
+
+            return rushingValue(
+                player
+            );
+        }
+
+
+        if (
+            key === "movement"
+        ) {
+
+            return movementValue(
+                player
+            );
+        }
+
+
+        return null;
     }
 
 
     // -------------------------------------------------------
-    // BUILD TOOLBAR
+    // CONFERENCE FILTER
     // -------------------------------------------------------
 
-    const toolbar =
+    const conferenceBar =
         document.createElement(
             "div"
         );
 
 
-    toolbar.className =
-        "rankings-toolbar";
+    conferenceBar.className =
+        "conference-filter-bar";
 
 
-    const teams = [
+    conferenceBar.innerHTML = `
 
-        ...new Set(
-
-            allPlayers
-            .map(
-                player =>
-                    player.team
-            )
-            .filter(
-                Boolean
-            )
-
-        )
-
-    ].sort(
-        (a, b) =>
-            String(a)
-            .localeCompare(
-                String(b)
-            )
-    );
-
-
-    const conferenceValues = [
-
-        ...new Set(
-
-            allPlayers
-            .map(
-                player =>
-                    player.conference
-                    ||
-                    player.Conference
-            )
-            .filter(
-                Boolean
-            )
-
-        )
-
-    ].sort();
-
-
-    toolbar.innerHTML = `
-
-        <div class="ranking-filter-group">
-
-            <label for="rankings-sort">
-                Sort
-            </label>
-
-            <select id="rankings-sort">
-
-                <option value="rank">
-                    CQI Rank
-                </option>
-
-                <option value="cqi">
-                    CQI Score
-                </option>
-
-                <option value="passing">
-                    Passing
-                </option>
-
-                <option value="rushing">
-                    Rushing
-                </option>
-
-                <option value="movement">
-                    Rank Movement
-                </option>
-
-            </select>
-
-        </div>
-
-
-        <div class="ranking-filter-group">
-
-            <label for="rankings-team">
-                Team
-            </label>
-
-            <select id="rankings-team">
-
-                <option value="">
-                    All Teams
-                </option>
-
-                ${
-                    teams
-                    .map(
-                        team => `
-                            <option
-                                value="${team}"
-                            >
-                                ${team}
-                            </option>
-                        `
-                    )
-                    .join("")
-                }
-
-            </select>
-
-        </div>
-
-
-        ${
-            conferenceValues.length
-            ?
-            `
-
-            <div class="ranking-filter-group">
-
-                <label for="rankings-conference">
-                    Conference
-                </label>
-
-                <select id="rankings-conference">
-
-                    <option value="">
-                        All Conferences
-                    </option>
-
-                    ${
-                        conferenceValues
-                        .map(
-                            conference => `
-                                <option
-                                    value="${conference}"
-                                >
-                                    ${conference}
-                                </option>
-                            `
-                        )
-                        .join("")
-                    }
-
-                </select>
-
-            </div>
-
-            `
-            :
-            ""
-        }
-
-
-        <div class="ranking-filter-group">
-
-            <label for="rankings-sample">
-                Sample
-            </label>
-
-            <select id="rankings-sample">
-
-                <option value="">
-                    All Samples
-                </option>
-
-                <option value="established">
-                    Established
-                </option>
-
-                <option value="limited">
-                    Limited Sample
-                </option>
-
-            </select>
-
-        </div>
-
-
-        <div class="ranking-filter-group">
-
-            <label for="rankings-limit">
-                Show
-            </label>
-
-            <select id="rankings-limit">
-
-                <option value="all">
-                    All
-                </option>
-
-                <option value="10">
-                    Top 10
-                </option>
-
-                <option value="25">
-                    Top 25
-                </option>
-
-                <option value="50">
-                    Top 50
-                </option>
-
-            </select>
-
-        </div>
-
-
-        <button
-            type="button"
-            id="rankings-reset"
-            class="rankings-reset"
+        <label
+            for="conference-filter"
         >
-            Reset
-        </button>
+            Conference
+        </label>
+
+        <select
+            id="conference-filter"
+        >
+
+            <option value="">
+                All Conferences
+            </option>
+
+            $["ACC", "American Athletic", "Big 12", "Big Ten", "Conference USA", "FBS Independents", "Mid-American", "Mountain West", "Pac-12", "SEC", "Sun Belt"]
+                .replace(
+                    /^\[/,
+                    ""
+                )
+                .replace(
+                    /\]$/,
+                    ""
+                )
+
+        </select>
 
     `;
 
 
-    // Put filters directly below the existing search box.
-    controlsHost.appendChild(
-        toolbar
+    // Rebuild options safely rather than relying
+    // on the string inserted above.
+    const controls =
+        searchInput.parentElement;
+
+
+    controls.appendChild(
+        conferenceBar
+    );
+
+
+    const conferenceSelect =
+        conferenceBar.querySelector(
+            "select"
+        );
+
+
+    conferenceSelect.innerHTML =
+        '<option value="">All Conferences</option>';
+
+
+    const conferenceNames =
+        [
+            ...new Set(
+                allPlayers.map(
+                    conferenceFor
+                )
+            )
+        ]
+        .filter(
+            conference =>
+                conference
+                &&
+                conference !== "Other"
+        )
+        .sort();
+
+
+    conferenceNames.forEach(
+        conference => {
+
+            const option =
+                document.createElement(
+                    "option"
+                );
+
+
+            option.value =
+                conference;
+
+
+            option.textContent =
+                conference;
+
+
+            conferenceSelect.appendChild(
+                option
+            );
+        }
     );
 
 
     // -------------------------------------------------------
-    // RESULT COUNT
+    // TABLE HEADER SORTING
     // -------------------------------------------------------
 
-    const summary =
-        document.createElement(
-            "div"
+    const headers =
+        Array.from(
+            table.querySelectorAll(
+                "thead th"
+            )
         );
 
 
-    summary.className =
-        "rankings-summary";
+    function headerKey(
+        text
+    ) {
+
+        const label =
+            text
+            .trim()
+            .toLowerCase();
 
 
-    leaderboard
-        .parentElement
-        .insertBefore(
-            summary,
-            leaderboard
-                .parentElement
-                .firstChild
-        );
+        if (
+            label === "rank"
+            ||
+            label === "#"
+        ) {
+            return "rank";
+        }
+
+
+        if (
+            label.includes("cqi")
+            ||
+            label.includes("qpi")
+        ) {
+            return "cqi";
+        }
+
+
+        if (
+            label.includes(
+                "passing"
+            )
+        ) {
+            return "passing";
+        }
+
+
+        if (
+            label.includes(
+                "rushing"
+            )
+        ) {
+            return "rushing";
+        }
+
+
+        if (
+            label.includes(
+                "movement"
+            )
+            ||
+            label.includes(
+                "change"
+            )
+        ) {
+            return "movement";
+        }
+
+
+        return null;
+    }
+
+
+    const sortableHeaders = [];
+
+
+    headers.forEach(
+        header => {
+
+            const key =
+                headerKey(
+                    header.textContent
+                );
+
+
+            if (!key) {
+                return;
+            }
+
+
+            header.dataset.sortKey =
+                key;
+
+
+            header.classList.add(
+                "sortable-header"
+            );
+
+
+            sortableHeaders.push(
+                header
+            );
+
+
+            header.addEventListener(
+                "click",
+                () => {
+
+                    if (
+                        sortKey === key
+                    ) {
+
+                        direction =
+                            direction === "asc"
+                                ? "desc"
+                                : "asc";
+
+                    } else {
+
+                        sortKey =
+                            key;
+
+
+                        // Rankings run 1 → 135.
+                        // Performance metrics default high → low.
+                        direction =
+                            key === "rank"
+                                ? "asc"
+                                : "desc";
+                    }
+
+
+                    update();
+                }
+            );
+
+        }
+    );
 
 
     // -------------------------------------------------------
-    // REFERENCES
+    // SORT INDICATORS
     // -------------------------------------------------------
 
-    const sortSelect =
-        document.getElementById(
-            "rankings-sort"
+    function updateHeaders() {
+
+        sortableHeaders.forEach(
+            header => {
+
+                header.classList.remove(
+                    "sort-active",
+                    "sort-asc",
+                    "sort-desc"
+                );
+
+
+                if (
+                    header.dataset.sortKey
+                    === sortKey
+                ) {
+
+                    header.classList.add(
+                        "sort-active"
+                    );
+
+
+                    header.classList.add(
+                        direction === "asc"
+                            ? "sort-asc"
+                            : "sort-desc"
+                    );
+                }
+            }
         );
-
-
-    const teamSelect =
-        document.getElementById(
-            "rankings-team"
-        );
-
-
-    const conferenceSelect =
-        document.getElementById(
-            "rankings-conference"
-        );
-
-
-    const sampleSelect =
-        document.getElementById(
-            "rankings-sample"
-        );
-
-
-    const limitSelect =
-        document.getElementById(
-            "rankings-limit"
-        );
-
-
-    const resetButton =
-        document.getElementById(
-            "rankings-reset"
-        );
+    }
 
 
     // -------------------------------------------------------
-    // FILTER + SORT
+    // MAIN UPDATE PIPELINE
     // -------------------------------------------------------
 
-    function updateRankings() {
+    function update() {
 
         const query =
-            searchInput
-            ?
             searchInput.value
                 .trim()
-                .toLowerCase()
-            :
-            "";
+                .toLowerCase();
 
 
-        const selectedTeam =
-            teamSelect.value;
-
-
-        const selectedConference =
-            conferenceSelect
-            ?
-            conferenceSelect.value
-            :
-            "";
-
-
-        const selectedSample =
-            sampleSelect.value;
-
-
-        const selectedSort =
-            sortSelect.value;
-
-
-        const selectedLimit =
-            limitSelect.value;
+        const conference =
+            conferenceSelect.value;
 
 
         let players =
             allPlayers.filter(
                 player => {
 
-                    // Search
-                    const searchMatch =
+                    const matchesSearch =
                         !query
                         ||
                         String(
@@ -629,229 +700,115 @@
                         );
 
 
-                    // Team
-                    const teamMatch =
-                        !selectedTeam
+                    const matchesConference =
+                        !conference
                         ||
-                        player.team
-                        ===
-                        selectedTeam;
-
-
-                    // Conference
-                    const playerConference =
-                        player.conference
-                        ||
-                        player.Conference
-                        ||
-                        "";
-
-
-                    const conferenceMatch =
-                        !selectedConference
-                        ||
-                        playerConference
-                        ===
-                        selectedConference;
-
-
-                    // Sample
-                    const sampleMatch =
-                        !selectedSample
-                        ||
-                        sampleStatus(
+                        conferenceFor(
                             player
                         )
                         ===
-                        selectedSample;
+                        conference;
 
 
                     return (
-                        searchMatch
+                        matchesSearch
                         &&
-                        teamMatch
-                        &&
-                        conferenceMatch
-                        &&
-                        sampleMatch
+                        matchesConference
                     );
                 }
             );
 
 
-        // ---------------------------------------------------
-        // SORT
-        // ---------------------------------------------------
-
         players.sort(
             (a, b) => {
 
+                const av =
+                    valueFor(
+                        a,
+                        sortKey
+                    );
+
+
+                const bv =
+                    valueFor(
+                        b,
+                        sortKey
+                    );
+
+
+                // Missing metrics always go to bottom.
                 if (
-                    selectedSort
-                    ===
-                    "cqi"
+                    av === null
+                    &&
+                    bv === null
                 ) {
 
                     return (
-                        (
-                            playerCQI(b)
-                            ?? -Infinity
+                        Number(
+                            a.rank
                         )
                         -
-                        (
-                            playerCQI(a)
-                            ?? -Infinity
+                        Number(
+                            b.rank
                         )
                     );
                 }
 
 
                 if (
-                    selectedSort
-                    ===
-                    "passing"
+                    av === null
                 ) {
-
-                    return (
-                        (
-                            playerPassing(b)
-                            ?? -Infinity
-                        )
-                        -
-                        (
-                            playerPassing(a)
-                            ?? -Infinity
-                        )
-                    );
+                    return 1;
                 }
 
 
                 if (
-                    selectedSort
-                    ===
-                    "rushing"
+                    bv === null
                 ) {
-
-                    return (
-                        (
-                            playerRushing(b)
-                            ?? -Infinity
-                        )
-                        -
-                        (
-                            playerRushing(a)
-                            ?? -Infinity
-                        )
-                    );
+                    return -1;
                 }
+
+
+                let result =
+                    av - bv;
 
 
                 if (
-                    selectedSort
-                    ===
-                    "movement"
+                    direction === "desc"
                 ) {
-
-                    return (
-                        (
-                            currentMovement(b)
-                            ?? -Infinity
-                        )
-                        -
-                        (
-                            currentMovement(a)
-                            ?? -Infinity
-                        )
-                    );
+                    result *= -1;
                 }
 
 
-                // Default:
+                // Stable tie break:
                 // official CQI rank.
-                return (
-                    Number(
-                        a.rank
-                    )
-                    -
-                    Number(
-                        b.rank
-                    )
-                );
+                if (
+                    result === 0
+                ) {
+
+                    return (
+                        Number(
+                            a.rank
+                        )
+                        -
+                        Number(
+                            b.rank
+                        )
+                    );
+                }
+
+
+                return result;
             }
         );
 
-
-        // ---------------------------------------------------
-        // LIMIT
-        //
-        // "Top 10" means official CQI Top 10,
-        // not merely first 10 filtered rows.
-        // ---------------------------------------------------
-
-        if (
-            selectedLimit
-            !==
-            "all"
-        ) {
-
-            const maxRank =
-                Number(
-                    selectedLimit
-                );
-
-
-            players =
-                players.filter(
-                    player =>
-                        Number(
-                            player.rank
-                        )
-                        <=
-                        maxRank
-                );
-        }
-
-
-        // ---------------------------------------------------
-        // RENDER
-        // ---------------------------------------------------
 
         renderLeaderboard(
             players
         );
 
 
-        summary.innerHTML = `
-
-            <strong>
-                ${players.length}
-            </strong>
-
-            <span>
-                ${
-                    players.length === 1
-                    ?
-                    "quarterback shown"
-                    :
-                    "quarterbacks shown"
-                }
-            </span>
-
-            ${
-                players.length
-                !==
-                allPlayers.length
-                ?
-                `
-                    <small>
-                        of ${allPlayers.length}
-                    </small>
-                `
-                :
-                ""
-            }
-
-        `;
+        updateHeaders();
     }
 
 
@@ -859,81 +816,27 @@
     // EVENTS
     // -------------------------------------------------------
 
-    if (searchInput) {
-
-        searchInput.addEventListener(
-            "input",
-            updateRankings
-        );
-    }
-
-
-    [
-        sortSelect,
-        teamSelect,
-        conferenceSelect,
-        sampleSelect,
-        limitSelect
-
-    ]
-    .filter(
-        Boolean
-    )
-    .forEach(
-        element => {
-
-            element.addEventListener(
-                "change",
-                updateRankings
-            );
-        }
+    searchInput.addEventListener(
+        "input",
+        update
     );
 
 
-    resetButton.addEventListener(
-        "click",
-        () => {
-
-            if (searchInput) {
-                searchInput.value = "";
-            }
-
-
-            sortSelect.value =
-                "rank";
-
-
-            teamSelect.value =
-                "";
-
-
-            if (conferenceSelect) {
-                conferenceSelect.value = "";
-            }
-
-
-            sampleSelect.value =
-                "";
-
-
-            limitSelect.value =
-                "all";
-
-
-            updateRankings();
-        }
+    conferenceSelect.addEventListener(
+        "change",
+        update
     );
 
 
     // -------------------------------------------------------
-    // FIRST RENDER
+    // INITIAL STATE
     // -------------------------------------------------------
 
-    updateRankings();
+    update();
 
 })();
 
 
 /* ==========================================================
-   END PERCERA RANKINGS TOOLS
+   END PERCERA CLEAN RANKINGS INTERACTIONS
    ========================================================== */
