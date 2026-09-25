@@ -1,6 +1,6 @@
 
 /* ==========================================================
-   PERCERA CLEAN RANKINGS INTERACTIONS
+   PERCERA FINAL LEADERBOARD SORTING
    ========================================================== */
 
 (() => {
@@ -15,14 +15,6 @@
         window.QPI_LEADERBOARD;
 
 
-    const profiles =
-        window.CQI_PLAYERS
-        ||
-        window.QPI_PLAYERS
-        ||
-        {};
-
-
     if (
         !rankingsData
         ||
@@ -35,7 +27,7 @@
     ) {
 
         console.warn(
-            "Percera rankings controls could not initialize."
+            "Percera rankings tools could not initialize."
         );
 
         return;
@@ -64,15 +56,20 @@
         ||
         !oldSearch
     ) {
+
+        console.warn(
+            "Percera leaderboard or search box missing."
+        );
+
         return;
     }
 
 
     // -------------------------------------------------------
-    // Replace search input with an identical clone.
+    // REMOVE OLD SEARCH LISTENER
     //
-    // This removes the original standalone app.js listener
-    // so search + conference + sorting all use one pipeline.
+    // Clone the existing input so the original app.js search
+    // listener does not fight with conference + sorting.
     // -------------------------------------------------------
 
     const searchInput =
@@ -87,213 +84,20 @@
 
 
     // -------------------------------------------------------
-    // STATE
+    // SORT STATE
     // -------------------------------------------------------
 
-    let sortKey =
+    let activeSortKey =
         "rank";
 
 
-    let direction =
+    let sortDirection =
         "asc";
 
 
     // -------------------------------------------------------
-    // VALUE HELPERS
+    // CONFERENCE LOOKUP
     // -------------------------------------------------------
-
-    function numberOrNull(
-        value
-    ) {
-
-        if (
-            value === null
-            ||
-            value === undefined
-            ||
-            value === ""
-        ) {
-            return null;
-        }
-
-
-        const n =
-            Number(
-                value
-            );
-
-
-        return Number.isFinite(n)
-            ? n
-            : null;
-    }
-
-
-    function profileFor(
-        player
-    ) {
-
-        if (
-            player.slug
-            &&
-            profiles[
-                player.slug
-            ]
-        ) {
-
-            return profiles[
-                player.slug
-            ];
-        }
-
-
-        return {};
-    }
-
-
-    function firstNumber(
-        values
-    ) {
-
-        for (
-            const value
-            of values
-        ) {
-
-            const n =
-                numberOrNull(
-                    value
-                );
-
-
-            if (n !== null) {
-                return n;
-            }
-        }
-
-
-        return null;
-    }
-
-
-    function cqiValue(
-        player
-    ) {
-
-        const profile =
-            profileFor(
-                player
-            );
-
-
-        return firstNumber([
-            player.cqi,
-            player.qpi,
-            player.CQI,
-            player.QPI,
-
-            profile.cqi,
-            profile.qpi,
-            profile.CQI,
-            profile.QPI
-        ]);
-    }
-
-
-    function passingValue(
-        player
-    ) {
-
-        const profile =
-            profileFor(
-                player
-            );
-
-
-        return firstNumber([
-            player.passing,
-            player.Passing,
-
-            profile.passing,
-            profile.Passing,
-
-            profile.components
-                ? profile.components.passing
-                : null,
-
-            profile.components
-                ? profile.components.efficiency
-                : null
-        ]);
-    }
-
-
-    function rushingValue(
-        player
-    ) {
-
-        const profile =
-            profileFor(
-                player
-            );
-
-
-        return firstNumber([
-            player.rushing,
-            player.Rushing,
-
-            profile.rushing,
-            profile.Rushing,
-
-            profile.components
-                ? profile.components.rushing
-                : null
-        ]);
-    }
-
-
-    function movementValue(
-        player
-    ) {
-
-        const direct =
-            firstNumber([
-                player.rank_change,
-                player.movement
-            ]);
-
-
-        if (
-            direct !== null
-        ) {
-            return direct;
-        }
-
-
-        if (
-            typeof latestMovementRecord
-            === "function"
-        ) {
-
-            const record =
-                latestMovementRecord(
-                    player
-                );
-
-
-            if (record) {
-
-                return firstNumber([
-                    record.rank_change,
-                    record.movement
-                ]);
-            }
-        }
-
-
-        return null;
-    }
-
 
     function conferenceFor(
         player
@@ -308,72 +112,29 @@
                 player.team
             ]
             ||
-            "Other"
+            ""
         );
     }
 
 
-    function valueFor(
-        player,
-        key
-    ) {
+    // -------------------------------------------------------
+    // REMOVE ANY EXISTING CONFERENCE CONTROL
+    //
+    // Prevent duplicates if this script is loaded twice.
+    // -------------------------------------------------------
 
-        if (
-            key === "rank"
-        ) {
-
-            return numberOrNull(
-                player.rank
-            );
-        }
-
-
-        if (
-            key === "cqi"
-        ) {
-
-            return cqiValue(
-                player
-            );
-        }
-
-
-        if (
-            key === "passing"
-        ) {
-
-            return passingValue(
-                player
-            );
-        }
-
-
-        if (
-            key === "rushing"
-        ) {
-
-            return rushingValue(
-                player
-            );
-        }
-
-
-        if (
-            key === "movement"
-        ) {
-
-            return movementValue(
-                player
-            );
-        }
-
-
-        return null;
-    }
+    document
+        .querySelectorAll(
+            ".conference-filter-bar"
+        )
+        .forEach(
+            node =>
+                node.remove()
+        );
 
 
     // -------------------------------------------------------
-    // CONFERENCE FILTER
+    // BUILD CONFERENCE FILTER
     // -------------------------------------------------------
 
     const conferenceBar =
@@ -397,28 +158,14 @@
         <select
             id="conference-filter"
         >
-
             <option value="">
                 All Conferences
             </option>
-
-            $["ACC", "American Athletic", "Big 12", "Big Ten", "Conference USA", "FBS Independents", "Mid-American", "Mountain West", "Pac-12", "SEC", "Sun Belt"]
-                .replace(
-                    /^\[/,
-                    ""
-                )
-                .replace(
-                    /\]$/,
-                    ""
-                )
-
         </select>
 
     `;
 
 
-    // Rebuild options safely rather than relying
-    // on the string inserted above.
     const controls =
         searchInput.parentElement;
 
@@ -434,28 +181,23 @@
         );
 
 
-    conferenceSelect.innerHTML =
-        '<option value="">All Conferences</option>';
+    const conferences = [
 
+        ...new Set(
 
-    const conferenceNames =
-        [
-            ...new Set(
-                allPlayers.map(
-                    conferenceFor
-                )
+            allPlayers
+            .map(
+                conferenceFor
             )
-        ]
-        .filter(
-            conference =>
-                conference
-                &&
-                conference !== "Other"
+            .filter(
+                Boolean
+            )
         )
-        .sort();
+
+    ].sort();
 
 
-    conferenceNames.forEach(
+    conferences.forEach(
         conference => {
 
             const option =
@@ -480,7 +222,195 @@
 
 
     // -------------------------------------------------------
-    // TABLE HEADER SORTING
+    // HEADER NORMALIZATION
+    // -------------------------------------------------------
+
+    function normalizeHeader(
+        text
+    ) {
+
+        return String(
+            text || ""
+        )
+        .replace(
+            /\s+/g,
+            " "
+        )
+        .trim()
+        .toLowerCase();
+    }
+
+
+    // -------------------------------------------------------
+    // WHICH HEADERS ARE SORTABLE?
+    // -------------------------------------------------------
+
+    function sortKeyForHeader(
+        label
+    ) {
+
+        const text =
+            normalizeHeader(
+                label
+            );
+
+
+        // Rank:
+        // restores official CQI ranking order.
+        if (
+            text === "rank"
+            ||
+            text === "#"
+        ) {
+
+            return "rank";
+        }
+
+
+        // CQI deliberately NOT sortable.
+        //
+        // Sorting by CQI produces the same ordering as Rank.
+        if (
+            text === "cqi"
+            ||
+            text === "qpi"
+        ) {
+
+            return null;
+        }
+
+
+        // Pass Efficiency
+        if (
+            text.includes(
+                "pass eff"
+            )
+            ||
+            text.includes(
+                "passing eff"
+            )
+            ||
+            text === "efficiency"
+            ||
+            text === "pass efficiency"
+            ||
+            text === "passing efficiency"
+        ) {
+
+            return "pass-eff";
+        }
+
+
+        // Sack Avoidance
+        if (
+            text.includes(
+                "sack avoidance"
+            )
+            ||
+            text.includes(
+                "sack avoid"
+            )
+        ) {
+
+            return "sack";
+        }
+
+
+        // Rushing
+        if (
+            text === "rushing"
+            ||
+            text.includes(
+                "rush"
+            )
+        ) {
+
+            return "rushing";
+        }
+
+
+        // Rank movement
+        if (
+            text.includes(
+                "movement"
+            )
+            ||
+            text.includes(
+                "change"
+            )
+        ) {
+
+            return "movement";
+        }
+
+
+        return null;
+    }
+
+
+    // -------------------------------------------------------
+    // READ A NUMBER DIRECTLY FROM A TABLE CELL
+    // -------------------------------------------------------
+
+    function numericCellValue(
+        cell
+    ) {
+
+        if (!cell) {
+
+            return null;
+        }
+
+
+        const raw =
+            cell.textContent
+            .trim()
+            .replace(
+                /,/g,
+                ""
+            );
+
+
+        if (
+            raw === ""
+            ||
+            raw === "—"
+            ||
+            raw === "-"
+        ) {
+
+            return null;
+        }
+
+
+        const match =
+            raw.match(
+                /[-+]?\d*\.?\d+/
+            );
+
+
+        if (!match) {
+
+            return null;
+        }
+
+
+        const value =
+            Number(
+                match[0]
+            );
+
+
+        return Number.isFinite(
+            value
+        )
+            ? value
+            : null;
+    }
+
+
+    // -------------------------------------------------------
+    // INITIALIZE SORTABLE HEADERS
     // -------------------------------------------------------
 
     const headers =
@@ -491,88 +421,50 @@
         );
 
 
-    function headerKey(
-        text
-    ) {
-
-        const label =
-            text
-            .trim()
-            .toLowerCase();
-
-
-        if (
-            label === "rank"
-            ||
-            label === "#"
-        ) {
-            return "rank";
-        }
-
-
-        if (
-            label.includes("cqi")
-            ||
-            label.includes("qpi")
-        ) {
-            return "cqi";
-        }
-
-
-        if (
-            label.includes(
-                "passing"
-            )
-        ) {
-            return "passing";
-        }
-
-
-        if (
-            label.includes(
-                "rushing"
-            )
-        ) {
-            return "rushing";
-        }
-
-
-        if (
-            label.includes(
-                "movement"
-            )
-            ||
-            label.includes(
-                "change"
-            )
-        ) {
-            return "movement";
-        }
-
-
-        return null;
-    }
-
-
-    const sortableHeaders = [];
+    const sortableHeaders =
+        [];
 
 
     headers.forEach(
-        header => {
+        (
+            header,
+            index
+        ) => {
 
             const key =
-                headerKey(
+                sortKeyForHeader(
                     header.textContent
                 );
 
 
+            // Remove stale classes from previous versions.
+            header.classList.remove(
+                "sortable-header",
+                "sort-active",
+                "sort-asc",
+                "sort-desc"
+            );
+
+
+            delete header.dataset.sortKey;
+            delete header.dataset.columnIndex;
+
+
+            // Non-sortable columns get NOTHING.
             if (!key) {
+
                 return;
             }
 
 
             header.dataset.sortKey =
                 key;
+
+
+            header.dataset.columnIndex =
+                String(
+                    index
+                );
 
 
             header.classList.add(
@@ -590,30 +482,34 @@
                 () => {
 
                     if (
-                        sortKey === key
+                        activeSortKey
+                        === key
                     ) {
 
-                        direction =
-                            direction === "asc"
+                        sortDirection =
+                            sortDirection
+                            === "asc"
                                 ? "desc"
                                 : "asc";
 
                     } else {
 
-                        sortKey =
+                        activeSortKey =
                             key;
 
 
-                        // Rankings run 1 → 135.
-                        // Performance metrics default high → low.
-                        direction =
+                        // Official rank begins 1 → ...
+                        //
+                        // Performance metrics begin
+                        // best → worst.
+                        sortDirection =
                             key === "rank"
                                 ? "asc"
                                 : "desc";
                     }
 
 
-                    update();
+                    applyFiltersAndSort();
                 }
             );
 
@@ -622,10 +518,135 @@
 
 
     // -------------------------------------------------------
-    // SORT INDICATORS
+    // SORT THE ACTUAL RENDERED TABLE
     // -------------------------------------------------------
 
-    function updateHeaders() {
+    function sortRenderedRows() {
+
+        const activeHeader =
+            sortableHeaders.find(
+                header =>
+                    header.dataset.sortKey
+                    ===
+                    activeSortKey
+            );
+
+
+        if (!activeHeader) {
+
+            return;
+        }
+
+
+        const columnIndex =
+            Number(
+                activeHeader.dataset.columnIndex
+            );
+
+
+        const tbody =
+            table.querySelector(
+                "tbody"
+            );
+
+
+        const rows =
+            Array.from(
+                tbody.querySelectorAll(
+                    "tr"
+                )
+            );
+
+
+        rows.sort(
+            (
+                rowA,
+                rowB
+            ) => {
+
+                const a =
+                    numericCellValue(
+                        rowA.children[
+                            columnIndex
+                        ]
+                    );
+
+
+                const b =
+                    numericCellValue(
+                        rowB.children[
+                            columnIndex
+                        ]
+                    );
+
+
+                // Missing values always stay at bottom.
+                if (
+                    a === null
+                    &&
+                    b === null
+                ) {
+
+                    return 0;
+                }
+
+
+                if (
+                    a === null
+                ) {
+
+                    return 1;
+                }
+
+
+                if (
+                    b === null
+                ) {
+
+                    return -1;
+                }
+
+
+                let result =
+                    a - b;
+
+
+                if (
+                    sortDirection
+                    === "desc"
+                ) {
+
+                    result *= -1;
+                }
+
+
+                return result;
+            }
+        );
+
+
+        rows.forEach(
+            row =>
+                tbody.appendChild(
+                    row
+                )
+        );
+    }
+
+
+    // -------------------------------------------------------
+    // SORT INDICATORS
+    //
+    // IMPORTANT:
+    //
+    // NO inactive triangles.
+    //
+    // Only the ACTIVE column gets:
+    //     ▲ ascending
+    //     ▼ descending
+    // -------------------------------------------------------
+
+    function updateSortIndicators() {
 
         sortableHeaders.forEach(
             header => {
@@ -639,7 +660,7 @@
 
                 if (
                     header.dataset.sortKey
-                    === sortKey
+                    === activeSortKey
                 ) {
 
                     header.classList.add(
@@ -648,7 +669,8 @@
 
 
                     header.classList.add(
-                        direction === "asc"
+                        sortDirection
+                        === "asc"
                             ? "sort-asc"
                             : "sort-desc"
                     );
@@ -659,28 +681,30 @@
 
 
     // -------------------------------------------------------
-    // MAIN UPDATE PIPELINE
+    // SEARCH + CONFERENCE + SORT PIPELINE
     // -------------------------------------------------------
 
-    function update() {
+    function applyFiltersAndSort() {
 
         const query =
             searchInput.value
-                .trim()
-                .toLowerCase();
+            .trim()
+            .toLowerCase();
 
 
         const conference =
             conferenceSelect.value;
 
 
-        let players =
+        const filtered =
             allPlayers.filter(
                 player => {
 
-                    const matchesSearch =
+                    const searchMatch =
                         !query
+
                         ||
+
                         String(
                             player.player
                             || ""
@@ -689,7 +713,9 @@
                         .includes(
                             query
                         )
+
                         ||
+
                         String(
                             player.team
                             || ""
@@ -700,9 +726,11 @@
                         );
 
 
-                    const matchesConference =
+                    const conferenceMatch =
                         !conference
+
                         ||
+
                         conferenceFor(
                             player
                         )
@@ -711,104 +739,26 @@
 
 
                     return (
-                        matchesSearch
+                        searchMatch
                         &&
-                        matchesConference
+                        conferenceMatch
                     );
                 }
             );
 
 
-        players.sort(
-            (a, b) => {
-
-                const av =
-                    valueFor(
-                        a,
-                        sortKey
-                    );
-
-
-                const bv =
-                    valueFor(
-                        b,
-                        sortKey
-                    );
-
-
-                // Missing metrics always go to bottom.
-                if (
-                    av === null
-                    &&
-                    bv === null
-                ) {
-
-                    return (
-                        Number(
-                            a.rank
-                        )
-                        -
-                        Number(
-                            b.rank
-                        )
-                    );
-                }
-
-
-                if (
-                    av === null
-                ) {
-                    return 1;
-                }
-
-
-                if (
-                    bv === null
-                ) {
-                    return -1;
-                }
-
-
-                let result =
-                    av - bv;
-
-
-                if (
-                    direction === "desc"
-                ) {
-                    result *= -1;
-                }
-
-
-                // Stable tie break:
-                // official CQI rank.
-                if (
-                    result === 0
-                ) {
-
-                    return (
-                        Number(
-                            a.rank
-                        )
-                        -
-                        Number(
-                            b.rank
-                        )
-                    );
-                }
-
-
-                return result;
-            }
-        );
-
-
+        // Use existing site renderer.
         renderLeaderboard(
-            players
+            filtered
         );
 
 
-        updateHeaders();
+        // Then reorder visible rows.
+        sortRenderedRows();
+
+
+        // Finally show ONLY the active triangle.
+        updateSortIndicators();
     }
 
 
@@ -818,25 +768,25 @@
 
     searchInput.addEventListener(
         "input",
-        update
+        applyFiltersAndSort
     );
 
 
     conferenceSelect.addEventListener(
         "change",
-        update
+        applyFiltersAndSort
     );
 
 
     // -------------------------------------------------------
-    // INITIAL STATE
+    // INITIAL PAGE STATE
     // -------------------------------------------------------
 
-    update();
+    applyFiltersAndSort();
 
 })();
 
 
 /* ==========================================================
-   END PERCERA CLEAN RANKINGS INTERACTIONS
+   END PERCERA FINAL LEADERBOARD SORTING
    ========================================================== */

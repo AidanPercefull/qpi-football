@@ -5225,7 +5225,7 @@ h3 {
 
 
 /* ==========================================================
-   PERCERA CLEAN RANKINGS INTERACTIONS
+   PERCERA FINAL LEADERBOARD SORTING
    ========================================================== */
 
 
@@ -5345,15 +5345,20 @@ h3 {
 }
 
 
-/* ---------- SORTABLE HEADERS ---------- */
+/* ----------------------------------------------------------
+   SORTABLE HEADERS
 
-#leaderboard th.sortable-header {
+   IMPORTANT:
+   Header colors NEVER change.
+   ---------------------------------------------------------- */
+
+#leaderboard thead th.sortable-header {
 
     position:
         relative;
 
     padding-right:
-        27px;
+        26px;
 
     cursor:
         pointer;
@@ -5361,26 +5366,37 @@ h3 {
     user-select:
         none;
 
-    transition:
-        color .12s ease,
-        background .12s ease;
-}
-
-
-#leaderboard th.sortable-header:hover {
+    color:
+        inherit !important;
 
     background:
-        rgba(12, 35, 64, .04);
+        inherit !important;
 
-    color:
-        var(--brand-navy);
+    transition:
+        none;
 }
 
 
-#leaderboard th.sortable-header::after {
+#leaderboard thead th.sortable-header:hover {
+
+    color:
+        inherit !important;
+
+    background:
+        inherit !important;
+}
+
+
+/* ----------------------------------------------------------
+   DEFAULT / INACTIVE
+
+   NO TRIANGLE.
+   ---------------------------------------------------------- */
+
+#leaderboard thead th.sortable-header::after {
 
     content:
-        "↕";
+        "";
 
     position:
         absolute;
@@ -5391,52 +5407,122 @@ h3 {
     top:
         50%;
 
+    width:
+        0;
+
+    height:
+        0;
+
+    border:
+        0;
+}
+
+
+/* ----------------------------------------------------------
+   ACTIVE HEADER
+
+   Again: do NOT alter text/background.
+   ---------------------------------------------------------- */
+
+#leaderboard thead th.sort-active {
+
+    color:
+        inherit !important;
+
+    background:
+        inherit !important;
+}
+
+
+/* ----------------------------------------------------------
+   DESCENDING
+
+   Gold triangle points DOWN.
+   ---------------------------------------------------------- */
+
+#leaderboard thead th.sort-active.sort-desc::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    right:
+        10px;
+
+    top:
+        50%;
+
+    width:
+        0;
+
+    height:
+        0;
+
+    border-left:
+        5px solid transparent;
+
+    border-right:
+        5px solid transparent;
+
+    border-bottom:
+        0;
+
+    border-top:
+        7px solid
+        var(--accent);
+
     transform:
-        translateY(-52%);
-
-    opacity:
-        .32;
-
-    font-size:
-        11px;
-
-    font-weight:
-        700;
+        translateY(-35%);
 }
 
 
-#leaderboard th.sort-active {
+/* ----------------------------------------------------------
+   ASCENDING
 
-    color:
-        var(--brand-navy);
-}
+   Gold triangle points UP.
+   ---------------------------------------------------------- */
 
-
-#leaderboard th.sort-active.sort-asc::after {
+#leaderboard thead th.sort-active.sort-asc::after {
 
     content:
-        "↑";
+        "";
 
-    opacity:
-        1;
+    position:
+        absolute;
 
-    color:
+    right:
+        10px;
+
+    top:
+        50%;
+
+    width:
+        0;
+
+    height:
+        0;
+
+    border-left:
+        5px solid transparent;
+
+    border-right:
+        5px solid transparent;
+
+    border-top:
+        0;
+
+    border-bottom:
+        7px solid
         var(--accent);
+
+    transform:
+        translateY(-65%);
 }
 
 
-#leaderboard th.sort-active.sort-desc::after {
-
-    content:
-        "↓";
-
-    opacity:
-        1;
-
-    color:
-        var(--accent);
-}
-
+/* ---------- MOBILE ---------- */
 
 @media (
     max-width: 650px
@@ -5476,6 +5562,6 @@ h3 {
 
 
 /* ==========================================================
-   END PERCERA CLEAN RANKINGS INTERACTIONS
+   END PERCERA FINAL LEADERBOARD SORTING
    ========================================================== */
 
