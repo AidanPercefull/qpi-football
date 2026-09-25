@@ -2825,3 +2825,603 @@ strong,
    ========================================================== */
 
 
+
+/* ==========================================================
+   PERCERA FEATURED LEADER LAYOUT
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   HERO
+   ---------------------------------------------------------- */
+
+.hero {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        210px;
+
+    align-items: end;
+
+    column-gap: 60px;
+
+    padding-top: 62px;
+    padding-bottom: 38px;
+}
+
+
+.hero h2 {
+
+    max-width: 760px;
+}
+
+
+.hero-stat {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    min-height: 112px;
+
+    padding:
+        0 0
+        4px 30px;
+}
+
+
+/* ----------------------------------------------------------
+   TOP 3 — ASYMMETRIC EDITORIAL LAYOUT
+   ---------------------------------------------------------- */
+
+.top-three {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.65fr)
+        minmax(330px, .85fr);
+
+    grid-template-rows:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+
+    margin:
+        38px 0
+        38px;
+
+    align-items: stretch;
+}
+
+
+/* ==========================================================
+   #1 FEATURE CARD
+   ========================================================== */
+
+.leader-card:first-child {
+
+    grid-column: 1;
+    grid-row: 1 / span 2;
+
+    min-height: 455px;
+
+    display: grid;
+
+    grid-template-columns:
+        46% 54%;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 16px 40px
+        rgba(11,31,58,.09);
+
+    position: relative;
+}
+
+
+.leader-card:first-child
+.leader-visual {
+
+    width: 100%;
+    min-width: 0;
+
+    border-right:
+        1px solid var(--border);
+
+    background:
+
+        linear-gradient(
+            160deg,
+            color-mix(
+                in srgb,
+                var(--team-color) 17%,
+                white
+            ),
+            #f7f5f0 75%
+        );
+}
+
+
+.leader-card:first-child
+.leader-headshot {
+
+    width: 100%;
+
+    max-height: 440px;
+
+    object-fit: contain;
+
+    object-position:
+        center bottom;
+
+    transform:
+        scale(1.04);
+
+    transform-origin:
+        center bottom;
+}
+
+
+.leader-card:first-child
+.leader-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-end;
+
+    padding:
+        40px 36px
+        37px;
+}
+
+
+.leader-card:first-child
+.leader-card-rank {
+
+    top: 15px;
+    right: 21px;
+
+    font-size: 112px;
+
+    color:
+        rgba(11,31,58,.055);
+}
+
+
+.leader-card:first-child
+.label {
+
+    font-size: 11px;
+
+    margin-bottom: 2px;
+}
+
+
+.leader-card:first-child
+.leader-team-row {
+
+    order: 1;
+
+    margin-top: 16px;
+
+    font-size: 13px;
+}
+
+
+.leader-card:first-child
+.leader-team-logo {
+
+    width: 32px;
+    height: 32px;
+}
+
+
+.leader-card:first-child
+h3 {
+
+    order: 0;
+
+    margin:
+        13px 0
+        4px;
+
+    color: var(--brand-navy);
+
+    font-size: 39px;
+
+    line-height: .98;
+
+    letter-spacing: -.055em;
+
+    font-weight: 920;
+}
+
+
+.leader-card:first-child
+.leader-card-score {
+
+    order: 2;
+
+    margin-top: 30px;
+
+    padding-top: 23px;
+
+    border-top:
+        1px solid var(--border);
+}
+
+
+.leader-card:first-child
+.leader-card-score strong {
+
+    font-size: 66px;
+
+    line-height: .88;
+
+    letter-spacing: -.07em;
+}
+
+
+.leader-card:first-child
+.leader-card-score span {
+
+    font-size: 10px;
+}
+
+
+/* gold marker for national leader */
+
+.leader-card:first-child::after {
+
+    content: "NATIONAL LEADER";
+
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+
+    padding:
+        7px 12px;
+
+    background:
+        var(--brand-navy);
+
+    color: white;
+
+    border-top-left-radius: 6px;
+
+    font-size: 8px;
+
+    font-weight: 850;
+
+    letter-spacing: .14em;
+}
+
+
+/* ==========================================================
+   #2 + #3 SECONDARY CARDS
+   ========================================================== */
+
+.leader-card:not(:first-child) {
+
+    min-height: 218px;
+
+    display: grid;
+
+    grid-template-columns:
+        39% 61%;
+
+    border-radius: 9px;
+}
+
+
+.leader-card:not(:first-child)
+.leader-visual {
+
+    width: 100%;
+    min-width: 0;
+}
+
+
+.leader-card:not(:first-child)
+.leader-headshot {
+
+    max-height: 215px;
+}
+
+
+.leader-card:not(:first-child)
+.leader-info {
+
+    padding:
+        20px 19px;
+}
+
+
+.leader-card:not(:first-child)
+.leader-card-rank {
+
+    font-size: 51px;
+}
+
+
+.leader-card:not(:first-child)
+h3 {
+
+    font-size: 21px;
+
+    line-height: 1.02;
+}
+
+
+.leader-card:not(:first-child)
+.leader-card-score {
+
+    margin-top: 19px;
+}
+
+
+.leader-card:not(:first-child)
+.leader-card-score strong {
+
+    font-size: 36px;
+}
+
+
+/* ----------------------------------------------------------
+   SEARCH SECTION
+   ---------------------------------------------------------- */
+
+.controls {
+
+    position: relative;
+
+    margin-top: 8px;
+
+    padding-top: 25px;
+
+    border-top:
+        1px solid var(--border);
+}
+
+
+.controls::before {
+
+    content: "FULL QUARTERBACK RANKINGS";
+
+    position: absolute;
+
+    top: -7px;
+    left: 0;
+
+    padding-right: 12px;
+
+    background: var(--bg);
+
+    color: var(--brand-navy);
+
+    font-size: 10px;
+
+    font-weight: 850;
+
+    letter-spacing: .13em;
+}
+
+
+#search {
+
+    width: 365px;
+
+    max-width: 100%;
+}
+
+
+/* ----------------------------------------------------------
+   TABLE
+   ---------------------------------------------------------- */
+
+.table-wrap {
+
+    margin-top: 16px;
+
+    border-radius: 7px;
+
+    box-shadow:
+        0 9px 28px
+        rgba(11,31,58,.055);
+}
+
+
+#leaderboard thead {
+
+    background:
+
+        linear-gradient(
+            90deg,
+            var(--brand-navy),
+            #10294b
+        );
+}
+
+
+#leaderboard th:first-child {
+
+    border-left:
+        4px solid var(--gold);
+}
+
+
+#leaderboard td:first-child {
+
+    border-left:
+        4px solid transparent;
+}
+
+
+#leaderboard tbody tr:hover td:first-child {
+
+    border-left-color:
+        var(--accent);
+}
+
+
+#leaderboard td {
+
+    height: 70px;
+}
+
+
+.qb-name {
+
+    font-size: 14px;
+}
+
+
+.qpi-score {
+
+    font-size: 19px;
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (max-width: 980px) {
+
+    .top-three {
+
+        grid-template-columns:
+            1fr 1fr;
+
+        grid-template-rows:
+            auto auto;
+    }
+
+
+    .leader-card:first-child {
+
+        grid-column:
+            1 / -1;
+
+        grid-row:
+            auto;
+
+        min-height: 370px;
+
+        grid-template-columns:
+            42% 58%;
+    }
+
+
+    .leader-card:not(:first-child) {
+
+        min-height: 205px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .hero {
+
+        display: block;
+
+        padding-top: 38px;
+    }
+
+
+    .hero-stat {
+
+        margin-top: 25px;
+
+        min-height: auto;
+
+        border-left: none;
+
+        border-top:
+            1px solid var(--border);
+
+        padding:
+            20px 0 0;
+    }
+
+
+    .top-three {
+
+        display: block;
+    }
+
+
+    .leader-card,
+    .leader-card:first-child,
+    .leader-card:not(:first-child) {
+
+        display: grid;
+
+        grid-template-columns:
+            38% 62%;
+
+        min-height: 180px;
+
+        margin-bottom: 13px;
+    }
+
+
+    .leader-card:first-child
+    .leader-headshot {
+
+        max-height: 220px;
+    }
+
+
+    .leader-card:first-child
+    .leader-info {
+
+        padding: 23px 20px;
+    }
+
+
+    .leader-card:first-child
+    h3 {
+
+        font-size: 28px;
+    }
+
+
+    .leader-card:first-child
+    .leader-card-score strong {
+
+        font-size: 43px;
+    }
+
+
+    .leader-card:first-child
+    .leader-card-rank {
+
+        font-size: 60px;
+    }
+
+
+    .leader-card:first-child::after {
+
+        display: none;
+    }
+
+}
+
+
+/* ==========================================================
+   END PERCERA FEATURED LEADER LAYOUT
+   ========================================================== */
+
+
