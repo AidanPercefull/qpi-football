@@ -823,37 +823,40 @@ function renderMethodology() {
         </div>
 
 
-        <div class="method-section">
+                <div class="method-section">
 
             <h3>
-                Validation
+                Does CQI carry forward?
             </h3>
 
             <p>
-                CQI was built to test whether a quarterback's
-                current performance profile contained
-                information about how he performed next.
+                CQI measures current quarterback performance,
+                but historically its highest-rated quarterbacks
+                have also been much more likely to outperform
+                opponent-adjusted expectations over their
+                following three games.
             </p>
 
 
             <div class="validation-grid">
 
-                <div class="validation-card">
+                <div class="validation-card featured">
 
                     <span>
-                        DEVELOPMENT
+                        TOP QUARTILE
                     </span>
 
                     <strong>
                         ${Number(
-                            m.validation
-                            .development_average_spearman
-                        ).toFixed(3)}
+                            m.rank_bucket_validation
+                            .top_quartile_rate
+                        ).toFixed(1)}%
                     </strong>
 
                     <p>
-                        Average forward rank correlation
-                        across the 2023–25 development seasons.
+                        Top-quartile CQI quarterbacks
+                        beat subsequent opponent-adjusted
+                        expectation.
                     </p>
 
                 </div>
@@ -862,19 +865,20 @@ function renderMethodology() {
                 <div class="validation-card featured">
 
                     <span>
-                        UNTOUCHED 2022
+                        CQI TOP 5
                     </span>
 
                     <strong>
                         ${Number(
-                            m.validation
-                            .untouched_2022_spearman
-                        ).toFixed(3)}
+                            m.rank_bucket_validation
+                            .top_five_rate
+                        ).toFixed(1)}%
                     </strong>
 
                     <p>
-                        Frozen v1.1 performance on the
-                        season held out from model selection.
+                        Quarterbacks ranked inside CQI's
+                        top five beat subsequent
+                        opponent-adjusted expectation.
                     </p>
 
                 </div>
@@ -883,19 +887,25 @@ function renderMethodology() {
                 <div class="validation-card">
 
                     <span>
-                        V1.0 — SAME HOLDOUT
+                        UNTOUCHED HOLDOUT
                     </span>
 
                     <strong>
                         ${Number(
-                            m.validation
-                            .v1_2022_spearman
+                            m.rank_bucket_validation
+                            .untouched_holdout_spearman
                         ).toFixed(3)}
                     </strong>
 
                     <p>
-                        CQI v1.0 on the same untouched
-                        2022 evaluation.
+                        Forward rank correlation on the
+                        untouched 2022 season, compared
+                        with
+                        ${Number(
+                            m.rank_bucket_validation
+                            .v1_holdout_spearman
+                        ).toFixed(3)}
+                        for CQI v1.0.
                     </p>
 
                 </div>
@@ -903,14 +913,39 @@ function renderMethodology() {
             </div>
 
 
-            <p class="validation-note">
-                ${m.validation.holdout_note}
-            </p>
+            <div class="validation-explanation">
+
+                <strong>
+                    What these numbers mean
+                </strong>
+
+                <p>
+                    These percentages are not CQI
+                    "accuracy scores" and do not represent
+                    guaranteed probabilities for an
+                    individual quarterback.
+                </p>
+
+                <p>
+                    ${
+                        m.rank_bucket_validation
+                        .interpretation
+                    }
+                </p>
+
+                <small>
+                    ${
+                        m.rank_bucket_validation
+                        .disclaimer
+                    }
+                </small>
+
+            </div>
 
         </div>
 
 
-        <div class="method-section">
+<div class="method-section">
 
             <h3>
                 Qualification

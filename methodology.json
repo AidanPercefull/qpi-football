@@ -43,5 +43,13 @@
     "Quarterback performance cannot be completely separated from offensive line play, receivers, scheme and coaching.",
     "CQI is not an NFL scouting grade.",
     "CQI is not a betting line, win probability or standalone wagering model."
-  ]
+  ],
+  "rank_bucket_validation": {
+    "top_quartile_rate": 75.2,
+    "top_five_rate": 80.0,
+    "untouched_holdout_spearman": 0.384,
+    "v1_holdout_spearman": 0.343,
+    "interpretation": "Higher CQI ratings have historically been associated with stronger subsequent opponent-adjusted quarterback performance.",
+    "disclaimer": "Historical results are descriptive, not guarantees of future performance."
+  }
 }

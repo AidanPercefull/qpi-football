@@ -4845,3 +4845,94 @@ h3 {
    END PERCERA FINAL HEADER + TOP 3 FIX
    ========================================================== */
 
+
+
+/* ==========================================================
+   CQI PUBLIC VALIDATION EXPLANATION
+   ========================================================== */
+
+.validation-explanation {
+
+    margin-top:
+        18px;
+
+    padding:
+        21px 23px;
+
+    max-width:
+        900px;
+
+    background:
+        #faf9f6;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-left:
+        3px solid
+        var(--gold);
+
+    border-radius:
+        7px;
+}
+
+
+.validation-explanation strong {
+
+    display:
+        block;
+
+    margin-bottom:
+        8px;
+
+    color:
+        var(--brand-navy);
+
+    font-size:
+        13px;
+
+    font-weight:
+        850;
+}
+
+
+.validation-explanation p {
+
+    margin:
+        7px 0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        12px;
+
+    line-height:
+        1.65;
+}
+
+
+.validation-explanation small {
+
+    display:
+        block;
+
+    margin-top:
+        12px;
+
+    color:
+        #7a8492;
+
+    font-size:
+        10px;
+
+    font-style:
+        italic;
+}
+
+
+/* ==========================================================
+   END CQI PUBLIC VALIDATION EXPLANATION
+   ========================================================== */
+
