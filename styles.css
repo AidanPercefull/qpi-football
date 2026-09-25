@@ -8315,3 +8315,2479 @@ h3 {
    END PERCERA HOMEPAGE TYPOGRAPHY
    ========================================================== */
 
+
+
+/* ==========================================================
+   PERCERA TEAMS PRODUCT
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   TEAMS DIRECTORY HERO
+   ---------------------------------------------------------- */
+
+#teams-view {
+
+    padding:
+        48px 0 70px;
+}
+
+
+.teams-hero {
+
+    display:
+        flex;
+
+    align-items:
+        flex-end;
+
+    justify-content:
+        space-between;
+
+    gap:
+        40px;
+
+    padding-bottom:
+        34px;
+
+    border-bottom:
+        1px solid #dedad2;
+}
+
+
+.teams-kicker,
+.team-detail-heading > span {
+
+    color:
+        #174A9C;
+
+    font-size:
+        9px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .11em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.teams-hero h1 {
+
+    margin:
+        8px 0 7px;
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        52px;
+
+    line-height:
+        1;
+
+    letter-spacing:
+        -.055em;
+}
+
+
+.teams-hero p {
+
+    max-width:
+        600px;
+
+    margin:
+        0;
+
+    color:
+        #687487;
+
+    font-size:
+        13px;
+
+    line-height:
+        1.65;
+}
+
+
+.teams-count {
+
+    text-align:
+        right;
+}
+
+
+.teams-count strong {
+
+    display:
+        block;
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        45px;
+
+    line-height:
+        1;
+}
+
+
+.teams-count span {
+
+    display:
+        block;
+
+    margin-top:
+        5px;
+
+    color:
+        #7b8695;
+
+    font-size:
+        9px;
+
+    font-weight:
+        750;
+
+    letter-spacing:
+        .08em;
+
+    text-transform:
+        uppercase;
+}
+
+
+/* ----------------------------------------------------------
+   CONTROLS
+   ---------------------------------------------------------- */
+
+.teams-controls {
+
+    display:
+        flex;
+
+    justify-content:
+        space-between;
+
+    gap:
+        14px;
+
+    margin:
+        28px 0 14px;
+}
+
+
+#teams-search,
+#teams-conference {
+
+    min-height:
+        43px;
+
+    border:
+        1px solid #d6d2cb;
+
+    border-radius:
+        5px;
+
+    background:
+        #ffffff;
+
+    color:
+        #0B1F3B;
+
+    font-family:
+        inherit;
+
+    font-size:
+        11px;
+}
+
+
+#teams-search {
+
+    width:
+        min(
+            430px,
+            55%
+        );
+
+    padding:
+        0 14px;
+}
+
+
+#teams-conference {
+
+    min-width:
+        175px;
+
+    padding:
+        0 12px;
+}
+
+
+/* ----------------------------------------------------------
+   TEAM DIRECTORY TABLE
+   ---------------------------------------------------------- */
+
+.teams-table-wrap {
+
+    overflow:
+        hidden;
+
+    border:
+        1px solid #ddd9d1;
+
+    border-radius:
+        7px;
+
+    background:
+        #ffffff;
+}
+
+
+.teams-table {
+
+    width:
+        100%;
+
+    border-collapse:
+        collapse;
+}
+
+
+.teams-table thead {
+
+    background:
+        #0B274A;
+}
+
+
+.teams-table th {
+
+    padding:
+        13px 16px;
+
+    color:
+        #ffffff;
+
+    font-size:
+        8px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .08em;
+
+    text-align:
+        left;
+
+    text-transform:
+        uppercase;
+}
+
+
+.teams-table td {
+
+    padding:
+        13px 16px;
+
+    border-bottom:
+        1px solid #ebe7df;
+
+    color:
+        #24364f;
+
+    font-size:
+        11px;
+
+    vertical-align:
+        middle;
+}
+
+
+.team-directory-row {
+
+    cursor:
+        pointer;
+
+    transition:
+        background .12s ease;
+}
+
+
+.team-directory-row:hover {
+
+    background:
+        #f6f8fb;
+}
+
+
+.team-directory-name {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+}
+
+
+.team-directory-name img {
+
+    width:
+        27px;
+
+    height:
+        27px;
+
+    object-fit:
+        contain;
+}
+
+
+.team-directory-name strong {
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        12px;
+}
+
+
+.team-record-cell,
+.team-cqi-cell {
+
+    color:
+        #0B1F3B !important;
+
+    font-size:
+        13px !important;
+
+    font-weight:
+        850;
+}
+
+
+.team-next-name {
+
+    display:
+        block;
+
+    color:
+        #0B1F3B;
+}
+
+
+.team-next-week,
+.team-qb-rank {
+
+    display:
+        block;
+
+    margin-top:
+        3px;
+
+    color:
+        #8490a0;
+
+    font-size:
+        8px;
+}
+
+
+.teams-muted {
+
+    color:
+        #99a2af;
+}
+
+
+/* ----------------------------------------------------------
+   TEAM DETAIL
+   ---------------------------------------------------------- */
+
+.team-back-button {
+
+    margin-bottom:
+        20px;
+
+    padding:
+        0;
+
+    border:
+        0;
+
+    background:
+        transparent;
+
+    color:
+        #174A9C;
+
+    font-family:
+        inherit;
+
+    font-size:
+        10px;
+
+    font-weight:
+        800;
+
+    cursor:
+        pointer;
+}
+
+
+.team-detail-hero {
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    border:
+        1px solid #ddd9d1;
+
+    border-radius:
+        9px;
+
+    background:
+        #ffffff;
+}
+
+
+.team-detail-hero::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        0;
+
+    right:
+        0;
+
+    height:
+        4px;
+
+    background:
+        var(
+            --team-detail-color
+        );
+}
+
+
+.team-detail-brand {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        22px;
+
+    padding:
+        31px 32px 28px;
+
+    border-bottom:
+        1px solid #e7e3dc;
+}
+
+
+.team-detail-brand img {
+
+    width:
+        80px;
+
+    height:
+        80px;
+
+    object-fit:
+        contain;
+}
+
+
+.team-detail-brand span {
+
+    color:
+        #748092;
+
+    font-size:
+        9px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        .08em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.team-detail-brand h1 {
+
+    margin:
+        5px 0 0;
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        42px;
+
+    line-height:
+        1;
+
+    letter-spacing:
+        -.05em;
+}
+
+
+.team-detail-facts {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0,1fr)
+        );
+}
+
+
+.team-detail-facts article {
+
+    padding:
+        19px 31px;
+
+    border-right:
+        1px solid #e7e3dc;
+
+    background:
+        #fbfcfe;
+}
+
+
+.team-detail-facts article:last-child {
+
+    border-right:
+        0;
+}
+
+
+.team-detail-facts span {
+
+    display:
+        block;
+
+    color:
+        #7a8595;
+
+    font-size:
+        8px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .1em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.team-detail-facts strong {
+
+    display:
+        block;
+
+    margin-top:
+        7px;
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        23px;
+}
+
+
+.team-detail-facts small {
+
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    color:
+        #7d8898;
+
+    font-size:
+        9px;
+}
+
+
+/* ----------------------------------------------------------
+   DETAIL SECTIONS
+   ---------------------------------------------------------- */
+
+.team-detail-section {
+
+    margin-top:
+        38px;
+}
+
+
+.team-detail-heading {
+
+    margin-bottom:
+        16px;
+}
+
+
+.team-detail-heading h2 {
+
+    margin:
+        6px 0 0;
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        27px;
+
+    letter-spacing:
+        -.035em;
+}
+
+
+/* ----------------------------------------------------------
+   QB FEATURE
+   ---------------------------------------------------------- */
+
+.team-qb-feature {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0,1fr)
+        auto
+        auto;
+
+    align-items:
+        center;
+
+    gap:
+        25px;
+
+    min-height:
+        120px;
+
+    overflow:
+        hidden;
+
+    border:
+        1px solid #ddd9d1;
+
+    border-radius:
+        8px;
+
+    background:
+        #ffffff;
+}
+
+
+.team-qb-info {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        18px;
+}
+
+
+.team-qb-image {
+
+    width:
+        125px;
+
+    height:
+        120px;
+
+    overflow:
+        hidden;
+
+    display:
+        flex;
+
+    align-items:
+        flex-end;
+
+    justify-content:
+        center;
+
+    background:
+        #f1f3f7;
+}
+
+
+.team-qb-image img {
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    object-fit:
+        contain;
+
+    object-position:
+        center bottom;
+}
+
+
+.team-qb-image img.fallback {
+
+    width:
+        55%;
+
+    height:
+        55%;
+
+    margin:
+        auto;
+
+    object-fit:
+        contain;
+}
+
+
+.team-qb-label {
+
+    color:
+        #174A9C;
+
+    font-size:
+        8px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .08em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.team-qb-info h3 {
+
+    margin:
+        6px 0 0;
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        21px;
+}
+
+
+.team-qb-info p {
+
+    margin:
+        4px 0 0;
+
+    color:
+        #758092;
+
+    font-size:
+        10px;
+}
+
+
+.team-qb-score {
+
+    padding:
+        0 27px;
+
+    border-left:
+        1px solid #e6e2db;
+
+    border-right:
+        1px solid #e6e2db;
+
+    text-align:
+        center;
+}
+
+
+.team-qb-score strong {
+
+    display:
+        block;
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        34px;
+
+    line-height:
+        1;
+}
+
+
+.team-qb-score span {
+
+    color:
+        #7b8695;
+
+    font-size:
+        8px;
+
+    font-weight:
+        850;
+}
+
+
+.team-qb-profile-button {
+
+    margin-right:
+        22px;
+
+    min-height:
+        39px;
+
+    padding:
+        0 14px;
+
+    border:
+        1px solid #0B1F3B;
+
+    border-radius:
+        5px;
+
+    background:
+        #0B1F3B;
+
+    color:
+        #ffffff;
+
+    font-family:
+        inherit;
+
+    font-size:
+        9px;
+
+    font-weight:
+        800;
+
+    cursor:
+        pointer;
+}
+
+
+.team-no-qb {
+
+    padding:
+        25px;
+
+    border:
+        1px solid #ddd9d1;
+
+    border-radius:
+        7px;
+
+    background:
+        #ffffff;
+
+    color:
+        #7a8595;
+
+    font-size:
+        11px;
+}
+
+
+/* ----------------------------------------------------------
+   SCHEDULE
+   ---------------------------------------------------------- */
+
+.team-schedule-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0,1fr)
+        );
+
+    gap:
+        14px;
+}
+
+
+.team-schedule-card {
+
+    padding:
+        20px 21px;
+
+    border:
+        1px solid #ddd9d1;
+
+    border-radius:
+        7px;
+
+    background:
+        #ffffff;
+}
+
+
+.team-schedule-card h3 {
+
+    margin:
+        0 0 13px;
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        15px;
+}
+
+
+.team-game-row {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        58px
+        minmax(0,1fr)
+        auto;
+
+    align-items:
+        center;
+
+    gap:
+        10px;
+
+    min-height:
+        45px;
+
+    border-top:
+        1px solid #ede9e3;
+}
+
+
+.team-game-week {
+
+    color:
+        #8993a1;
+
+    font-size:
+        8px;
+
+    font-weight:
+        750;
+}
+
+
+.team-game-opponent {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        8px;
+}
+
+
+.team-game-opponent strong {
+
+    color:
+        #24364f;
+
+    font-size:
+        10px;
+}
+
+
+.team-game-score {
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        11px;
+}
+
+
+.team-game-result {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    width:
+        20px;
+
+    height:
+        20px;
+
+    border-radius:
+        3px;
+
+    font-size:
+        8px;
+
+    font-weight:
+        900;
+}
+
+
+.team-game-result.win {
+
+    background:
+        #e8f5ed;
+
+    color:
+        #267346;
+}
+
+
+.team-game-result.loss {
+
+    background:
+        #f9eaea;
+
+    color:
+        #9d3434;
+}
+
+
+/* ----------------------------------------------------------
+   RESPONSIVE
+   ---------------------------------------------------------- */
+
+@media (
+    max-width: 850px
+) {
+
+    .teams-table-wrap {
+
+        overflow-x:
+            auto;
+    }
+
+
+    .teams-table {
+
+        min-width:
+            880px;
+    }
+
+
+    .team-qb-feature {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .team-qb-score {
+
+        padding:
+            18px 22px;
+
+        border:
+            0;
+
+        border-top:
+            1px solid #e6e2db;
+
+        border-bottom:
+            1px solid #e6e2db;
+
+        text-align:
+            left;
+    }
+
+
+    .team-qb-profile-button {
+
+        margin:
+            0 22px 20px;
+
+        width:
+            max-content;
+    }
+
+}
+
+
+@media (
+    max-width: 650px
+) {
+
+    #teams-view {
+
+        padding-top:
+            30px;
+    }
+
+
+    .teams-hero {
+
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+    }
+
+
+    .teams-count {
+
+        text-align:
+            left;
+    }
+
+
+    .teams-controls {
+
+        flex-direction:
+            column;
+    }
+
+
+    #teams-search {
+
+        width:
+            100%;
+    }
+
+
+    .team-detail-brand {
+
+        padding:
+            25px 20px;
+    }
+
+
+    .team-detail-brand img {
+
+        width:
+            60px;
+
+        height:
+            60px;
+    }
+
+
+    .team-detail-brand h1 {
+
+        font-size:
+            34px;
+    }
+
+
+    .team-detail-facts {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .team-detail-facts article {
+
+        border-right:
+            0;
+
+        border-bottom:
+            1px solid #e7e3dc;
+    }
+
+
+    .team-detail-facts article:last-child {
+
+        border-bottom:
+            0;
+    }
+
+
+    .team-schedule-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+}
+
+
+/* ==========================================================
+   END PERCERA TEAMS PRODUCT
+   ========================================================== */
+
+
+
+/* ==========================================================
+   PERCERA TEAM PAGE VISUAL REFINEMENT
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   TEAM HERO
+   ---------------------------------------------------------- */
+
+.team-detail-hero {
+
+    isolation:
+        isolate;
+
+    background:
+        linear-gradient(
+            112deg,
+            color-mix(
+                in srgb,
+                var(--team-detail-color) 8%,
+                #ffffff
+            ) 0%,
+            #ffffff 58%,
+            color-mix(
+                in srgb,
+                var(--team-detail-color) 4%,
+                #ffffff
+            ) 100%
+        );
+}
+
+
+/* Huge faded school logo */
+
+.team-detail-watermark {
+
+    position:
+        absolute;
+
+    z-index:
+        0;
+
+    top:
+        50%;
+
+    right:
+        38px;
+
+    width:
+        min(
+            290px,
+            27%
+        );
+
+    height:
+        80%;
+
+    transform:
+        translateY(-50%);
+
+    object-fit:
+        contain;
+
+    opacity:
+        .045;
+
+    pointer-events:
+        none;
+
+    user-select:
+        none;
+}
+
+
+/* Keep actual information over watermark */
+
+.team-detail-brand,
+.team-detail-facts {
+
+    position:
+        relative;
+
+    z-index:
+        1;
+}
+
+
+.team-detail-brand {
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .65
+        );
+
+    backdrop-filter:
+        blur(2px);
+}
+
+
+.team-detail-facts article {
+
+    background:
+        rgba(
+            251,
+            252,
+            254,
+            .88
+        );
+}
+
+
+
+/* ----------------------------------------------------------
+   SCHEDULE CARDS
+   ---------------------------------------------------------- */
+
+.team-schedule-card {
+
+    overflow:
+        hidden;
+
+    background:
+        linear-gradient(
+            160deg,
+            #ffffff 0%,
+            #ffffff 62%,
+            #f7f9fc 100%
+        );
+
+    box-shadow:
+        0 7px 20px
+        rgba(11,31,59,.025);
+}
+
+
+.team-schedule-card h3 {
+
+    padding-bottom:
+        12px;
+
+    border-bottom:
+        2px solid
+        color-mix(
+            in srgb,
+            var(--team-detail-color) 55%,
+            #dcd9d2
+        );
+}
+
+
+
+/* ----------------------------------------------------------
+   OPPONENT LOGOS
+   ---------------------------------------------------------- */
+
+.team-opponent-logo {
+
+    width:
+        25px;
+
+    height:
+        25px;
+
+    object-fit:
+        contain;
+
+    flex:
+        0 0 25px;
+}
+
+
+.team-game-opponent {
+
+    min-width:
+        0;
+}
+
+
+.team-game-opponent strong {
+
+    font-size:
+        11px;
+}
+
+
+
+/* ----------------------------------------------------------
+   BYE ROWS
+   ---------------------------------------------------------- */
+
+.team-game-bye {
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(11,31,59,.025),
+            rgba(11,31,59,0)
+        );
+}
+
+
+.team-bye-mark {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    min-height:
+        24px;
+
+    padding:
+        0 9px;
+
+    border:
+        1px solid #d8dde5;
+
+    border-radius:
+        999px;
+
+    background:
+        #f2f4f7;
+
+    color:
+        #778397;
+
+    font-size:
+        8px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .1em;
+}
+
+
+
+/* ----------------------------------------------------------
+   NO CQI QB STATE
+   ---------------------------------------------------------- */
+
+.team-no-qb {
+
+    position:
+        relative;
+
+    min-height:
+        auto;
+
+    padding:
+        17px 19px;
+
+    border-left:
+        3px solid
+        var(--team-detail-color);
+
+    background:
+        linear-gradient(
+            90deg,
+            color-mix(
+                in srgb,
+                var(--team-detail-color) 5%,
+                #ffffff
+            ),
+            #ffffff
+        );
+
+    color:
+        #687487;
+
+    font-size:
+        11px;
+}
+
+
+
+/* ----------------------------------------------------------
+   SECTION SPACING
+   ---------------------------------------------------------- */
+
+.team-detail-section {
+
+    margin-top:
+        32px;
+}
+
+
+.team-detail-heading {
+
+    margin-bottom:
+        13px;
+}
+
+
+
+/* ----------------------------------------------------------
+   MOBILE
+   ---------------------------------------------------------- */
+
+@media (
+    max-width: 650px
+) {
+
+    .team-detail-watermark {
+
+        right:
+            10px;
+
+        width:
+            42%;
+
+        opacity:
+            .035;
+    }
+
+
+    .team-opponent-logo {
+
+        width:
+            23px;
+
+        height:
+            23px;
+
+        flex-basis:
+            23px;
+    }
+
+}
+
+
+/* ==========================================================
+   END PERCERA TEAM PAGE VISUAL REFINEMENT
+   ========================================================== */
+
+
+
+/* ==========================================================
+   PERCERA TEAM HERO VISUAL
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   STRONGER TEAM-COLOR HERO
+   ---------------------------------------------------------- */
+
+.team-detail-hero {
+
+    background:
+        linear-gradient(
+            112deg,
+
+            color-mix(
+                in srgb,
+                var(--team-detail-color) 15%,
+                #ffffff
+            )
+            0%,
+
+            color-mix(
+                in srgb,
+                var(--team-detail-color) 8%,
+                #ffffff
+            )
+            46%,
+
+            #ffffff
+            72%,
+
+            color-mix(
+                in srgb,
+                var(--team-detail-color) 10%,
+                #ffffff
+            )
+            100%
+        );
+
+    box-shadow:
+        0 12px 32px
+        rgba(11,31,59,.06);
+}
+
+
+/* ----------------------------------------------------------
+   MUCH MORE VISIBLE WATERMARK
+   ---------------------------------------------------------- */
+
+.team-detail-watermark {
+
+    right:
+        34px;
+
+    width:
+        min(
+            330px,
+            34%
+        );
+
+    height:
+        86%;
+
+    opacity:
+        .105;
+
+    filter:
+        saturate(.9);
+
+    transform:
+        translateY(-50%)
+        scale(1.03);
+}
+
+
+/* ----------------------------------------------------------
+   LET THE COLOR ACTUALLY SHOW THROUGH
+   ---------------------------------------------------------- */
+
+.team-detail-brand {
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .34
+        );
+
+    backdrop-filter:
+        none;
+}
+
+
+.team-detail-facts {
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .45
+        );
+}
+
+
+.team-detail-facts article {
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .64
+        );
+}
+
+
+/* ----------------------------------------------------------
+   CONFERENCE LABEL
+   ---------------------------------------------------------- */
+
+.team-detail-brand span {
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    min-height:
+        22px;
+
+    padding:
+        0 7px;
+
+    border:
+        1px solid
+        color-mix(
+            in srgb,
+            var(--team-detail-color) 30%,
+            #d7dce4
+        );
+
+    border-radius:
+        999px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .72
+        );
+}
+
+
+/* ----------------------------------------------------------
+   TOP NEXT OPPONENT
+   ---------------------------------------------------------- */
+
+.team-hero-next {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        12px;
+
+    margin-top:
+        7px;
+}
+
+
+.team-hero-next-logo {
+
+    width:
+        36px;
+
+    height:
+        36px;
+
+    object-fit:
+        contain;
+
+    flex:
+        0 0 36px;
+}
+
+
+.team-hero-next strong {
+
+    margin-top:
+        0 !important;
+}
+
+
+.team-hero-next small {
+
+    margin-top:
+        4px;
+}
+
+
+/* ----------------------------------------------------------
+   SUBTLE TEAM-COLOR RULE ABOVE FACTS
+   ---------------------------------------------------------- */
+
+.team-detail-facts {
+
+    position:
+        relative;
+}
+
+
+.team-detail-facts::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        0;
+
+    right:
+        0;
+
+    height:
+        1px;
+
+    background:
+        color-mix(
+            in srgb,
+            var(--team-detail-color) 22%,
+            transparent
+        );
+}
+
+
+/* ----------------------------------------------------------
+   MOBILE
+   ---------------------------------------------------------- */
+
+@media (
+    max-width: 650px
+) {
+
+    .team-detail-watermark {
+
+        right:
+            -10px;
+
+        width:
+            50%;
+
+        opacity:
+            .075;
+    }
+
+
+    .team-hero-next-logo {
+
+        width:
+            31px;
+
+        height:
+            31px;
+
+        flex-basis:
+            31px;
+    }
+
+}
+
+
+/* ==========================================================
+   END PERCERA TEAM HERO VISUAL
+   ========================================================== */
+
+
+
+/* ==========================================================
+   PERCERA TEAM IDENTITY
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   HERO COLOR
+
+   Strong enough to be obvious, still light enough that
+   Percera's navy typography remains dominant.
+   ---------------------------------------------------------- */
+
+.team-detail-hero {
+
+    background:
+        linear-gradient(
+            108deg,
+
+            color-mix(
+                in srgb,
+                var(--team-detail-color) 24%,
+                #ffffff
+            )
+            0%,
+
+            color-mix(
+                in srgb,
+                var(--team-detail-color) 17%,
+                #ffffff
+            )
+            38%,
+
+            color-mix(
+                in srgb,
+                var(--team-detail-color) 9%,
+                #ffffff
+            )
+            70%,
+
+            color-mix(
+                in srgb,
+                var(--team-detail-color) 13%,
+                #ffffff
+            )
+            100%
+        );
+}
+
+
+/* ----------------------------------------------------------
+   HERO HEADER
+
+   Let substantially more of the team color show through.
+   ---------------------------------------------------------- */
+
+.team-detail-brand {
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .18
+        );
+}
+
+
+/* ----------------------------------------------------------
+   LARGE TEAM WATERMARK
+
+   This should now read immediately as part of the design,
+   rather than an almost invisible texture.
+   ---------------------------------------------------------- */
+
+.team-detail-watermark {
+
+    right:
+        18px;
+
+    width:
+        min(
+            370px,
+            39%
+        );
+
+    height:
+        94%;
+
+    opacity:
+        .18;
+
+    filter:
+        saturate(.8);
+
+    transform:
+        translateY(-50%)
+        scale(1.06);
+}
+
+
+/* Keep watermark behind actual content */
+
+.team-detail-brand,
+.team-detail-facts {
+
+    position:
+        relative;
+
+    z-index:
+        2;
+}
+
+
+.team-detail-watermark {
+
+    z-index:
+        1;
+}
+
+
+/* ----------------------------------------------------------
+   RECORD / NEXT AREA
+
+   Still lighter than the top hero but no longer completely
+   detached visually.
+   ---------------------------------------------------------- */
+
+.team-detail-facts {
+
+    background:
+        color-mix(
+            in srgb,
+            var(--team-detail-color) 5%,
+            #ffffff
+        );
+}
+
+
+.team-detail-facts article {
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            .68
+        );
+}
+
+
+/* ----------------------------------------------------------
+   SCHOOL-COLOR TOP EDGE
+   ---------------------------------------------------------- */
+
+.team-detail-hero::before {
+
+    height:
+        4px;
+
+    background:
+        var(--team-detail-color);
+}
+
+
+/* ----------------------------------------------------------
+   MOBILE
+   ---------------------------------------------------------- */
+
+@media (
+    max-width: 650px
+) {
+
+    .team-detail-hero {
+
+        background:
+            linear-gradient(
+                120deg,
+
+                color-mix(
+                    in srgb,
+                    var(--team-detail-color) 20%,
+                    #ffffff
+                ),
+
+                color-mix(
+                    in srgb,
+                    var(--team-detail-color) 8%,
+                    #ffffff
+                )
+            );
+    }
+
+
+    .team-detail-watermark {
+
+        right:
+            -22px;
+
+        width:
+            58%;
+
+        opacity:
+            .13;
+    }
+
+}
+
+
+/* ==========================================================
+   END PERCERA TEAM IDENTITY
+   ========================================================== */
+
+
+
+/* ==========================================================
+   PERCERA TEAM WATERMARK LOGIC
+   ========================================================== */
+
+
+/* Base watermark */
+
+.team-detail-watermark {
+
+    object-fit:
+        contain;
+
+    object-position:
+        center;
+
+    max-width:
+        none;
+}
+
+
+/* ----------------------------------------------------------
+   COMPACT / SQUARE LOGOS
+
+   Examples:
+   Air Force-type monograms and compact marks.
+   These can stay large.
+   ---------------------------------------------------------- */
+
+.team-detail-watermark.watermark-compact {
+
+    right:
+        18px;
+
+    width:
+        min(
+            370px,
+            39%
+        );
+
+    height:
+        94%;
+
+    opacity:
+        .18;
+}
+
+
+/* ----------------------------------------------------------
+   WIDE LOGOS / WORDMARKS
+
+   These become visually overwhelming if treated like a
+   compact monogram, so scale them down.
+   ---------------------------------------------------------- */
+
+.team-detail-watermark.watermark-wide {
+
+    right:
+        30px;
+
+    width:
+        min(
+            300px,
+            30%
+        );
+
+    height:
+        68%;
+
+    opacity:
+        .135;
+
+    transform:
+        translateY(-50%)
+        scale(.96);
+}
+
+
+/* ----------------------------------------------------------
+   TALL LOGOS
+
+   Height becomes the limiting dimension.
+   ---------------------------------------------------------- */
+
+.team-detail-watermark.watermark-tall {
+
+    right:
+        55px;
+
+    width:
+        min(
+            235px,
+            25%
+        );
+
+    height:
+        82%;
+
+    opacity:
+        .16;
+
+    transform:
+        translateY(-50%);
+}
+
+
+/* ----------------------------------------------------------
+   MOBILE
+   ---------------------------------------------------------- */
+
+@media (
+    max-width: 650px
+) {
+
+    .team-detail-watermark.watermark-compact {
+
+        right:
+            -22px;
+
+        width:
+            58%;
+
+        opacity:
+            .13;
+    }
+
+
+    .team-detail-watermark.watermark-wide {
+
+        right:
+            4px;
+
+        width:
+            42%;
+
+        height:
+            60%;
+
+        opacity:
+            .10;
+    }
+
+
+    .team-detail-watermark.watermark-tall {
+
+        right:
+            15px;
+
+        width:
+            34%;
+
+        height:
+            76%;
+
+        opacity:
+            .12;
+    }
+
+}
+
+
+/* ==========================================================
+   END PERCERA TEAM WATERMARK LOGIC
+   ========================================================== */
+
+
+
+/* ==========================================================
+   PERCERA TEAM WATERMARK POSITION
+   ========================================================== */
+
+
+/* Base watermark adjustment */
+
+.team-detail-watermark {
+
+    top:
+        43% !important;
+
+    right:
+        12px !important;
+
+    width:
+        min(
+            405px,
+            43%
+        ) !important;
+
+    height:
+        100% !important;
+
+    opacity:
+        .18 !important;
+
+    transform:
+        translateY(-50%)
+        scale(1.08) !important;
+
+    object-fit:
+        contain;
+}
+
+
+/* Keep all adaptive classes from shrinking it too much */
+
+.team-detail-watermark.watermark-compact,
+.team-detail-watermark.watermark-wide,
+.team-detail-watermark.watermark-tall {
+
+    top:
+        43% !important;
+
+    right:
+        12px !important;
+
+    width:
+        min(
+            405px,
+            43%
+        ) !important;
+
+    height:
+        100% !important;
+
+    opacity:
+        .18 !important;
+
+    transform:
+        translateY(-50%)
+        scale(1.08) !important;
+}
+
+
+/* Mobile */
+
+@media (
+    max-width: 650px
+) {
+
+    .team-detail-watermark,
+    .team-detail-watermark.watermark-compact,
+    .team-detail-watermark.watermark-wide,
+    .team-detail-watermark.watermark-tall {
+
+        top:
+            42% !important;
+
+        right:
+            -18px !important;
+
+        width:
+            58% !important;
+
+        height:
+            94% !important;
+
+        opacity:
+            .13 !important;
+    }
+
+}
+
+
+/* ==========================================================
+   END PERCERA TEAM WATERMARK POSITION
+   ========================================================== */
+
+
+
+/* ==========================================================
+   PERCERA QB TEAM LINK STYLING
+   ========================================================== */
+
+
+.percera-team-link {
+
+    cursor:
+        pointer;
+}
+
+
+/* ----------------------------------------------------------
+   QB HERO TEAM ROW
+   ---------------------------------------------------------- */
+
+.profile-team-row.percera-team-link {
+
+    width:
+        fit-content;
+
+    border-radius:
+        5px;
+
+    transition:
+        opacity .12s ease,
+        transform .12s ease,
+        background .12s ease;
+}
+
+
+.profile-team-row.percera-team-link:hover {
+
+    opacity:
+        .78;
+
+    transform:
+        translateX(2px);
+}
+
+
+.profile-team-row.percera-team-link:focus-visible {
+
+    outline:
+        2px solid #C48B28;
+
+    outline-offset:
+        4px;
+}
+
+
+/* ----------------------------------------------------------
+   LOWER TEAM CARD HEADER
+   ---------------------------------------------------------- */
+
+.team-card-header.percera-team-link {
+
+    transition:
+        background .12s ease;
+}
+
+
+.team-card-header.percera-team-link:hover {
+
+    background:
+        rgba(
+            11,
+            31,
+            59,
+            .025
+        );
+}
+
+
+.team-card-header.percera-team-link:hover
+.team-card-identity h3 {
+
+    text-decoration:
+        underline;
+
+    text-decoration-color:
+        #C48B28;
+
+    text-decoration-thickness:
+        1px;
+
+    text-underline-offset:
+        3px;
+}
+
+
+.team-card-header.percera-team-link:focus-visible {
+
+    outline:
+        2px solid #C48B28;
+
+    outline-offset:
+        -2px;
+}
+
+
+/* ==========================================================
+   END PERCERA QB TEAM LINK STYLING
+   ========================================================== */
+
