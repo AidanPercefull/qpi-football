@@ -1,65 +1,47 @@
 {
   "name": "Contextual Quarterback Index",
   "abbreviation": "CQI",
-  "version": "1.0",
-  "purpose": "A transparent, opponent-aware college football quarterback performance rating from Percera.",
-  "description": "CQI measures observed quarterback performance rather than future talent or projection.",
+  "version": "1.1",
+  "purpose": "CQI is a context-adjusted college football quarterback performance rating built around performance characteristics that historically carried forward into subsequent games.",
   "formula": {
-    "passing": {
-      "success": 0.377,
-      "efficiency": 0.37,
-      "td_creation": 0.127,
-      "sack_avoidance": 0.126
+    "passing_efficiency": 40,
+    "sack_avoidance": 35,
+    "rushing": 25
+  },
+  "components": {
+    "passing_efficiency": {
+      "title": "Passing Efficiency",
+      "weight": 40,
+      "description": "Network-adjusted yards per attempt. CQI evaluates pass defenses through the quarterbacks they faced rather than using a broad overall defensive rating."
     },
-    "overall": {
-      "passing": 0.825,
-      "rushing": 0.175
+    "sack_avoidance": {
+      "title": "Sack Avoidance",
+      "weight": 35,
+      "description": "Quarterback sack tendency estimated while accounting for the opposing pass rush."
+    },
+    "rushing": {
+      "title": "Rushing",
+      "weight": 25,
+      "description": "Sustained quarterback rushing value. Opponent adjustment was tested here, but did not improve the historical forward signal."
     }
   },
-  "display_only": [
-    "INT Avoidance"
-  ],
-  "weekly_eligibility": {
-    "first_published_week": 3,
-    "minimum_full_attempts": 30,
-    "minimum_context_games": 2,
-    "limited_sample_threshold": 50
-  },
-  "context_game": {
-    "minimum_pass_attempts": 10,
-    "requires_comparable_defensive_rating": true
-  },
-  "opponent_adjustment": {
-    "efficiency": "Adjusted using opponent defensive SP+.",
-    "td_creation": "Adjusted using opponent defensive SP+."
-  },
+  "score_scale": "The public CQI score is historically anchored. A CQI of 90 represents an internal performance profile stronger than approximately 90% of qualifying historical quarterback snapshots in the 2023-2025 reference population.",
   "validation": {
-    "leave_one_season_out": {
-      "2023": {
-        "overall_r2": 0.626,
-        "overall_correlation": 0.906
-      },
-      "2024": {
-        "overall_r2": 0.739,
-        "overall_correlation": 0.881
-      },
-      "2025": {
-        "overall_r2": 0.662,
-        "overall_correlation": 0.89
-      }
-    }
+    "development_average_spearman": 0.387,
+    "untouched_2022_spearman": 0.384,
+    "v1_2022_spearman": 0.343,
+    "target": "Opponent-adjusted overall quarterback performance over the following three games.",
+    "holdout_note": "The 2022 season was kept untouched while the v1.1 architecture, hyperparameters and weights were selected."
   },
-  "external_checks": {
-    "qpi_vs_qbr_spearman": 0.756,
-    "qpi_vs_exact_ppa_spearman": 0.912,
-    "passing_vs_pass_ppa_spearman": 0.894,
-    "passing_vs_ncaa_efficiency_spearman": 0.868
+  "qualification": {
+    "minimum_attempts": 30,
+    "minimum_context_games": 2,
+    "limited_sample": "Quarterbacks with fewer than 50 attempts receive a limited-sample label."
   },
   "limitations": [
-    "CQI is a performance metric, not a projection.",
-    "CQI does not fully isolate the quarterback from teammates and scheme.",
-    "FCS games without a comparable defensive rating are excluded from CQI v1.0 context calculations.",
-    "CQI does not currently perform play-level credit allocation like film-based grading systems."
-  ],
-  "model_development": "Derived from recent historical college football performance data and validated on seasons excluded from model training."
+    "CQI evaluates observed college quarterback performance, not pure individual talent.",
+    "Quarterback performance cannot be completely separated from offensive line play, receivers, scheme and coaching.",
+    "CQI is not an NFL scouting grade.",
+    "CQI is not a betting line, win probability or standalone wagering model."
+  ]
 }

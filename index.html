@@ -2,43 +2,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBDTLXCYQC"></script>
-
-<script>
-  window.dataLayer = window.dataLayer || [];
-
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-
-  gtag('js', new Date());
-  gtag('config', 'G-NBDTLXCYQC');
-</script>
-    
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Percera — Contextual Quarterback Index</title>
+<title>Percera — CQI Quarterback Rankings</title>
 
-<meta name="description" content="Percera is an independent college football analytics platform. Explore CQI, the Contextual Quarterback Index, for transparent, opponent-aware quarterback rankings.">
-<meta property="og:title" content="Percera — Contextual Quarterback Index">
-<meta property="og:description" content="Transparent, opponent-aware college quarterback rankings from Percera.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://perceraanalytics.com/">
-<meta property="og:image" content="https://perceraanalytics.com/percera-og.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Percera — Contextual Quarterback Index">
-<meta name="twitter:description" content="Same game. More context. A clearer picture. Explore CQI from Percera.">
-<meta name="twitter:image" content="https://perceraanalytics.com/percera-og.png">
-<meta name="theme-color" content="#0B1F3B">
-<link rel="canonical" href="https://perceraanalytics.com/">
-<link rel="icon" type="image/png" sizes="32x32" href="percera-favicon-32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="percera-favicon-192.png">
-<link rel="apple-touch-icon" href="percera-favicon-192.png">
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css?v=cqi11-finalcopy">
 
 </head>
 
@@ -46,14 +15,14 @@
 
 <header class="site-header">
 
-    <a class="brand" href="/" aria-label="Percera home">
-        <img
-            src="percera-wordmark-transparent.png"
-            class="brand-wordmark"
-            alt="Percera"
-        >
-        <span class="brand-subtitle">College Football Analytics</span>
-    </a>
+    <div class="brand">
+        <div class="brand-mark">QPI</div>
+
+        <div>
+            <h1>Quarterback Performance Index</h1>
+            <p>2026 · Through Week 3</p>
+        </div>
+    </div>
 
     <nav>
         <button class="nav-button active" data-view="rankings">
@@ -74,22 +43,18 @@
 
     <div class="hero">
 
-        <div class="hero-copy">
+        <div>
             <span class="eyebrow">
-                CQI v1.0 · 2026 Through Week 3
+                QPI v1.0
             </span>
 
             <h2>
-                Contextual Quarterback Index
+                2026 Quarterback Rankings
             </h2>
 
-            <p class="hero-tagline">
-                Same game. More context. A clearer picture.
-            </p>
-
-            <p class="hero-description">
-                Percera's transparent, opponent-aware measure of
-                observed college quarterback performance.
+            <p>
+                A transparent, opponent-aware measure of
+                college quarterback performance.
             </p>
         </div>
 
@@ -128,7 +93,7 @@
                     <th>Rank</th>
                     <th>Quarterback</th>
                     <th>Team</th>
-                    <th>CQI</th>
+                    <th>QPI</th>
                     <th>Passing</th>
                     <th>Rushing</th>
                     <th>Sample</th>
@@ -141,22 +106,6 @@
         </table>
 
     </div>
-
-    <section class="brand-story" aria-label="About Percera">
-        <div>
-            <span class="eyebrow">About Percera</span>
-            <h3>College football analytics built around context.</h3>
-            <p>
-                Percera builds transparent tools for evaluating college football
-                performance beyond the surface-level box score. CQI is the first
-                model in a broader analytics platform for players, teams, rosters,
-                and the transfer era.
-            </p>
-        </div>
-        <div class="brand-story-mark" aria-hidden="true">
-            <img src="percera-favicon-192.png" alt="">
-        </div>
-    </section>
 
 </section>
 
@@ -182,15 +131,15 @@
 >
 
     <span class="eyebrow">
-        CQI v1.0
+        QPI v1.0
     </span>
 
     <h2>
-        How CQI Works
+        How QPI Works
     </h2>
 
     <p class="method-intro">
-        CQI is Percera's transparent, opponent-aware measure of
+        QPI is a transparent, opponent-aware measure of
         observed college quarterback performance.
         It is designed to explain not just who performed well,
         but how they did it.
@@ -199,10 +148,10 @@
 
     <div class="method-section">
 
-        <h3>What CQI measures</h3>
+        <h3>What QPI measures</h3>
 
         <p>
-            CQI rewards quarterbacks who consistently produce
+            QPI rewards quarterbacks who consistently produce
             efficient offense while accounting for opponent
             strength, sacks, and rushing contribution.
         </p>
@@ -215,7 +164,7 @@
         <h3>Passing Performance</h3>
 
         <p>
-            CQI evaluates four dimensions of passing:
+            QPI evaluates four dimensions of passing:
         </p>
 
         <div class="method-pill-grid">
@@ -262,7 +211,7 @@
         <h3>Rushing Value</h3>
 
         <p>
-            CQI also credits quarterbacks for the scoring value
+            QPI also credits quarterbacks for the scoring value
             they create as runners. It uses situational rushing
             value rather than simply rewarding raw rushing yards.
         </p>
@@ -289,13 +238,13 @@
         <h3>How the model was built</h3>
 
         <p>
-            CQI's formula was derived from recent historical
+            QPI's formula was derived from recent historical
             college football performance data and tested on seasons
             excluded from model training.
         </p>
 
         <p>
-            The formula is fixed for CQI v1.0. Future methodology
+            The formula is fixed for QPI v1.0. Future methodology
             changes will be released as new versions rather than
             silently changing the meaning of previous rankings.
         </p>
@@ -308,8 +257,8 @@
         <h3>Weekly rankings</h3>
 
         <p>
-            CQI rankings begin after Week 3. A quarterback must have
-            at least 30 season passing attempts and at least two CQI
+            QPI rankings begin after Week 3. A quarterback must have
+            at least 30 season passing attempts and at least two QPI
             context games to appear in the rankings.
         </p>
 
@@ -323,10 +272,10 @@
 
     <div class="method-section">
 
-        <h3>What CQI is not</h3>
+        <h3>What QPI is not</h3>
 
         <p>
-            CQI is not a projection, recruiting rating, NFL scouting
+            QPI is not a projection, recruiting rating, NFL scouting
             grade, or attempt to perfectly isolate the quarterback
             from his teammates and scheme.
         </p>
@@ -348,7 +297,7 @@
 
         <div class="technical-content">
 
-            <h3>CQI v1.0 Formula</h3>
+            <h3>QPI v1.0 Formula</h3>
 
             <p>
                 The public component scores are percentile-based,
@@ -394,7 +343,7 @@
 
                 <div class="formula-card">
 
-                    <h3>Overall CQI</h3>
+                    <h3>Overall QPI</h3>
 
                     <div class="formula-row">
                         <span>Passing</span>
@@ -415,7 +364,7 @@
 
             <p>
                 Interception avoidance is displayed on player profiles
-                but carries no independent CQI v1.0 weight. During model
+                but carries no independent QPI v1.0 weight. During model
                 development, it did not add meaningful explanatory value
                 after the other passing components were included.
             </p>
@@ -424,7 +373,7 @@
             <h3>Validation</h3>
 
             <p>
-                CQI was tested by repeatedly fitting the model while
+                QPI was tested by repeatedly fitting the model while
                 withholding an entire season, then evaluating it on the
                 unseen season. The model structure remained stable across
                 those tests.
@@ -436,7 +385,7 @@
             <ul class="technical-list">
 
                 <li>
-                    CQI does not completely separate quarterback
+                    QPI does not completely separate quarterback
                     performance from receivers, offensive line play,
                     scheme, and other supporting factors.
                 </li>
@@ -447,12 +396,12 @@
                 </li>
 
                 <li>
-                    CQI v1.0 does not yet include a fully validated
+                    QPI v1.0 does not yet include a fully validated
                     opponent adjustment for every FCS game.
                 </li>
 
                 <li>
-                    CQI does not perform film-based play attribution
+                    QPI does not perform film-based play attribution
                     or scouting evaluation.
                 </li>
 
@@ -466,20 +415,12 @@
 
 
 </main>
-<footer class="site-footer">
-    <div class="footer-brand">
-        <img src="percera-wordmark-transparent.png" alt="Percera" class="footer-wordmark">
-        <span>Independent college football analytics.</span>
-    </div>
-    <div class="footer-meta">
-        <span>CQI · Contextual Quarterback Index</span>
-        <span>Data sourced from CollegeFootballData.com</span>
-        <span>perceraanalytics.com</span>
-    </div>
-</footer>
 
-<script src="data.js"></script>
-<script src="app.js"></script>
+
+<script src="data.js?v=cqi11-finalcopy"></script>
+<script src="data.js?v=cqi11-finalcopy"></script>
+<script src="data.js?v=cqi11-finalcopy"></script>
+<script src="app.js?v=cqi11-finalcopy"></script>
 
 </body>
 </html>

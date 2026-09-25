@@ -3579,3 +3579,729 @@ h3 {
 
 }
 
+
+
+/* ==========================================================
+   CQI V1.1 PRODUCT UI
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   PLAYER SCORE STRIP
+   ---------------------------------------------------------- */
+
+.cqi-score-row {
+
+    display: grid;
+
+    grid-template-columns:
+        1.15fr
+        repeat(
+            3,
+            minmax(0, 1fr)
+        );
+
+    gap: 12px;
+
+    margin:
+        28px 0
+        24px;
+}
+
+
+.cqi-score-row
+.score-card {
+
+    min-width: 0;
+
+    margin: 0;
+
+    padding:
+        22px 20px;
+}
+
+
+.cqi-score-row
+.score-card strong {
+
+    font-size: 34px;
+}
+
+
+.cqi-main-score {
+
+    background:
+        var(--brand-navy)
+        !important;
+
+    border-color:
+        var(--brand-navy)
+        !important;
+
+    box-shadow:
+        inset 0 -3px 0
+        var(--gold);
+}
+
+
+.cqi-main-score span {
+
+    color:
+        rgba(255,255,255,.66)
+        !important;
+}
+
+
+.cqi-main-score strong {
+
+    color:
+        white
+        !important;
+}
+
+
+/* ----------------------------------------------------------
+   WHY CQI RANKS HIM HERE
+   ---------------------------------------------------------- */
+
+.player-explainer {
+
+    position: relative;
+
+    margin:
+        28px 0
+        42px;
+
+    padding:
+        29px 32px
+        30px;
+
+    max-width: 920px;
+
+    background:
+        white;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-left:
+        4px solid
+        var(--gold);
+
+    border-radius:
+        7px;
+
+    box-shadow:
+        0 8px 24px
+        rgba(11,31,58,.045);
+}
+
+
+.explainer-kicker {
+
+    margin-bottom:
+        10px;
+
+    color:
+        var(--accent);
+
+    font-size:
+        10px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .11em;
+}
+
+
+.player-explainer p {
+
+    max-width:
+        830px;
+
+    margin: 0;
+
+    color:
+        #3d4858;
+
+    font-size:
+        15px;
+
+    line-height:
+        1.78;
+
+    letter-spacing:
+        0;
+
+    word-spacing:
+        0;
+}
+
+
+/* ----------------------------------------------------------
+   THREE-COMPONENT PROFILE
+   ---------------------------------------------------------- */
+
+.player-component-section {
+
+    margin-top:
+        46px;
+}
+
+
+.section-heading-row {
+
+    display: flex;
+
+    align-items:
+        flex-end;
+
+    justify-content:
+        space-between;
+
+    gap:
+        30px;
+
+    margin-bottom:
+        20px;
+
+    padding-bottom:
+        17px;
+
+    border-bottom:
+        1px solid
+        var(--border);
+}
+
+
+.section-heading-row h3 {
+
+    margin:
+        6px 0 0;
+
+    color:
+        var(--brand-navy);
+
+    font-size:
+        27px;
+
+    letter-spacing:
+        -.035em;
+}
+
+
+.section-heading-row p {
+
+    max-width:
+        420px;
+
+    margin: 0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        12px;
+
+    line-height:
+        1.6;
+
+    text-align:
+        right;
+}
+
+
+.cqi-component-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        );
+
+    gap:
+        14px;
+}
+
+
+.cqi-component-card {
+
+    position:
+        relative;
+
+    padding:
+        23px;
+
+    min-height:
+        205px;
+
+    background:
+        white;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-top:
+        3px solid
+        var(--accent);
+
+    border-radius:
+        7px;
+
+    overflow:
+        hidden;
+}
+
+
+.component-title-row {
+
+    display: flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        15px;
+}
+
+
+.component-title-row span {
+
+    color:
+        var(--brand-navy);
+
+    font-size:
+        11px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .065em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.component-title-row strong {
+
+    color:
+        var(--accent);
+
+    font-size:
+        13px;
+
+    font-weight:
+        850;
+}
+
+
+.component-percentile {
+
+    margin-top:
+        31px;
+
+    color:
+        var(--brand-navy);
+
+    font-size:
+        46px;
+
+    font-weight:
+        900;
+
+    line-height:
+        .92;
+
+    letter-spacing:
+        -.055em;
+}
+
+
+.component-percentile small {
+
+    display:
+        block;
+
+    margin-top:
+        10px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        8px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        .115em;
+}
+
+
+.component-bar {
+
+    width: 100%;
+
+    height:
+        5px;
+
+    margin-top:
+        24px;
+
+    background:
+        #eae7df;
+
+    border-radius:
+        3px;
+
+    overflow:
+        hidden;
+}
+
+
+.component-bar-fill {
+
+    height:
+        100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--accent-dark),
+            var(--accent)
+        );
+
+    border-radius:
+        3px;
+}
+
+
+.component-raw {
+
+    margin-top:
+        12px;
+
+    color:
+        var(--muted);
+
+    font-size:
+        11px;
+
+    line-height:
+        1.45;
+}
+
+
+/* ----------------------------------------------------------
+   METHODOLOGY
+   ---------------------------------------------------------- */
+
+.formula-weight {
+
+    float:
+        right;
+
+    margin-left:
+        15px;
+
+    color:
+        var(--accent);
+
+    font-size:
+        13px;
+}
+
+
+.validation-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        );
+
+    gap:
+        13px;
+
+    margin-top:
+        22px;
+}
+
+
+.validation-card {
+
+    padding:
+        22px;
+
+    background:
+        white;
+
+    border:
+        1px solid
+        var(--border);
+
+    border-radius:
+        7px;
+}
+
+
+.validation-card.featured {
+
+    border-top:
+        3px solid
+        var(--gold);
+}
+
+
+.validation-card span {
+
+    display:
+        block;
+
+    color:
+        var(--muted);
+
+    font-size:
+        9px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .105em;
+}
+
+
+.validation-card strong {
+
+    display:
+        block;
+
+    margin-top:
+        15px;
+
+    color:
+        var(--brand-navy);
+
+    font-size:
+        40px;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        -.05em;
+}
+
+
+.validation-card p {
+
+    margin:
+        12px 0 0;
+
+    color:
+        var(--muted);
+
+    font-size:
+        12px;
+
+    line-height:
+        1.55;
+}
+
+
+.validation-note {
+
+    margin-top:
+        16px;
+
+    padding-left:
+        14px;
+
+    border-left:
+        3px solid
+        var(--gold);
+
+    font-size:
+        12px;
+}
+
+
+/* ----------------------------------------------------------
+   TABLE — V1.1 COMPONENT COLUMNS
+   ---------------------------------------------------------- */
+
+#leaderboard
+.metric-number {
+
+    color:
+        #475467;
+
+    font-size:
+        13px;
+
+    font-weight:
+        650;
+}
+
+
+/* ----------------------------------------------------------
+   RESPONSIVE
+   ---------------------------------------------------------- */
+
+@media (
+    max-width: 900px
+) {
+
+    .cqi-score-row {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+    }
+
+
+    .cqi-component-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .validation-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+}
+
+
+@media (
+    max-width: 650px
+) {
+
+    .cqi-score-row {
+
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .section-heading-row {
+
+        display:
+            block;
+    }
+
+
+    .section-heading-row p {
+
+        margin-top:
+            11px;
+
+        text-align:
+            left;
+    }
+
+
+    .player-explainer {
+
+        padding:
+            23px 20px;
+    }
+
+
+    .component-percentile {
+
+        font-size:
+            39px;
+    }
+
+}
+
+
+/* ==========================================================
+   END CQI V1.1 PRODUCT UI
+   ========================================================== */
+
+
+
+
+/* ==========================================================
+   CQI PLAYER PROFILE LABEL
+   ========================================================== */
+
+.player-profile-label {
+
+    margin:
+        0 0 11px;
+
+    color:
+        var(--brand-navy);
+
+    font-size:
+        18px;
+
+    font-weight:
+        850;
+
+    line-height:
+        1.2;
+
+    letter-spacing:
+        -.02em;
+}
+
+
+/* ==========================================================
+   END CQI PLAYER PROFILE LABEL
+   ========================================================== */
+
+
+
+/* ==========================================================
+   CQI FINAL PROFILE LABEL
+   ========================================================== */
+
+.player-profile-label {
+
+    margin:
+        0 0 10px;
+
+    color:
+        var(--brand-navy);
+
+    font-size:
+        18px;
+
+    font-weight:
+        850;
+
+    line-height:
+        1.2;
+
+    letter-spacing:
+        -.02em;
+}
+
+/* ==========================================================
+   END CQI FINAL PROFILE LABEL
+   ========================================================== */
+
