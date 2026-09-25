@@ -1,0 +1,4064 @@
+{
+  "season": 2026,
+  "cqi_version": "1.1",
+  "available_weeks": [
+    3
+  ],
+  "latest_week": 3,
+  "weeks": {
+    "3": [
+      {
+        "rank": 1,
+        "player": "Lincoln Kienholz",
+        "team": "Louisville",
+        "cqi": 97.0,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 97.8,
+        "sack_percentile": 49.6,
+        "rushing_percentile": 87.1,
+        "attempts": 73,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 2,
+        "player": "Aaron Philo",
+        "team": "Florida",
+        "cqi": 96.9,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 98.1,
+        "sack_percentile": 51.6,
+        "rushing_percentile": 80.5,
+        "attempts": 64,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 3,
+        "player": "Gunner Stockton",
+        "team": "Georgia",
+        "cqi": 96.2,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 98.8,
+        "sack_percentile": 30.7,
+        "rushing_percentile": 73.1,
+        "attempts": 45,
+        "cqi_games": 2,
+        "sample_flag": "Limited sample"
+      },
+      {
+        "rank": 4,
+        "player": "Kamario Taylor",
+        "team": "Mississippi State",
+        "cqi": 94.9,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 95.2,
+        "sack_percentile": 47.2,
+        "rushing_percentile": 91.5,
+        "attempts": 82,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 5,
+        "player": "Michael Hawkins Jr.",
+        "team": "West Virginia",
+        "cqi": 93.1,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 95.2,
+        "sack_percentile": 30.5,
+        "rushing_percentile": 98.2,
+        "attempts": 38,
+        "cqi_games": 2,
+        "sample_flag": "Limited sample"
+      },
+      {
+        "rank": 6,
+        "player": "Ryan Browne",
+        "team": "Purdue",
+        "cqi": 90.0,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 95.6,
+        "sack_percentile": 41.0,
+        "rushing_percentile": 63.3,
+        "attempts": 101,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 7,
+        "player": "Devon Dampier",
+        "team": "Utah",
+        "cqi": 89.8,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 86.3,
+        "sack_percentile": 59.1,
+        "rushing_percentile": 81.6,
+        "attempts": 74,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 8,
+        "player": "Darian Mensah",
+        "team": "Miami",
+        "cqi": 89.3,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 97.8,
+        "sack_percentile": 72.0,
+        "rushing_percentile": 19.1,
+        "attempts": 79,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 9,
+        "player": "David McComb",
+        "team": "Miami (OH)",
+        "cqi": 89.3,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 97.5,
+        "sack_percentile": 32.8,
+        "rushing_percentile": 57.9,
+        "attempts": 74,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 10,
+        "player": "Bear Bachmeier",
+        "team": "BYU",
+        "cqi": 88.6,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 90.8,
+        "sack_percentile": 51.4,
+        "rushing_percentile": 67.6,
+        "attempts": 62,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 11,
+        "player": "Trinidad Chambliss",
+        "team": "Ole Miss",
+        "cqi": 85.5,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 78.4,
+        "sack_percentile": 74.3,
+        "rushing_percentile": 65.7,
+        "attempts": 110,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 12,
+        "player": "Demond Williams Jr.",
+        "team": "Washington",
+        "cqi": 85.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 63.5,
+        "sack_percentile": 72.7,
+        "rushing_percentile": 92.2,
+        "attempts": 109,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 13,
+        "player": "Katin Houser",
+        "team": "Illinois",
+        "cqi": 84.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 87.4,
+        "sack_percentile": 65.9,
+        "rushing_percentile": 53.3,
+        "attempts": 81,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 14,
+        "player": "Josh Hoover",
+        "team": "Indiana",
+        "cqi": 84.1,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 97.9,
+        "sack_percentile": 42.9,
+        "rushing_percentile": 24.5,
+        "attempts": 51,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 15,
+        "player": "Marcus Stokes",
+        "team": "Memphis",
+        "cqi": 83.2,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 93.6,
+        "sack_percentile": 48.7,
+        "rushing_percentile": 43.0,
+        "attempts": 98,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 16,
+        "player": "Jared Curtis",
+        "team": "Vanderbilt",
+        "cqi": 82.5,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 70.8,
+        "sack_percentile": 47.2,
+        "rushing_percentile": 97.3,
+        "attempts": 65,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 17,
+        "player": "Conner Weigman",
+        "team": "Houston",
+        "cqi": 81.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 80.6,
+        "sack_percentile": 44.9,
+        "rushing_percentile": 79.8,
+        "attempts": 80,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 18,
+        "player": "Julian Sayin",
+        "team": "Ohio State",
+        "cqi": 81.2,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 95.5,
+        "sack_percentile": 35.9,
+        "rushing_percentile": 39.3,
+        "attempts": 79,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 19,
+        "player": "Giovanni Lopez",
+        "team": "Wake Forest",
+        "cqi": 80.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 75.5,
+        "sack_percentile": 52.2,
+        "rushing_percentile": 77.7,
+        "attempts": 105,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 20,
+        "player": "Drew Mestemaker",
+        "team": "Oklahoma State",
+        "cqi": 80.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 54.1,
+        "sack_percentile": 76.0,
+        "rushing_percentile": 82.5,
+        "attempts": 114,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 21,
+        "player": "Jayden Maiava",
+        "team": "USC",
+        "cqi": 80.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 94.5,
+        "sack_percentile": 82.8,
+        "rushing_percentile": 2.7,
+        "attempts": 115,
+        "cqi_games": 4,
+        "sample_flag": ""
+      },
+      {
+        "rank": 22,
+        "player": "Keelon Russell",
+        "team": "Alabama",
+        "cqi": 80.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 80.4,
+        "sack_percentile": 28.7,
+        "rushing_percentile": 94.9,
+        "attempts": 83,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 23,
+        "player": "C.J. Carr",
+        "team": "Notre Dame",
+        "cqi": 80.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 91.6,
+        "sack_percentile": 58.5,
+        "rushing_percentile": 32.4,
+        "attempts": 73,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 24,
+        "player": "Avery Johnson",
+        "team": "Kansas State",
+        "cqi": 79.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 35.5,
+        "sack_percentile": 80.4,
+        "rushing_percentile": 100.0,
+        "attempts": 83,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 25,
+        "player": "Tayven Jackson",
+        "team": "North Texas",
+        "cqi": 79.0,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 62.9,
+        "sack_percentile": 80.4,
+        "rushing_percentile": 60.0,
+        "attempts": 111,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 26,
+        "player": "Cameran Brown",
+        "team": "Georgia State",
+        "cqi": 77.8,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 63.5,
+        "sack_percentile": 70.9,
+        "rushing_percentile": 68.8,
+        "attempts": 90,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 27,
+        "player": "Kevin Jennings",
+        "team": "SMU",
+        "cqi": 77.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 96.9,
+        "sack_percentile": 57.6,
+        "rushing_percentile": 6.9,
+        "attempts": 87,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 28,
+        "player": "Faizon Brandon",
+        "team": "Tennessee",
+        "cqi": 73.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 64.5,
+        "sack_percentile": 42.9,
+        "rushing_percentile": 89.8,
+        "attempts": 64,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 29,
+        "player": "Ethan Grunkemeyer",
+        "team": "Virginia Tech",
+        "cqi": 72.1,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 71.2,
+        "sack_percentile": 61.8,
+        "rushing_percentile": 55.5,
+        "attempts": 101,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 30,
+        "player": "D'Wayne' Winfield",
+        "team": "Louisiana",
+        "cqi": 71.8,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 59.6,
+        "sack_percentile": 42.1,
+        "rushing_percentile": 93.0,
+        "attempts": 63,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 31,
+        "player": "Rocco Becht",
+        "team": "Penn State",
+        "cqi": 71.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 97.8,
+        "sack_percentile": 41.4,
+        "rushing_percentile": 4.7,
+        "attempts": 64,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 32,
+        "player": "Mason Heintschel",
+        "team": "Pittsburgh",
+        "cqi": 70.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 75.5,
+        "sack_percentile": 53.7,
+        "rushing_percentile": 54.7,
+        "attempts": 93,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 33,
+        "player": "Anthony Colandrea",
+        "team": "Nebraska",
+        "cqi": 69.1,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 59.1,
+        "sack_percentile": 61.3,
+        "rushing_percentile": 66.6,
+        "attempts": 77,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 34,
+        "player": "Ashton Daniels",
+        "team": "Florida State",
+        "cqi": 68.5,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 76.6,
+        "sack_percentile": 20.9,
+        "rushing_percentile": 86.1,
+        "attempts": 79,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 35,
+        "player": "Cutter Boley",
+        "team": "Arizona State",
+        "cqi": 68.3,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 57.3,
+        "sack_percentile": 56.6,
+        "rushing_percentile": 70.7,
+        "attempts": 84,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 36,
+        "player": "Nathan Hayes",
+        "team": "North Dakota State",
+        "cqi": 65.8,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 73.0,
+        "sack_percentile": 51.5,
+        "rushing_percentile": 48.4,
+        "attempts": 91,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 37,
+        "player": "Beau Pribula",
+        "team": "Virginia",
+        "cqi": 64.9,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 70.3,
+        "sack_percentile": 23.3,
+        "rushing_percentile": 83.3,
+        "attempts": 58,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 38,
+        "player": "Noah Fifita",
+        "team": "Arizona",
+        "cqi": 64.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 76.6,
+        "sack_percentile": 21.4,
+        "rushing_percentile": 75.0,
+        "attempts": 94,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 39,
+        "player": "Austin Simmons",
+        "team": "Missouri",
+        "cqi": 64.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 88.5,
+        "sack_percentile": 64.9,
+        "rushing_percentile": 10.0,
+        "attempts": 67,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 40,
+        "player": "John Mateer",
+        "team": "Oklahoma",
+        "cqi": 64.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 82.2,
+        "sack_percentile": 42.4,
+        "rushing_percentile": 41.3,
+        "attempts": 75,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 41,
+        "player": "Braden Atkinson",
+        "team": "Oregon State",
+        "cqi": 64.6,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 72.8,
+        "sack_percentile": 60.1,
+        "rushing_percentile": 38.0,
+        "attempts": 129,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 42,
+        "player": "Malachi Singleton",
+        "team": "App State",
+        "cqi": 64.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 81.4,
+        "sack_percentile": 63.9,
+        "rushing_percentile": 23.5,
+        "attempts": 94,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 43,
+        "player": "Sam Leavitt",
+        "team": "LSU",
+        "cqi": 63.0,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 53.1,
+        "sack_percentile": 28.7,
+        "rushing_percentile": 96.3,
+        "attempts": 93,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 44,
+        "player": "Nico Iamaleava",
+        "team": "UCLA",
+        "cqi": 62.8,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 64.5,
+        "sack_percentile": 33.4,
+        "rushing_percentile": 74.2,
+        "attempts": 75,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 45,
+        "player": "Hank Brown",
+        "team": "Iowa",
+        "cqi": 60.5,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 47.9,
+        "sack_percentile": 71.4,
+        "rushing_percentile": 51.6,
+        "attempts": 62,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 46,
+        "player": "Deuce Bailey",
+        "team": "Coastal Carolina",
+        "cqi": 60.3,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 86.1,
+        "sack_percentile": 14.9,
+        "rushing_percentile": 58.4,
+        "attempts": 88,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 47,
+        "player": "Colton Joseph",
+        "team": "Wisconsin",
+        "cqi": 58.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 72.9,
+        "sack_percentile": 67.9,
+        "rushing_percentile": 20.3,
+        "attempts": 85,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 48,
+        "player": "Jayden Mandal",
+        "team": "Fresno State",
+        "cqi": 57.9,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 61.5,
+        "sack_percentile": 54.8,
+        "rushing_percentile": 45.5,
+        "attempts": 70,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 49,
+        "player": "J.J. Kohl",
+        "team": "Florida International",
+        "cqi": 56.6,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 21.4,
+        "sack_percentile": 88.0,
+        "rushing_percentile": 53.9,
+        "attempts": 129,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 50,
+        "player": "Rickie Collins",
+        "team": "Kennesaw State",
+        "cqi": 56.0,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 34.3,
+        "sack_percentile": 65.0,
+        "rushing_percentile": 65.1,
+        "attempts": 92,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 51,
+        "player": "Kalieb Osborne",
+        "team": "UConn",
+        "cqi": 55.9,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 77.9,
+        "sack_percentile": 12.5,
+        "rushing_percentile": 71.6,
+        "attempts": 69,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 52,
+        "player": "John Alan Richter",
+        "team": "Toledo",
+        "cqi": 55.6,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 75.5,
+        "sack_percentile": 73.4,
+        "rushing_percentile": 9.5,
+        "attempts": 96,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 53,
+        "player": "Isaiah Marshall",
+        "team": "Kansas",
+        "cqi": 55.2,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 56.1,
+        "sack_percentile": 37.8,
+        "rushing_percentile": 62.3,
+        "attempts": 82,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 54,
+        "player": "Hauss Hejny",
+        "team": "Colorado State",
+        "cqi": 54.6,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 58.4,
+        "sack_percentile": 68.8,
+        "rushing_percentile": 29.4,
+        "attempts": 73,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 55,
+        "player": "Arch Manning",
+        "team": "Texas",
+        "cqi": 54.2,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 50.1,
+        "sack_percentile": 54.3,
+        "rushing_percentile": 50.1,
+        "attempts": 97,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 56,
+        "player": "Lanorris Sellers",
+        "team": "South Carolina",
+        "cqi": 53.6,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 53.9,
+        "sack_percentile": 40.1,
+        "rushing_percentile": 57.1,
+        "attempts": 86,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 57,
+        "player": "JC French",
+        "team": "Cincinnati",
+        "cqi": 52.9,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 30.7,
+        "sack_percentile": 45.7,
+        "rushing_percentile": 78.8,
+        "attempts": 81,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 58,
+        "player": "Will Hammond",
+        "team": "Texas Tech",
+        "cqi": 52.0,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 65.9,
+        "sack_percentile": 40.2,
+        "rushing_percentile": 40.1,
+        "attempts": 87,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 59,
+        "player": "Bryce Underwood",
+        "team": "Michigan",
+        "cqi": 51.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 47.0,
+        "sack_percentile": 35.4,
+        "rushing_percentile": 68.2,
+        "attempts": 64,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 60,
+        "player": "Trey Owens",
+        "team": "Arkansas State",
+        "cqi": 51.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 51.2,
+        "sack_percentile": 23.4,
+        "rushing_percentile": 76.7,
+        "attempts": 71,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 61,
+        "player": "Landyn Locke",
+        "team": "Sam Houston",
+        "cqi": 50.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 87.9,
+        "sack_percentile": 45.7,
+        "rushing_percentile": 1.7,
+        "attempts": 108,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 62,
+        "player": "Carter Jones",
+        "team": "Nevada",
+        "cqi": 49.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 51.0,
+        "sack_percentile": 44.4,
+        "rushing_percentile": 49.5,
+        "attempts": 40,
+        "cqi_games": 2,
+        "sample_flag": "Limited sample"
+      },
+      {
+        "rank": 63,
+        "player": "Michael Van Buren Jr.",
+        "team": "South Florida",
+        "cqi": 49.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 51.3,
+        "sack_percentile": 79.5,
+        "rushing_percentile": 15.9,
+        "attempts": 80,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 64,
+        "player": "Caden Creel",
+        "team": "Jacksonville State",
+        "cqi": 49.1,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 66.6,
+        "sack_percentile": 58.3,
+        "rushing_percentile": 18.3,
+        "attempts": 99,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 65,
+        "player": "Mason McKenzie",
+        "team": "Boston College",
+        "cqi": 47.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 31.4,
+        "sack_percentile": 31.0,
+        "rushing_percentile": 84.2,
+        "attempts": 85,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 66,
+        "player": "Malik Washington",
+        "team": "Maryland",
+        "cqi": 47.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 51.9,
+        "sack_percentile": 76.8,
+        "rushing_percentile": 15.2,
+        "attempts": 115,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 67,
+        "player": "Brad Jackson",
+        "team": "Texas State",
+        "cqi": 46.8,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 64.1,
+        "sack_percentile": 69.2,
+        "rushing_percentile": 10.8,
+        "attempts": 75,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 68,
+        "player": "Drake Lindsey",
+        "team": "Minnesota",
+        "cqi": 45.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 30.4,
+        "sack_percentile": 77.1,
+        "rushing_percentile": 33.3,
+        "attempts": 103,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 69,
+        "player": "Nick Minicucci",
+        "team": "Delaware",
+        "cqi": 44.9,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 64.4,
+        "sack_percentile": 22.9,
+        "rushing_percentile": 47.6,
+        "attempts": 95,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 70,
+        "player": "Jaron-Keawe Sagapolutele",
+        "team": "California",
+        "cqi": 44.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 52.5,
+        "sack_percentile": 73.2,
+        "rushing_percentile": 13.8,
+        "attempts": 108,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 71,
+        "player": "Byrum Brown",
+        "team": "Auburn",
+        "cqi": 44.1,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 65.2,
+        "sack_percentile": 6.1,
+        "rushing_percentile": 90.8,
+        "attempts": 98,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 72,
+        "player": "Jaylen Raynor",
+        "team": "Iowa State",
+        "cqi": 44.1,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 62.8,
+        "sack_percentile": 44.4,
+        "rushing_percentile": 25.8,
+        "attempts": 52,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 73,
+        "player": "Jaden Craig",
+        "team": "TCU",
+        "cqi": 41.6,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 82.5,
+        "sack_percentile": 44.4,
+        "rushing_percentile": 0.6,
+        "attempts": 92,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 74,
+        "player": "Skyler Locklear",
+        "team": "Missouri State",
+        "cqi": 40.3,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 58.8,
+        "sack_percentile": 52.9,
+        "rushing_percentile": 17.2,
+        "attempts": 65,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 75,
+        "player": "Will Crowder",
+        "team": "Troy",
+        "cqi": 39.5,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 51.7,
+        "sack_percentile": 17.4,
+        "rushing_percentile": 61.5,
+        "attempts": 83,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 76,
+        "player": "Maddux Madsen",
+        "team": "Boise State",
+        "cqi": 39.2,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 21.1,
+        "sack_percentile": 50.4,
+        "rushing_percentile": 60.8,
+        "attempts": 88,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 77,
+        "player": "Baylor Hayes",
+        "team": "Tulsa",
+        "cqi": 39.0,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 43.4,
+        "sack_percentile": 36.5,
+        "rushing_percentile": 46.9,
+        "attempts": 53,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 78,
+        "player": "Luke Weaver",
+        "team": "San José State",
+        "cqi": 38.9,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 25.9,
+        "sack_percentile": 58.7,
+        "rushing_percentile": 43.8,
+        "attempts": 143,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 79,
+        "player": "Alberto Mendoza",
+        "team": "Georgia Tech",
+        "cqi": 38.8,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 72.9,
+        "sack_percentile": 18.6,
+        "rushing_percentile": 31.7,
+        "attempts": 84,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 80,
+        "player": "Marcel Reed",
+        "team": "Texas A&M",
+        "cqi": 38.5,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 16.7,
+        "sack_percentile": 61.7,
+        "rushing_percentile": 56.3,
+        "attempts": 104,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 81,
+        "player": "Jay Kastantin",
+        "team": "Bowling Green",
+        "cqi": 37.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 28.4,
+        "sack_percentile": 71.6,
+        "rushing_percentile": 28.8,
+        "attempts": 63,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 82,
+        "player": "KJ Jackson",
+        "team": "Arkansas",
+        "cqi": 37.2,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 32.1,
+        "sack_percentile": 47.8,
+        "rushing_percentile": 44.5,
+        "attempts": 96,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 83,
+        "player": "Trey Hedden",
+        "team": "New Mexico State",
+        "cqi": 36.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 29.8,
+        "sack_percentile": 55.0,
+        "rushing_percentile": 39.0,
+        "attempts": 97,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 84,
+        "player": "Tyler Hughes",
+        "team": "Wyoming",
+        "cqi": 32.3,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 9.2,
+        "sack_percentile": 50.4,
+        "rushing_percentile": 72.4,
+        "attempts": 75,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 85,
+        "player": "Julian Lewis",
+        "team": "Colorado",
+        "cqi": 32.1,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 64.4,
+        "sack_percentile": 35.7,
+        "rushing_percentile": 15.0,
+        "attempts": 79,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 86,
+        "player": "Quinn Henicle",
+        "team": "Old Dominion",
+        "cqi": 30.9,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 37.0,
+        "sack_percentile": 8.4,
+        "rushing_percentile": 88.0,
+        "attempts": 53,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 87,
+        "player": "Dante Moore",
+        "team": "Oregon",
+        "cqi": 29.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 62.6,
+        "sack_percentile": 33.8,
+        "rushing_percentile": 14.4,
+        "attempts": 89,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 88,
+        "player": "Billy Edwards",
+        "team": "North Carolina",
+        "cqi": 28.8,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 48.3,
+        "sack_percentile": 26.9,
+        "rushing_percentile": 32.9,
+        "attempts": 78,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 89,
+        "player": "Deshawn Purdie",
+        "team": "Liberty",
+        "cqi": 28.6,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 68.5,
+        "sack_percentile": 26.3,
+        "rushing_percentile": 13.2,
+        "attempts": 64,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 90,
+        "player": "Dru Deshields",
+        "team": "Kent State",
+        "cqi": 26.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 9.2,
+        "sack_percentile": 58.9,
+        "rushing_percentile": 50.8,
+        "attempts": 60,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 91,
+        "player": "Austin Carlisle",
+        "team": "UL Monroe",
+        "cqi": 26.0,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 13.6,
+        "sack_percentile": 15.7,
+        "rushing_percentile": 93.9,
+        "attempts": 53,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 92,
+        "player": "Steven Angeli",
+        "team": "Syracuse",
+        "cqi": 25.5,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 42.1,
+        "sack_percentile": 34.3,
+        "rushing_percentile": 27.3,
+        "attempts": 103,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 93,
+        "player": "Walker Eget",
+        "team": "Duke",
+        "cqi": 25.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 32.5,
+        "sack_percentile": 66.3,
+        "rushing_percentile": 10.2,
+        "attempts": 71,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 94,
+        "player": "Cibastian Broughton",
+        "team": "Akron",
+        "cqi": 24.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 11.3,
+        "sack_percentile": 27.4,
+        "rushing_percentile": 75.8,
+        "attempts": 66,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 95,
+        "player": "CJ Bailey",
+        "team": "NC State",
+        "cqi": 24.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 60.4,
+        "sack_percentile": 44.2,
+        "rushing_percentile": 1.1,
+        "attempts": 77,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 96,
+        "player": "Jackson Sharman",
+        "team": "Sacramento State",
+        "cqi": 24.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 14.5,
+        "sack_percentile": 88.4,
+        "rushing_percentile": 7.4,
+        "attempts": 100,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 97,
+        "player": "Alessio Milivojevic",
+        "team": "Michigan State",
+        "cqi": 24.5,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 56.4,
+        "sack_percentile": 9.0,
+        "rushing_percentile": 46.0,
+        "attempts": 71,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 98,
+        "player": "Ryder Burton",
+        "team": "UAB",
+        "cqi": 24.2,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 22.0,
+        "sack_percentile": 17.2,
+        "rushing_percentile": 69.9,
+        "attempts": 72,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 99,
+        "player": "Kenny Minchey",
+        "team": "Kentucky",
+        "cqi": 24.0,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 68.7,
+        "sack_percentile": 26.1,
+        "rushing_percentile": 6.3,
+        "attempts": 76,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 100,
+        "player": "Caden Pinnick",
+        "team": "Washington State",
+        "cqi": 23.9,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 12.6,
+        "sack_percentile": 16.7,
+        "rushing_percentile": 89.0,
+        "attempts": 67,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 101,
+        "player": "Davis Warren",
+        "team": "Stanford",
+        "cqi": 23.6,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 24.7,
+        "sack_percentile": 54.1,
+        "rushing_percentile": 22.6,
+        "attempts": 107,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 102,
+        "player": "Jacurri Brown",
+        "team": "Rice",
+        "cqi": 23.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 16.5,
+        "sack_percentile": 29.4,
+        "rushing_percentile": 59.5,
+        "attempts": 35,
+        "cqi_games": 2,
+        "sample_flag": "Limited sample"
+      },
+      {
+        "rank": 103,
+        "player": "Max Johnson",
+        "team": "Georgia Southern",
+        "cqi": 22.0,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 15.1,
+        "sack_percentile": 62.2,
+        "rushing_percentile": 26.6,
+        "attempts": 119,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 104,
+        "player": "Cole Gonzales",
+        "team": "Charlotte",
+        "cqi": 19.6,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 23.4,
+        "sack_percentile": 74.2,
+        "rushing_percentile": 0.2,
+        "attempts": 97,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 105,
+        "player": "Owen McCown",
+        "team": "UTSA",
+        "cqi": 19.3,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 4.5,
+        "sack_percentile": 77.6,
+        "rushing_percentile": 25.0,
+        "attempts": 92,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 106,
+        "player": "Dylan Lonergan",
+        "team": "Rutgers",
+        "cqi": 19.3,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 50.9,
+        "sack_percentile": 35.2,
+        "rushing_percentile": 4.0,
+        "attempts": 65,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 107,
+        "player": "Broc Lowry",
+        "team": "Western Michigan",
+        "cqi": 18.5,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 24.6,
+        "sack_percentile": 24.9,
+        "rushing_percentile": 36.3,
+        "attempts": 61,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 108,
+        "player": "Carlos Del Rio-Wilson",
+        "team": "Marshall",
+        "cqi": 18.3,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 15.7,
+        "sack_percentile": 61.8,
+        "rushing_percentile": 15.9,
+        "attempts": 58,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 109,
+        "player": "Tait Reynolds",
+        "team": "Clemson",
+        "cqi": 17.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 48.8,
+        "sack_percentile": 22.8,
+        "rushing_percentile": 11.8,
+        "attempts": 62,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 110,
+        "player": "Andrew Indorf",
+        "team": "Towson",
+        "cqi": 17.3,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 41.0,
+        "sack_percentile": 19.2,
+        "rushing_percentile": 21.9,
+        "attempts": 48,
+        "cqi_games": 2,
+        "sample_flag": "Limited sample"
+      },
+      {
+        "rank": 111,
+        "player": "Jackson Arnold",
+        "team": "UNLV",
+        "cqi": 16.5,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 10.9,
+        "sack_percentile": 8.7,
+        "rushing_percentile": 85.4,
+        "attempts": 82,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 112,
+        "player": "Caden Veltkamp",
+        "team": "Florida Atlantic",
+        "cqi": 16.0,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 32.3,
+        "sack_percentile": 37.4,
+        "rushing_percentile": 8.8,
+        "attempts": 120,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 113,
+        "player": "Mitch Griffis",
+        "team": "East Carolina",
+        "cqi": 15.9,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 22.6,
+        "sack_percentile": 26.9,
+        "rushing_percentile": 28.0,
+        "attempts": 65,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 114,
+        "player": "Roman Gagliano",
+        "team": "Middle Tennessee",
+        "cqi": 15.1,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 1.4,
+        "sack_percentile": 76.6,
+        "rushing_percentile": 34.1,
+        "attempts": 102,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 115,
+        "player": "Brock Glenn",
+        "team": "Western Kentucky",
+        "cqi": 14.6,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 1.3,
+        "sack_percentile": 46.2,
+        "rushing_percentile": 64.2,
+        "attempts": 55,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 116,
+        "player": "Noah Kim",
+        "team": "Eastern Michigan",
+        "cqi": 14.1,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 2.3,
+        "sack_percentile": 62.8,
+        "rushing_percentile": 34.8,
+        "attempts": 135,
+        "cqi_games": 4,
+        "sample_flag": ""
+      },
+      {
+        "rank": 117,
+        "player": "Gabe Downing",
+        "team": "Portland State",
+        "cqi": 13.8,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 4.0,
+        "sack_percentile": 57.8,
+        "rushing_percentile": 31.1,
+        "attempts": 72,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 118,
+        "player": "Kyle Lowe",
+        "team": "SE Louisiana",
+        "cqi": 13.6,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 28.9,
+        "sack_percentile": 38.7,
+        "rushing_percentile": 5.8,
+        "attempts": 45,
+        "cqi_games": 2,
+        "sample_flag": "Limited sample"
+      },
+      {
+        "rank": 119,
+        "player": "Jason Wright",
+        "team": "Buffalo",
+        "cqi": 13.6,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 8.8,
+        "sack_percentile": 43.7,
+        "rushing_percentile": 30.2,
+        "attempts": 52,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 120,
+        "player": "Micah Alejado",
+        "team": "Hawai'i",
+        "cqi": 13.4,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 3.8,
+        "sack_percentile": 45.9,
+        "rushing_percentile": 42.2,
+        "attempts": 137,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 121,
+        "player": "Jim Ogle",
+        "team": "Murray State",
+        "cqi": 12.8,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 3.1,
+        "sack_percentile": 52.2,
+        "rushing_percentile": 35.7,
+        "attempts": 37,
+        "cqi_games": 2,
+        "sample_flag": "Limited sample"
+      },
+      {
+        "rank": 122,
+        "player": "Ethan Hampton",
+        "team": "Southern Miss",
+        "cqi": 12.2,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 6.2,
+        "sack_percentile": 69.2,
+        "rushing_percentile": 11.3,
+        "attempts": 75,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 123,
+        "player": "Kadin Semonza",
+        "team": "Tulane",
+        "cqi": 12.2,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 54.7,
+        "sack_percentile": 9.1,
+        "rushing_percentile": 12.3,
+        "attempts": 69,
+        "cqi_games": 3,
+        "sample_flag": ""
+      },
+      {
+        "rank": 124,
+        "player": "Eddie Buehler",
+        "team": "Maine",
+        "cqi": 9.6,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 17.6,
+        "sack_percentile": 26.3,
+        "rushing_percentile": 19.7,
+        "attempts": 64,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 125,
+        "player": "Tate Surber",
+        "team": "UT Martin",
+        "cqi": 6.5,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 1.8,
+        "sack_percentile": 38.7,
+        "rushing_percentile": 37.1,
+        "attempts": 57,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 126,
+        "player": "Grady Brosterhous",
+        "team": "Utah State",
+        "cqi": 5.8,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 15.2,
+        "sack_percentile": 17.2,
+        "rushing_percentile": 20.7,
+        "attempts": 70,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 127,
+        "player": "Taron Dickens",
+        "team": "Northern Illinois",
+        "cqi": 5.6,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 25.9,
+        "sack_percentile": 15.7,
+        "rushing_percentile": 8.2,
+        "attempts": 78,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 128,
+        "player": "Jayden Denegal",
+        "team": "San Diego State",
+        "cqi": 4.3,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 2.6,
+        "sack_percentile": 36.0,
+        "rushing_percentile": 21.2,
+        "attempts": 67,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 129,
+        "player": "Keldric Luster",
+        "team": "Ball State",
+        "cqi": 2.8,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 6.1,
+        "sack_percentile": 32.1,
+        "rushing_percentile": 5.1,
+        "attempts": 86,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 130,
+        "player": "Gunnar Smith",
+        "team": "Fordham",
+        "cqi": 2.0,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 3.8,
+        "sack_percentile": 8.5,
+        "rushing_percentile": 40.5,
+        "attempts": 42,
+        "cqi_games": 2,
+        "sample_flag": "Limited sample"
+      },
+      {
+        "rank": 131,
+        "player": "Benjamin Newman",
+        "team": "Wagner",
+        "cqi": 1.7,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 0.1,
+        "sack_percentile": 52.3,
+        "rushing_percentile": 17.8,
+        "attempts": 51,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 132,
+        "player": "Carson Camp",
+        "team": "Duquesne",
+        "cqi": 1.5,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 0.0,
+        "sack_percentile": 33.0,
+        "rushing_percentile": 52.5,
+        "attempts": 36,
+        "cqi_games": 2,
+        "sample_flag": "Limited sample"
+      },
+      {
+        "rank": 133,
+        "player": "Deljay Bailey",
+        "team": "Norfolk State",
+        "cqi": 1.1,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 6.6,
+        "sack_percentile": 17.3,
+        "rushing_percentile": 2.3,
+        "attempts": 45,
+        "cqi_games": 2,
+        "sample_flag": "Limited sample"
+      },
+      {
+        "rank": 134,
+        "player": "Rodney Tisdale Jr.",
+        "team": "Western Kentucky",
+        "cqi": 0.6,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 0.9,
+        "sack_percentile": 28.2,
+        "rushing_percentile": 3.5,
+        "attempts": 54,
+        "cqi_games": 2,
+        "sample_flag": ""
+      },
+      {
+        "rank": 135,
+        "player": "Ean Rodrigue",
+        "team": "Nicholls",
+        "cqi": 0.1,
+        "previous_rank": null,
+        "rank_change": null,
+        "previous_cqi": null,
+        "cqi_change": null,
+        "efficiency_percentile": 0.0,
+        "sack_percentile": 37.0,
+        "rushing_percentile": 16.7,
+        "attempts": 40,
+        "cqi_games": 2,
+        "sample_flag": "Limited sample"
+      }
+    ]
+  },
+  "players": {
+    "aaron-philo": {
+      "player": "Aaron Philo",
+      "team": "Florida",
+      "history": [
+        {
+          "week": 3,
+          "rank": 2,
+          "cqi": 96.9,
+          "efficiency": 98.1,
+          "sack_avoidance": 51.6,
+          "rushing": 80.5
+        }
+      ]
+    },
+    "alberto-mendoza": {
+      "player": "Alberto Mendoza",
+      "team": "Georgia Tech",
+      "history": [
+        {
+          "week": 3,
+          "rank": 79,
+          "cqi": 38.8,
+          "efficiency": 72.9,
+          "sack_avoidance": 18.6,
+          "rushing": 31.7
+        }
+      ]
+    },
+    "alessio-milivojevic": {
+      "player": "Alessio Milivojevic",
+      "team": "Michigan State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 97,
+          "cqi": 24.5,
+          "efficiency": 56.4,
+          "sack_avoidance": 9.0,
+          "rushing": 46.0
+        }
+      ]
+    },
+    "andrew-indorf": {
+      "player": "Andrew Indorf",
+      "team": "Towson",
+      "history": [
+        {
+          "week": 3,
+          "rank": 110,
+          "cqi": 17.3,
+          "efficiency": 41.0,
+          "sack_avoidance": 19.2,
+          "rushing": 21.9
+        }
+      ]
+    },
+    "anthony-colandrea": {
+      "player": "Anthony Colandrea",
+      "team": "Nebraska",
+      "history": [
+        {
+          "week": 3,
+          "rank": 33,
+          "cqi": 69.1,
+          "efficiency": 59.1,
+          "sack_avoidance": 61.3,
+          "rushing": 66.6
+        }
+      ]
+    },
+    "arch-manning": {
+      "player": "Arch Manning",
+      "team": "Texas",
+      "history": [
+        {
+          "week": 3,
+          "rank": 55,
+          "cqi": 54.2,
+          "efficiency": 50.1,
+          "sack_avoidance": 54.3,
+          "rushing": 50.1
+        }
+      ]
+    },
+    "ashton-daniels": {
+      "player": "Ashton Daniels",
+      "team": "Florida State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 34,
+          "cqi": 68.5,
+          "efficiency": 76.6,
+          "sack_avoidance": 20.9,
+          "rushing": 86.1
+        }
+      ]
+    },
+    "austin-carlisle": {
+      "player": "Austin Carlisle",
+      "team": "UL Monroe",
+      "history": [
+        {
+          "week": 3,
+          "rank": 91,
+          "cqi": 26.0,
+          "efficiency": 13.6,
+          "sack_avoidance": 15.7,
+          "rushing": 93.9
+        }
+      ]
+    },
+    "austin-simmons": {
+      "player": "Austin Simmons",
+      "team": "Missouri",
+      "history": [
+        {
+          "week": 3,
+          "rank": 39,
+          "cqi": 64.7,
+          "efficiency": 88.5,
+          "sack_avoidance": 64.9,
+          "rushing": 10.0
+        }
+      ]
+    },
+    "avery-johnson": {
+      "player": "Avery Johnson",
+      "team": "Kansas State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 24,
+          "cqi": 79.7,
+          "efficiency": 35.5,
+          "sack_avoidance": 80.4,
+          "rushing": 100.0
+        }
+      ]
+    },
+    "baylor-hayes": {
+      "player": "Baylor Hayes",
+      "team": "Tulsa",
+      "history": [
+        {
+          "week": 3,
+          "rank": 77,
+          "cqi": 39.0,
+          "efficiency": 43.4,
+          "sack_avoidance": 36.5,
+          "rushing": 46.9
+        }
+      ]
+    },
+    "bear-bachmeier": {
+      "player": "Bear Bachmeier",
+      "team": "BYU",
+      "history": [
+        {
+          "week": 3,
+          "rank": 10,
+          "cqi": 88.6,
+          "efficiency": 90.8,
+          "sack_avoidance": 51.4,
+          "rushing": 67.6
+        }
+      ]
+    },
+    "beau-pribula": {
+      "player": "Beau Pribula",
+      "team": "Virginia",
+      "history": [
+        {
+          "week": 3,
+          "rank": 37,
+          "cqi": 64.9,
+          "efficiency": 70.3,
+          "sack_avoidance": 23.3,
+          "rushing": 83.3
+        }
+      ]
+    },
+    "benjamin-newman": {
+      "player": "Benjamin Newman",
+      "team": "Wagner",
+      "history": [
+        {
+          "week": 3,
+          "rank": 131,
+          "cqi": 1.7,
+          "efficiency": 0.1,
+          "sack_avoidance": 52.3,
+          "rushing": 17.8
+        }
+      ]
+    },
+    "billy-edwards": {
+      "player": "Billy Edwards",
+      "team": "North Carolina",
+      "history": [
+        {
+          "week": 3,
+          "rank": 88,
+          "cqi": 28.8,
+          "efficiency": 48.3,
+          "sack_avoidance": 26.9,
+          "rushing": 32.9
+        }
+      ]
+    },
+    "brad-jackson": {
+      "player": "Brad Jackson",
+      "team": "Texas State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 67,
+          "cqi": 46.8,
+          "efficiency": 64.1,
+          "sack_avoidance": 69.2,
+          "rushing": 10.8
+        }
+      ]
+    },
+    "braden-atkinson": {
+      "player": "Braden Atkinson",
+      "team": "Oregon State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 41,
+          "cqi": 64.6,
+          "efficiency": 72.8,
+          "sack_avoidance": 60.1,
+          "rushing": 38.0
+        }
+      ]
+    },
+    "broc-lowry": {
+      "player": "Broc Lowry",
+      "team": "Western Michigan",
+      "history": [
+        {
+          "week": 3,
+          "rank": 107,
+          "cqi": 18.5,
+          "efficiency": 24.6,
+          "sack_avoidance": 24.9,
+          "rushing": 36.3
+        }
+      ]
+    },
+    "brock-glenn": {
+      "player": "Brock Glenn",
+      "team": "Western Kentucky",
+      "history": [
+        {
+          "week": 3,
+          "rank": 115,
+          "cqi": 14.6,
+          "efficiency": 1.3,
+          "sack_avoidance": 46.2,
+          "rushing": 64.2
+        }
+      ]
+    },
+    "bryce-underwood": {
+      "player": "Bryce Underwood",
+      "team": "Michigan",
+      "history": [
+        {
+          "week": 3,
+          "rank": 59,
+          "cqi": 51.4,
+          "efficiency": 47.0,
+          "sack_avoidance": 35.4,
+          "rushing": 68.2
+        }
+      ]
+    },
+    "byrum-brown": {
+      "player": "Byrum Brown",
+      "team": "Auburn",
+      "history": [
+        {
+          "week": 3,
+          "rank": 71,
+          "cqi": 44.1,
+          "efficiency": 65.2,
+          "sack_avoidance": 6.1,
+          "rushing": 90.8
+        }
+      ]
+    },
+    "cj-carr": {
+      "player": "C.J. Carr",
+      "team": "Notre Dame",
+      "history": [
+        {
+          "week": 3,
+          "rank": 23,
+          "cqi": 80.4,
+          "efficiency": 91.6,
+          "sack_avoidance": 58.5,
+          "rushing": 32.4
+        }
+      ]
+    },
+    "cj-bailey": {
+      "player": "CJ Bailey",
+      "team": "NC State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 95,
+          "cqi": 24.7,
+          "efficiency": 60.4,
+          "sack_avoidance": 44.2,
+          "rushing": 1.1
+        }
+      ]
+    },
+    "caden-creel": {
+      "player": "Caden Creel",
+      "team": "Jacksonville State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 64,
+          "cqi": 49.1,
+          "efficiency": 66.6,
+          "sack_avoidance": 58.3,
+          "rushing": 18.3
+        }
+      ]
+    },
+    "caden-pinnick": {
+      "player": "Caden Pinnick",
+      "team": "Washington State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 100,
+          "cqi": 23.9,
+          "efficiency": 12.6,
+          "sack_avoidance": 16.7,
+          "rushing": 89.0
+        }
+      ]
+    },
+    "caden-veltkamp": {
+      "player": "Caden Veltkamp",
+      "team": "Florida Atlantic",
+      "history": [
+        {
+          "week": 3,
+          "rank": 112,
+          "cqi": 16.0,
+          "efficiency": 32.3,
+          "sack_avoidance": 37.4,
+          "rushing": 8.8
+        }
+      ]
+    },
+    "cameran-brown": {
+      "player": "Cameran Brown",
+      "team": "Georgia State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 26,
+          "cqi": 77.8,
+          "efficiency": 63.5,
+          "sack_avoidance": 70.9,
+          "rushing": 68.8
+        }
+      ]
+    },
+    "carlos-del-rio-wilson": {
+      "player": "Carlos Del Rio-Wilson",
+      "team": "Marshall",
+      "history": [
+        {
+          "week": 3,
+          "rank": 108,
+          "cqi": 18.3,
+          "efficiency": 15.7,
+          "sack_avoidance": 61.8,
+          "rushing": 15.9
+        }
+      ]
+    },
+    "carson-camp": {
+      "player": "Carson Camp",
+      "team": "Duquesne",
+      "history": [
+        {
+          "week": 3,
+          "rank": 132,
+          "cqi": 1.5,
+          "efficiency": 0.0,
+          "sack_avoidance": 33.0,
+          "rushing": 52.5
+        }
+      ]
+    },
+    "carter-jones": {
+      "player": "Carter Jones",
+      "team": "Nevada",
+      "history": [
+        {
+          "week": 3,
+          "rank": 62,
+          "cqi": 49.4,
+          "efficiency": 51.0,
+          "sack_avoidance": 44.4,
+          "rushing": 49.5
+        }
+      ]
+    },
+    "cibastian-broughton": {
+      "player": "Cibastian Broughton",
+      "team": "Akron",
+      "history": [
+        {
+          "week": 3,
+          "rank": 94,
+          "cqi": 24.7,
+          "efficiency": 11.3,
+          "sack_avoidance": 27.4,
+          "rushing": 75.8
+        }
+      ]
+    },
+    "cole-gonzales": {
+      "player": "Cole Gonzales",
+      "team": "Charlotte",
+      "history": [
+        {
+          "week": 3,
+          "rank": 104,
+          "cqi": 19.6,
+          "efficiency": 23.4,
+          "sack_avoidance": 74.2,
+          "rushing": 0.2
+        }
+      ]
+    },
+    "colton-joseph": {
+      "player": "Colton Joseph",
+      "team": "Wisconsin",
+      "history": [
+        {
+          "week": 3,
+          "rank": 47,
+          "cqi": 58.7,
+          "efficiency": 72.9,
+          "sack_avoidance": 67.9,
+          "rushing": 20.3
+        }
+      ]
+    },
+    "conner-weigman": {
+      "player": "Conner Weigman",
+      "team": "Houston",
+      "history": [
+        {
+          "week": 3,
+          "rank": 17,
+          "cqi": 81.7,
+          "efficiency": 80.6,
+          "sack_avoidance": 44.9,
+          "rushing": 79.8
+        }
+      ]
+    },
+    "cutter-boley": {
+      "player": "Cutter Boley",
+      "team": "Arizona State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 35,
+          "cqi": 68.3,
+          "efficiency": 57.3,
+          "sack_avoidance": 56.6,
+          "rushing": 70.7
+        }
+      ]
+    },
+    "dwayne-winfield": {
+      "player": "D'Wayne' Winfield",
+      "team": "Louisiana",
+      "history": [
+        {
+          "week": 3,
+          "rank": 30,
+          "cqi": 71.8,
+          "efficiency": 59.6,
+          "sack_avoidance": 42.1,
+          "rushing": 93.0
+        }
+      ]
+    },
+    "dante-moore": {
+      "player": "Dante Moore",
+      "team": "Oregon",
+      "history": [
+        {
+          "week": 3,
+          "rank": 87,
+          "cqi": 29.4,
+          "efficiency": 62.6,
+          "sack_avoidance": 33.8,
+          "rushing": 14.4
+        }
+      ]
+    },
+    "darian-mensah": {
+      "player": "Darian Mensah",
+      "team": "Miami",
+      "history": [
+        {
+          "week": 3,
+          "rank": 8,
+          "cqi": 89.3,
+          "efficiency": 97.8,
+          "sack_avoidance": 72.0,
+          "rushing": 19.1
+        }
+      ]
+    },
+    "david-mccomb": {
+      "player": "David McComb",
+      "team": "Miami (OH)",
+      "history": [
+        {
+          "week": 3,
+          "rank": 9,
+          "cqi": 89.3,
+          "efficiency": 97.5,
+          "sack_avoidance": 32.8,
+          "rushing": 57.9
+        }
+      ]
+    },
+    "davis-warren": {
+      "player": "Davis Warren",
+      "team": "Stanford",
+      "history": [
+        {
+          "week": 3,
+          "rank": 101,
+          "cqi": 23.6,
+          "efficiency": 24.7,
+          "sack_avoidance": 54.1,
+          "rushing": 22.6
+        }
+      ]
+    },
+    "deljay-bailey": {
+      "player": "Deljay Bailey",
+      "team": "Norfolk State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 133,
+          "cqi": 1.1,
+          "efficiency": 6.6,
+          "sack_avoidance": 17.3,
+          "rushing": 2.3
+        }
+      ]
+    },
+    "demond-williams-jr": {
+      "player": "Demond Williams Jr.",
+      "team": "Washington",
+      "history": [
+        {
+          "week": 3,
+          "rank": 12,
+          "cqi": 85.4,
+          "efficiency": 63.5,
+          "sack_avoidance": 72.7,
+          "rushing": 92.2
+        }
+      ]
+    },
+    "deshawn-purdie": {
+      "player": "Deshawn Purdie",
+      "team": "Liberty",
+      "history": [
+        {
+          "week": 3,
+          "rank": 89,
+          "cqi": 28.6,
+          "efficiency": 68.5,
+          "sack_avoidance": 26.3,
+          "rushing": 13.2
+        }
+      ]
+    },
+    "deuce-bailey": {
+      "player": "Deuce Bailey",
+      "team": "Coastal Carolina",
+      "history": [
+        {
+          "week": 3,
+          "rank": 46,
+          "cqi": 60.3,
+          "efficiency": 86.1,
+          "sack_avoidance": 14.9,
+          "rushing": 58.4
+        }
+      ]
+    },
+    "devon-dampier": {
+      "player": "Devon Dampier",
+      "team": "Utah",
+      "history": [
+        {
+          "week": 3,
+          "rank": 7,
+          "cqi": 89.8,
+          "efficiency": 86.3,
+          "sack_avoidance": 59.1,
+          "rushing": 81.6
+        }
+      ]
+    },
+    "drake-lindsey": {
+      "player": "Drake Lindsey",
+      "team": "Minnesota",
+      "history": [
+        {
+          "week": 3,
+          "rank": 68,
+          "cqi": 45.7,
+          "efficiency": 30.4,
+          "sack_avoidance": 77.1,
+          "rushing": 33.3
+        }
+      ]
+    },
+    "drew-mestemaker": {
+      "player": "Drew Mestemaker",
+      "team": "Oklahoma State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 20,
+          "cqi": 80.7,
+          "efficiency": 54.1,
+          "sack_avoidance": 76.0,
+          "rushing": 82.5
+        }
+      ]
+    },
+    "dru-deshields": {
+      "player": "Dru Deshields",
+      "team": "Kent State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 90,
+          "cqi": 26.4,
+          "efficiency": 9.2,
+          "sack_avoidance": 58.9,
+          "rushing": 50.8
+        }
+      ]
+    },
+    "dylan-lonergan": {
+      "player": "Dylan Lonergan",
+      "team": "Rutgers",
+      "history": [
+        {
+          "week": 3,
+          "rank": 106,
+          "cqi": 19.3,
+          "efficiency": 50.9,
+          "sack_avoidance": 35.2,
+          "rushing": 4.0
+        }
+      ]
+    },
+    "ean-rodrigue": {
+      "player": "Ean Rodrigue",
+      "team": "Nicholls",
+      "history": [
+        {
+          "week": 3,
+          "rank": 135,
+          "cqi": 0.1,
+          "efficiency": 0.0,
+          "sack_avoidance": 37.0,
+          "rushing": 16.7
+        }
+      ]
+    },
+    "eddie-buehler": {
+      "player": "Eddie Buehler",
+      "team": "Maine",
+      "history": [
+        {
+          "week": 3,
+          "rank": 124,
+          "cqi": 9.6,
+          "efficiency": 17.6,
+          "sack_avoidance": 26.3,
+          "rushing": 19.7
+        }
+      ]
+    },
+    "ethan-grunkemeyer": {
+      "player": "Ethan Grunkemeyer",
+      "team": "Virginia Tech",
+      "history": [
+        {
+          "week": 3,
+          "rank": 29,
+          "cqi": 72.1,
+          "efficiency": 71.2,
+          "sack_avoidance": 61.8,
+          "rushing": 55.5
+        }
+      ]
+    },
+    "ethan-hampton": {
+      "player": "Ethan Hampton",
+      "team": "Southern Miss",
+      "history": [
+        {
+          "week": 3,
+          "rank": 122,
+          "cqi": 12.2,
+          "efficiency": 6.2,
+          "sack_avoidance": 69.2,
+          "rushing": 11.3
+        }
+      ]
+    },
+    "faizon-brandon": {
+      "player": "Faizon Brandon",
+      "team": "Tennessee",
+      "history": [
+        {
+          "week": 3,
+          "rank": 28,
+          "cqi": 73.7,
+          "efficiency": 64.5,
+          "sack_avoidance": 42.9,
+          "rushing": 89.8
+        }
+      ]
+    },
+    "gabe-downing": {
+      "player": "Gabe Downing",
+      "team": "Portland State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 117,
+          "cqi": 13.8,
+          "efficiency": 4.0,
+          "sack_avoidance": 57.8,
+          "rushing": 31.1
+        }
+      ]
+    },
+    "giovanni-lopez": {
+      "player": "Giovanni Lopez",
+      "team": "Wake Forest",
+      "history": [
+        {
+          "week": 3,
+          "rank": 19,
+          "cqi": 80.7,
+          "efficiency": 75.5,
+          "sack_avoidance": 52.2,
+          "rushing": 77.7
+        }
+      ]
+    },
+    "grady-brosterhous": {
+      "player": "Grady Brosterhous",
+      "team": "Utah State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 126,
+          "cqi": 5.8,
+          "efficiency": 15.2,
+          "sack_avoidance": 17.2,
+          "rushing": 20.7
+        }
+      ]
+    },
+    "gunnar-smith": {
+      "player": "Gunnar Smith",
+      "team": "Fordham",
+      "history": [
+        {
+          "week": 3,
+          "rank": 130,
+          "cqi": 2.0,
+          "efficiency": 3.8,
+          "sack_avoidance": 8.5,
+          "rushing": 40.5
+        }
+      ]
+    },
+    "gunner-stockton": {
+      "player": "Gunner Stockton",
+      "team": "Georgia",
+      "history": [
+        {
+          "week": 3,
+          "rank": 3,
+          "cqi": 96.2,
+          "efficiency": 98.8,
+          "sack_avoidance": 30.7,
+          "rushing": 73.1
+        }
+      ]
+    },
+    "hank-brown": {
+      "player": "Hank Brown",
+      "team": "Iowa",
+      "history": [
+        {
+          "week": 3,
+          "rank": 45,
+          "cqi": 60.5,
+          "efficiency": 47.9,
+          "sack_avoidance": 71.4,
+          "rushing": 51.6
+        }
+      ]
+    },
+    "hauss-hejny": {
+      "player": "Hauss Hejny",
+      "team": "Colorado State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 54,
+          "cqi": 54.6,
+          "efficiency": 58.4,
+          "sack_avoidance": 68.8,
+          "rushing": 29.4
+        }
+      ]
+    },
+    "isaiah-marshall": {
+      "player": "Isaiah Marshall",
+      "team": "Kansas",
+      "history": [
+        {
+          "week": 3,
+          "rank": 53,
+          "cqi": 55.2,
+          "efficiency": 56.1,
+          "sack_avoidance": 37.8,
+          "rushing": 62.3
+        }
+      ]
+    },
+    "jj-kohl": {
+      "player": "J.J. Kohl",
+      "team": "Florida International",
+      "history": [
+        {
+          "week": 3,
+          "rank": 49,
+          "cqi": 56.6,
+          "efficiency": 21.4,
+          "sack_avoidance": 88.0,
+          "rushing": 53.9
+        }
+      ]
+    },
+    "jc-french": {
+      "player": "JC French",
+      "team": "Cincinnati",
+      "history": [
+        {
+          "week": 3,
+          "rank": 57,
+          "cqi": 52.9,
+          "efficiency": 30.7,
+          "sack_avoidance": 45.7,
+          "rushing": 78.8
+        }
+      ]
+    },
+    "jackson-arnold": {
+      "player": "Jackson Arnold",
+      "team": "UNLV",
+      "history": [
+        {
+          "week": 3,
+          "rank": 111,
+          "cqi": 16.5,
+          "efficiency": 10.9,
+          "sack_avoidance": 8.7,
+          "rushing": 85.4
+        }
+      ]
+    },
+    "jackson-sharman": {
+      "player": "Jackson Sharman",
+      "team": "Sacramento State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 96,
+          "cqi": 24.7,
+          "efficiency": 14.5,
+          "sack_avoidance": 88.4,
+          "rushing": 7.4
+        }
+      ]
+    },
+    "jacurri-brown": {
+      "player": "Jacurri Brown",
+      "team": "Rice",
+      "history": [
+        {
+          "week": 3,
+          "rank": 102,
+          "cqi": 23.4,
+          "efficiency": 16.5,
+          "sack_avoidance": 29.4,
+          "rushing": 59.5
+        }
+      ]
+    },
+    "jaden-craig": {
+      "player": "Jaden Craig",
+      "team": "TCU",
+      "history": [
+        {
+          "week": 3,
+          "rank": 73,
+          "cqi": 41.6,
+          "efficiency": 82.5,
+          "sack_avoidance": 44.4,
+          "rushing": 0.6
+        }
+      ]
+    },
+    "jared-curtis": {
+      "player": "Jared Curtis",
+      "team": "Vanderbilt",
+      "history": [
+        {
+          "week": 3,
+          "rank": 16,
+          "cqi": 82.5,
+          "efficiency": 70.8,
+          "sack_avoidance": 47.2,
+          "rushing": 97.3
+        }
+      ]
+    },
+    "jaron-keawe-sagapolutele": {
+      "player": "Jaron-Keawe Sagapolutele",
+      "team": "California",
+      "history": [
+        {
+          "week": 3,
+          "rank": 70,
+          "cqi": 44.7,
+          "efficiency": 52.5,
+          "sack_avoidance": 73.2,
+          "rushing": 13.8
+        }
+      ]
+    },
+    "jason-wright": {
+      "player": "Jason Wright",
+      "team": "Buffalo",
+      "history": [
+        {
+          "week": 3,
+          "rank": 119,
+          "cqi": 13.6,
+          "efficiency": 8.8,
+          "sack_avoidance": 43.7,
+          "rushing": 30.2
+        }
+      ]
+    },
+    "jay-kastantin": {
+      "player": "Jay Kastantin",
+      "team": "Bowling Green",
+      "history": [
+        {
+          "week": 3,
+          "rank": 81,
+          "cqi": 37.7,
+          "efficiency": 28.4,
+          "sack_avoidance": 71.6,
+          "rushing": 28.8
+        }
+      ]
+    },
+    "jayden-denegal": {
+      "player": "Jayden Denegal",
+      "team": "San Diego State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 128,
+          "cqi": 4.3,
+          "efficiency": 2.6,
+          "sack_avoidance": 36.0,
+          "rushing": 21.2
+        }
+      ]
+    },
+    "jayden-maiava": {
+      "player": "Jayden Maiava",
+      "team": "USC",
+      "history": [
+        {
+          "week": 3,
+          "rank": 21,
+          "cqi": 80.4,
+          "efficiency": 94.5,
+          "sack_avoidance": 82.8,
+          "rushing": 2.7
+        }
+      ]
+    },
+    "jayden-mandal": {
+      "player": "Jayden Mandal",
+      "team": "Fresno State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 48,
+          "cqi": 57.9,
+          "efficiency": 61.5,
+          "sack_avoidance": 54.8,
+          "rushing": 45.5
+        }
+      ]
+    },
+    "jaylen-raynor": {
+      "player": "Jaylen Raynor",
+      "team": "Iowa State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 72,
+          "cqi": 44.1,
+          "efficiency": 62.8,
+          "sack_avoidance": 44.4,
+          "rushing": 25.8
+        }
+      ]
+    },
+    "jim-ogle": {
+      "player": "Jim Ogle",
+      "team": "Murray State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 121,
+          "cqi": 12.8,
+          "efficiency": 3.1,
+          "sack_avoidance": 52.2,
+          "rushing": 35.7
+        }
+      ]
+    },
+    "john-alan-richter": {
+      "player": "John Alan Richter",
+      "team": "Toledo",
+      "history": [
+        {
+          "week": 3,
+          "rank": 52,
+          "cqi": 55.6,
+          "efficiency": 75.5,
+          "sack_avoidance": 73.4,
+          "rushing": 9.5
+        }
+      ]
+    },
+    "john-mateer": {
+      "player": "John Mateer",
+      "team": "Oklahoma",
+      "history": [
+        {
+          "week": 3,
+          "rank": 40,
+          "cqi": 64.7,
+          "efficiency": 82.2,
+          "sack_avoidance": 42.4,
+          "rushing": 41.3
+        }
+      ]
+    },
+    "josh-hoover": {
+      "player": "Josh Hoover",
+      "team": "Indiana",
+      "history": [
+        {
+          "week": 3,
+          "rank": 14,
+          "cqi": 84.1,
+          "efficiency": 97.9,
+          "sack_avoidance": 42.9,
+          "rushing": 24.5
+        }
+      ]
+    },
+    "julian-lewis": {
+      "player": "Julian Lewis",
+      "team": "Colorado",
+      "history": [
+        {
+          "week": 3,
+          "rank": 85,
+          "cqi": 32.1,
+          "efficiency": 64.4,
+          "sack_avoidance": 35.7,
+          "rushing": 15.0
+        }
+      ]
+    },
+    "julian-sayin": {
+      "player": "Julian Sayin",
+      "team": "Ohio State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 18,
+          "cqi": 81.2,
+          "efficiency": 95.5,
+          "sack_avoidance": 35.9,
+          "rushing": 39.3
+        }
+      ]
+    },
+    "kj-jackson": {
+      "player": "KJ Jackson",
+      "team": "Arkansas",
+      "history": [
+        {
+          "week": 3,
+          "rank": 82,
+          "cqi": 37.2,
+          "efficiency": 32.1,
+          "sack_avoidance": 47.8,
+          "rushing": 44.5
+        }
+      ]
+    },
+    "kadin-semonza": {
+      "player": "Kadin Semonza",
+      "team": "Tulane",
+      "history": [
+        {
+          "week": 3,
+          "rank": 123,
+          "cqi": 12.2,
+          "efficiency": 54.7,
+          "sack_avoidance": 9.1,
+          "rushing": 12.3
+        }
+      ]
+    },
+    "kalieb-osborne": {
+      "player": "Kalieb Osborne",
+      "team": "UConn",
+      "history": [
+        {
+          "week": 3,
+          "rank": 51,
+          "cqi": 55.9,
+          "efficiency": 77.9,
+          "sack_avoidance": 12.5,
+          "rushing": 71.6
+        }
+      ]
+    },
+    "kamario-taylor": {
+      "player": "Kamario Taylor",
+      "team": "Mississippi State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 4,
+          "cqi": 94.9,
+          "efficiency": 95.2,
+          "sack_avoidance": 47.2,
+          "rushing": 91.5
+        }
+      ]
+    },
+    "katin-houser": {
+      "player": "Katin Houser",
+      "team": "Illinois",
+      "history": [
+        {
+          "week": 3,
+          "rank": 13,
+          "cqi": 84.7,
+          "efficiency": 87.4,
+          "sack_avoidance": 65.9,
+          "rushing": 53.3
+        }
+      ]
+    },
+    "keelon-russell": {
+      "player": "Keelon Russell",
+      "team": "Alabama",
+      "history": [
+        {
+          "week": 3,
+          "rank": 22,
+          "cqi": 80.4,
+          "efficiency": 80.4,
+          "sack_avoidance": 28.7,
+          "rushing": 94.9
+        }
+      ]
+    },
+    "keldric-luster": {
+      "player": "Keldric Luster",
+      "team": "Ball State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 129,
+          "cqi": 2.8,
+          "efficiency": 6.1,
+          "sack_avoidance": 32.1,
+          "rushing": 5.1
+        }
+      ]
+    },
+    "kenny-minchey": {
+      "player": "Kenny Minchey",
+      "team": "Kentucky",
+      "history": [
+        {
+          "week": 3,
+          "rank": 99,
+          "cqi": 24.0,
+          "efficiency": 68.7,
+          "sack_avoidance": 26.1,
+          "rushing": 6.3
+        }
+      ]
+    },
+    "kevin-jennings": {
+      "player": "Kevin Jennings",
+      "team": "SMU",
+      "history": [
+        {
+          "week": 3,
+          "rank": 27,
+          "cqi": 77.4,
+          "efficiency": 96.9,
+          "sack_avoidance": 57.6,
+          "rushing": 6.9
+        }
+      ]
+    },
+    "kyle-lowe": {
+      "player": "Kyle Lowe",
+      "team": "SE Louisiana",
+      "history": [
+        {
+          "week": 3,
+          "rank": 118,
+          "cqi": 13.6,
+          "efficiency": 28.9,
+          "sack_avoidance": 38.7,
+          "rushing": 5.8
+        }
+      ]
+    },
+    "landyn-locke": {
+      "player": "Landyn Locke",
+      "team": "Sam Houston",
+      "history": [
+        {
+          "week": 3,
+          "rank": 61,
+          "cqi": 50.4,
+          "efficiency": 87.9,
+          "sack_avoidance": 45.7,
+          "rushing": 1.7
+        }
+      ]
+    },
+    "lanorris-sellers": {
+      "player": "Lanorris Sellers",
+      "team": "South Carolina",
+      "history": [
+        {
+          "week": 3,
+          "rank": 56,
+          "cqi": 53.6,
+          "efficiency": 53.9,
+          "sack_avoidance": 40.1,
+          "rushing": 57.1
+        }
+      ]
+    },
+    "lincoln-kienholz": {
+      "player": "Lincoln Kienholz",
+      "team": "Louisville",
+      "history": [
+        {
+          "week": 3,
+          "rank": 1,
+          "cqi": 97.0,
+          "efficiency": 97.8,
+          "sack_avoidance": 49.6,
+          "rushing": 87.1
+        }
+      ]
+    },
+    "luke-weaver": {
+      "player": "Luke Weaver",
+      "team": "San José State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 78,
+          "cqi": 38.9,
+          "efficiency": 25.9,
+          "sack_avoidance": 58.7,
+          "rushing": 43.8
+        }
+      ]
+    },
+    "maddux-madsen": {
+      "player": "Maddux Madsen",
+      "team": "Boise State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 76,
+          "cqi": 39.2,
+          "efficiency": 21.1,
+          "sack_avoidance": 50.4,
+          "rushing": 60.8
+        }
+      ]
+    },
+    "malachi-singleton": {
+      "player": "Malachi Singleton",
+      "team": "App State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 42,
+          "cqi": 64.4,
+          "efficiency": 81.4,
+          "sack_avoidance": 63.9,
+          "rushing": 23.5
+        }
+      ]
+    },
+    "malik-washington": {
+      "player": "Malik Washington",
+      "team": "Maryland",
+      "history": [
+        {
+          "week": 3,
+          "rank": 66,
+          "cqi": 47.4,
+          "efficiency": 51.9,
+          "sack_avoidance": 76.8,
+          "rushing": 15.2
+        }
+      ]
+    },
+    "marcel-reed": {
+      "player": "Marcel Reed",
+      "team": "Texas A&M",
+      "history": [
+        {
+          "week": 3,
+          "rank": 80,
+          "cqi": 38.5,
+          "efficiency": 16.7,
+          "sack_avoidance": 61.7,
+          "rushing": 56.3
+        }
+      ]
+    },
+    "marcus-stokes": {
+      "player": "Marcus Stokes",
+      "team": "Memphis",
+      "history": [
+        {
+          "week": 3,
+          "rank": 15,
+          "cqi": 83.2,
+          "efficiency": 93.6,
+          "sack_avoidance": 48.7,
+          "rushing": 43.0
+        }
+      ]
+    },
+    "mason-heintschel": {
+      "player": "Mason Heintschel",
+      "team": "Pittsburgh",
+      "history": [
+        {
+          "week": 3,
+          "rank": 32,
+          "cqi": 70.7,
+          "efficiency": 75.5,
+          "sack_avoidance": 53.7,
+          "rushing": 54.7
+        }
+      ]
+    },
+    "mason-mckenzie": {
+      "player": "Mason McKenzie",
+      "team": "Boston College",
+      "history": [
+        {
+          "week": 3,
+          "rank": 65,
+          "cqi": 47.4,
+          "efficiency": 31.4,
+          "sack_avoidance": 31.0,
+          "rushing": 84.2
+        }
+      ]
+    },
+    "max-johnson": {
+      "player": "Max Johnson",
+      "team": "Georgia Southern",
+      "history": [
+        {
+          "week": 3,
+          "rank": 103,
+          "cqi": 22.0,
+          "efficiency": 15.1,
+          "sack_avoidance": 62.2,
+          "rushing": 26.6
+        }
+      ]
+    },
+    "micah-alejado": {
+      "player": "Micah Alejado",
+      "team": "Hawai'i",
+      "history": [
+        {
+          "week": 3,
+          "rank": 120,
+          "cqi": 13.4,
+          "efficiency": 3.8,
+          "sack_avoidance": 45.9,
+          "rushing": 42.2
+        }
+      ]
+    },
+    "michael-hawkins-jr": {
+      "player": "Michael Hawkins Jr.",
+      "team": "West Virginia",
+      "history": [
+        {
+          "week": 3,
+          "rank": 5,
+          "cqi": 93.1,
+          "efficiency": 95.2,
+          "sack_avoidance": 30.5,
+          "rushing": 98.2
+        }
+      ]
+    },
+    "michael-van-buren-jr": {
+      "player": "Michael Van Buren Jr.",
+      "team": "South Florida",
+      "history": [
+        {
+          "week": 3,
+          "rank": 63,
+          "cqi": 49.4,
+          "efficiency": 51.3,
+          "sack_avoidance": 79.5,
+          "rushing": 15.9
+        }
+      ]
+    },
+    "mitch-griffis": {
+      "player": "Mitch Griffis",
+      "team": "East Carolina",
+      "history": [
+        {
+          "week": 3,
+          "rank": 113,
+          "cqi": 15.9,
+          "efficiency": 22.6,
+          "sack_avoidance": 26.9,
+          "rushing": 28.0
+        }
+      ]
+    },
+    "nathan-hayes": {
+      "player": "Nathan Hayes",
+      "team": "North Dakota State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 36,
+          "cqi": 65.8,
+          "efficiency": 73.0,
+          "sack_avoidance": 51.5,
+          "rushing": 48.4
+        }
+      ]
+    },
+    "nick-minicucci": {
+      "player": "Nick Minicucci",
+      "team": "Delaware",
+      "history": [
+        {
+          "week": 3,
+          "rank": 69,
+          "cqi": 44.9,
+          "efficiency": 64.4,
+          "sack_avoidance": 22.9,
+          "rushing": 47.6
+        }
+      ]
+    },
+    "nico-iamaleava": {
+      "player": "Nico Iamaleava",
+      "team": "UCLA",
+      "history": [
+        {
+          "week": 3,
+          "rank": 44,
+          "cqi": 62.8,
+          "efficiency": 64.5,
+          "sack_avoidance": 33.4,
+          "rushing": 74.2
+        }
+      ]
+    },
+    "noah-fifita": {
+      "player": "Noah Fifita",
+      "team": "Arizona",
+      "history": [
+        {
+          "week": 3,
+          "rank": 38,
+          "cqi": 64.7,
+          "efficiency": 76.6,
+          "sack_avoidance": 21.4,
+          "rushing": 75.0
+        }
+      ]
+    },
+    "noah-kim": {
+      "player": "Noah Kim",
+      "team": "Eastern Michigan",
+      "history": [
+        {
+          "week": 3,
+          "rank": 116,
+          "cqi": 14.1,
+          "efficiency": 2.3,
+          "sack_avoidance": 62.8,
+          "rushing": 34.8
+        }
+      ]
+    },
+    "owen-mccown": {
+      "player": "Owen McCown",
+      "team": "UTSA",
+      "history": [
+        {
+          "week": 3,
+          "rank": 105,
+          "cqi": 19.3,
+          "efficiency": 4.5,
+          "sack_avoidance": 77.6,
+          "rushing": 25.0
+        }
+      ]
+    },
+    "quinn-henicle": {
+      "player": "Quinn Henicle",
+      "team": "Old Dominion",
+      "history": [
+        {
+          "week": 3,
+          "rank": 86,
+          "cqi": 30.9,
+          "efficiency": 37.0,
+          "sack_avoidance": 8.4,
+          "rushing": 88.0
+        }
+      ]
+    },
+    "rickie-collins": {
+      "player": "Rickie Collins",
+      "team": "Kennesaw State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 50,
+          "cqi": 56.0,
+          "efficiency": 34.3,
+          "sack_avoidance": 65.0,
+          "rushing": 65.1
+        }
+      ]
+    },
+    "rocco-becht": {
+      "player": "Rocco Becht",
+      "team": "Penn State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 31,
+          "cqi": 71.4,
+          "efficiency": 97.8,
+          "sack_avoidance": 41.4,
+          "rushing": 4.7
+        }
+      ]
+    },
+    "rodney-tisdale-jr": {
+      "player": "Rodney Tisdale Jr.",
+      "team": "Western Kentucky",
+      "history": [
+        {
+          "week": 3,
+          "rank": 134,
+          "cqi": 0.6,
+          "efficiency": 0.9,
+          "sack_avoidance": 28.2,
+          "rushing": 3.5
+        }
+      ]
+    },
+    "roman-gagliano": {
+      "player": "Roman Gagliano",
+      "team": "Middle Tennessee",
+      "history": [
+        {
+          "week": 3,
+          "rank": 114,
+          "cqi": 15.1,
+          "efficiency": 1.4,
+          "sack_avoidance": 76.6,
+          "rushing": 34.1
+        }
+      ]
+    },
+    "ryan-browne": {
+      "player": "Ryan Browne",
+      "team": "Purdue",
+      "history": [
+        {
+          "week": 3,
+          "rank": 6,
+          "cqi": 90.0,
+          "efficiency": 95.6,
+          "sack_avoidance": 41.0,
+          "rushing": 63.3
+        }
+      ]
+    },
+    "ryder-burton": {
+      "player": "Ryder Burton",
+      "team": "UAB",
+      "history": [
+        {
+          "week": 3,
+          "rank": 98,
+          "cqi": 24.2,
+          "efficiency": 22.0,
+          "sack_avoidance": 17.2,
+          "rushing": 69.9
+        }
+      ]
+    },
+    "sam-leavitt": {
+      "player": "Sam Leavitt",
+      "team": "LSU",
+      "history": [
+        {
+          "week": 3,
+          "rank": 43,
+          "cqi": 63.0,
+          "efficiency": 53.1,
+          "sack_avoidance": 28.7,
+          "rushing": 96.3
+        }
+      ]
+    },
+    "skyler-locklear": {
+      "player": "Skyler Locklear",
+      "team": "Missouri State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 74,
+          "cqi": 40.3,
+          "efficiency": 58.8,
+          "sack_avoidance": 52.9,
+          "rushing": 17.2
+        }
+      ]
+    },
+    "steven-angeli": {
+      "player": "Steven Angeli",
+      "team": "Syracuse",
+      "history": [
+        {
+          "week": 3,
+          "rank": 92,
+          "cqi": 25.5,
+          "efficiency": 42.1,
+          "sack_avoidance": 34.3,
+          "rushing": 27.3
+        }
+      ]
+    },
+    "tait-reynolds": {
+      "player": "Tait Reynolds",
+      "team": "Clemson",
+      "history": [
+        {
+          "week": 3,
+          "rank": 109,
+          "cqi": 17.7,
+          "efficiency": 48.8,
+          "sack_avoidance": 22.8,
+          "rushing": 11.8
+        }
+      ]
+    },
+    "taron-dickens": {
+      "player": "Taron Dickens",
+      "team": "Northern Illinois",
+      "history": [
+        {
+          "week": 3,
+          "rank": 127,
+          "cqi": 5.6,
+          "efficiency": 25.9,
+          "sack_avoidance": 15.7,
+          "rushing": 8.2
+        }
+      ]
+    },
+    "tate-surber": {
+      "player": "Tate Surber",
+      "team": "UT Martin",
+      "history": [
+        {
+          "week": 3,
+          "rank": 125,
+          "cqi": 6.5,
+          "efficiency": 1.8,
+          "sack_avoidance": 38.7,
+          "rushing": 37.1
+        }
+      ]
+    },
+    "tayven-jackson": {
+      "player": "Tayven Jackson",
+      "team": "North Texas",
+      "history": [
+        {
+          "week": 3,
+          "rank": 25,
+          "cqi": 79.0,
+          "efficiency": 62.9,
+          "sack_avoidance": 80.4,
+          "rushing": 60.0
+        }
+      ]
+    },
+    "trey-hedden": {
+      "player": "Trey Hedden",
+      "team": "New Mexico State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 83,
+          "cqi": 36.4,
+          "efficiency": 29.8,
+          "sack_avoidance": 55.0,
+          "rushing": 39.0
+        }
+      ]
+    },
+    "trey-owens": {
+      "player": "Trey Owens",
+      "team": "Arkansas State",
+      "history": [
+        {
+          "week": 3,
+          "rank": 60,
+          "cqi": 51.4,
+          "efficiency": 51.2,
+          "sack_avoidance": 23.4,
+          "rushing": 76.7
+        }
+      ]
+    },
+    "trinidad-chambliss": {
+      "player": "Trinidad Chambliss",
+      "team": "Ole Miss",
+      "history": [
+        {
+          "week": 3,
+          "rank": 11,
+          "cqi": 85.5,
+          "efficiency": 78.4,
+          "sack_avoidance": 74.3,
+          "rushing": 65.7
+        }
+      ]
+    },
+    "tyler-hughes": {
+      "player": "Tyler Hughes",
+      "team": "Wyoming",
+      "history": [
+        {
+          "week": 3,
+          "rank": 84,
+          "cqi": 32.3,
+          "efficiency": 9.2,
+          "sack_avoidance": 50.4,
+          "rushing": 72.4
+        }
+      ]
+    },
+    "walker-eget": {
+      "player": "Walker Eget",
+      "team": "Duke",
+      "history": [
+        {
+          "week": 3,
+          "rank": 93,
+          "cqi": 25.4,
+          "efficiency": 32.5,
+          "sack_avoidance": 66.3,
+          "rushing": 10.2
+        }
+      ]
+    },
+    "will-crowder": {
+      "player": "Will Crowder",
+      "team": "Troy",
+      "history": [
+        {
+          "week": 3,
+          "rank": 75,
+          "cqi": 39.5,
+          "efficiency": 51.7,
+          "sack_avoidance": 17.4,
+          "rushing": 61.5
+        }
+      ]
+    },
+    "will-hammond": {
+      "player": "Will Hammond",
+      "team": "Texas Tech",
+      "history": [
+        {
+          "week": 3,
+          "rank": 58,
+          "cqi": 52.0,
+          "efficiency": 65.9,
+          "sack_avoidance": 40.2,
+          "rushing": 40.1
+        }
+      ]
+    }
+  }
+}

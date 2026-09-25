@@ -30,6 +30,494 @@ const search =
     document.getElementById("search");
 
 
+
+
+/* ==========================================================
+   PERCERA WEEKLY HISTORY HELPERS
+   ========================================================== */
+
+const weeklyHistoryData =
+    window.CQI_WEEKLY_HISTORY || null;
+
+
+function playerHistoryRecord(player) {
+
+    if (
+        !weeklyHistoryData ||
+        !weeklyHistoryData.players
+    ) {
+        return null;
+    }
+
+
+    const records =
+        Object.values(
+            weeklyHistoryData.players
+        );
+
+
+    return (
+        records.find(
+            item =>
+                item.player ===
+                    (player.player || player.name)
+
+                &&
+
+                item.team === player.team
+        )
+        || null
+    );
+}
+
+
+function latestMovementRecord(player) {
+
+    if (
+        !weeklyHistoryData ||
+        !weeklyHistoryData.weeks
+    ) {
+        return null;
+    }
+
+
+    const latestWeek =
+        String(
+            weeklyHistoryData.latest_week
+        );
+
+
+    const latest =
+        weeklyHistoryData
+        .weeks[
+            latestWeek
+        ] || [];
+
+
+    return (
+        latest.find(
+            item =>
+                item.player ===
+                    (player.player || player.name)
+
+                &&
+
+                item.team === player.team
+        )
+        || null
+    );
+}
+
+
+function movementHTML(player) {
+
+    const movement =
+        latestMovementRecord(
+            player
+        );
+
+
+    if (
+        !movement ||
+        movement.rank_change === null ||
+        movement.rank_change === undefined
+    ) {
+
+        return `
+            <span
+                class="movement movement-none"
+                title="No previous official CQI ranking"
+            >
+                —
+            </span>
+        `;
+    }
+
+
+    const change =
+        Number(
+            movement.rank_change
+        );
+
+
+    const cqiChange =
+        movement.cqi_change;
+
+
+    const cqiText =
+        (
+            cqiChange === null ||
+            cqiChange === undefined
+        )
+
+        ? ""
+
+        : (
+            ` · CQI ${
+                Number(cqiChange) >= 0
+                ? "+"
+                : ""
+            }${Number(cqiChange).toFixed(1)}`
+        );
+
+
+    if (change > 0) {
+
+        return `
+            <span
+                class="movement movement-up"
+                title="Up ${change} ranks${cqiText}"
+            >
+                ▲ ${change}
+            </span>
+        `;
+    }
+
+
+    if (change < 0) {
+
+        return `
+            <span
+                class="movement movement-down"
+                title="Down ${Math.abs(change)} ranks${cqiText}"
+            >
+                ▼ ${Math.abs(change)}
+            </span>
+        `;
+    }
+
+
+    return `
+        <span
+            class="movement movement-flat"
+            title="No rank change${cqiText}"
+        >
+            —
+        </span>
+    `;
+}
+
+
+function playerTrendHTML(player) {
+
+    const record =
+        playerHistoryRecord(
+            player
+        );
+
+
+    if (
+        !record ||
+        !record.history ||
+        record.history.length < 2
+    ) {
+
+        return "";
+    }
+
+
+    const points =
+        [...record.history]
+        .sort(
+            (a, b) =>
+                Number(a.week)
+                -
+                Number(b.week)
+        );
+
+
+    const values =
+        points.map(
+            point =>
+                Number(
+                    point.cqi
+                )
+        );
+
+
+    const width = 680;
+    const height = 170;
+
+    const padX = 34;
+    const padTop = 24;
+    const padBottom = 34;
+
+
+    const minValue =
+        Math.min(
+            ...values
+        );
+
+    const maxValue =
+        Math.max(
+            ...values
+        );
+
+
+    const spread =
+        Math.max(
+            maxValue - minValue,
+            4
+        );
+
+
+    const chartMin =
+        minValue
+        -
+        spread * .20;
+
+    const chartMax =
+        maxValue
+        +
+        spread * .20;
+
+
+    const usableWidth =
+        width
+        -
+        padX * 2;
+
+    const usableHeight =
+        height
+        -
+        padTop
+        -
+        padBottom;
+
+
+    const coordinates =
+        points.map(
+            (point, index) => {
+
+                const x =
+                    points.length === 1
+
+                    ? width / 2
+
+                    : (
+                        padX
+                        +
+                        (
+                            index
+                            /
+                            (
+                                points.length
+                                - 1
+                            )
+                        )
+                        *
+                        usableWidth
+                    );
+
+
+                const y =
+                    padTop
+                    +
+                    (
+                        (
+                            chartMax
+                            -
+                            Number(
+                                point.cqi
+                            )
+                        )
+                        /
+                        (
+                            chartMax
+                            -
+                            chartMin
+                        )
+                    )
+                    *
+                    usableHeight;
+
+
+                return {
+                    ...point,
+                    x,
+                    y
+                };
+            }
+        );
+
+
+    const polyline =
+        coordinates
+        .map(
+            point =>
+                `${point.x},${point.y}`
+        )
+        .join(" ");
+
+
+    const circles =
+        coordinates
+        .map(
+            point => `
+                <circle
+                    cx="${point.x}"
+                    cy="${point.y}"
+                    r="4"
+                    class="trend-point"
+                >
+                    <title>
+                        Week ${point.week}:
+                        CQI ${Number(point.cqi).toFixed(1)},
+                        Rank #${point.rank}
+                    </title>
+                </circle>
+            `
+        )
+        .join("");
+
+
+    const labels =
+        coordinates
+        .map(
+            point => `
+                <text
+                    x="${point.x}"
+                    y="${height - 10}"
+                    text-anchor="middle"
+                    class="trend-week-label"
+                >
+                    W${point.week}
+                </text>
+            `
+        )
+        .join("");
+
+
+    const first =
+        points[0];
+
+    const latest =
+        points[
+            points.length - 1
+        ];
+
+
+    const rankChange =
+        Number(first.rank)
+        -
+        Number(latest.rank);
+
+
+    const cqiChange =
+        Number(latest.cqi)
+        -
+        Number(first.cqi);
+
+
+    return `
+
+        <section class="player-trend-section">
+
+            <div class="section-heading-row">
+
+                <div>
+
+                    <span class="eyebrow">
+                        CQI TREND
+                    </span>
+
+                    <h3>
+                        Season progression
+                    </h3>
+
+                </div>
+
+
+                <div class="trend-summary">
+
+                    <strong>
+                        ${
+                            rankChange > 0
+                            ? `▲ ${rankChange}`
+                            :
+                            rankChange < 0
+                            ? `▼ ${Math.abs(rankChange)}`
+                            : "—"
+                        }
+                    </strong>
+
+                    <span>
+                        since Week ${first.week}
+                    </span>
+
+                    <small>
+                        CQI ${
+                            cqiChange >= 0
+                            ? "+"
+                            : ""
+                        }${cqiChange.toFixed(1)}
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="trend-chart-wrap">
+
+                <svg
+                    class="trend-chart"
+                    viewBox="0 0 ${width} ${height}"
+                    role="img"
+                    aria-label="CQI trend by week"
+                >
+
+                    <line
+                        x1="${padX}"
+                        x2="${width - padX}"
+                        y1="${height - padBottom}"
+                        y2="${height - padBottom}"
+                        class="trend-axis"
+                    ></line>
+
+
+                    <polyline
+                        points="${polyline}"
+                        class="trend-line"
+                    ></polyline>
+
+
+                    ${circles}
+
+                    ${labels}
+
+                </svg>
+
+            </div>
+
+
+            <div class="trend-endpoints">
+
+                <span>
+                    Week ${first.week}
+                    · CQI ${Number(first.cqi).toFixed(1)}
+                    · #${first.rank}
+                </span>
+
+                <span>
+                    Week ${latest.week}
+                    · CQI ${Number(latest.cqi).toFixed(1)}
+                    · #${latest.rank}
+                </span>
+
+            </div>
+
+        </section>
+
+    `;
+}
+
+
+/* ==========================================================
+   END PERCERA WEEKLY HISTORY HELPERS
+   ========================================================== */
+
+
 function formatMetric(
     value,
     digits=1
@@ -163,6 +651,7 @@ function updatePageChrome() {
 
         tableHeader.innerHTML = `
             <th>Rank</th>
+            <th>Move</th>
             <th>Quarterback</th>
             <th>Team</th>
             <th>CQI</th>
@@ -307,6 +796,11 @@ function renderLeaderboard(
                         ${player.rank}
                     </span>
                 </td>
+
+                <td class="movement-cell">
+                    ${movementHTML(player)}
+                </td>
+
 
 
                 <td class="qb-cell">
@@ -655,6 +1149,8 @@ function showPlayer(
 
         </section>
 
+
+        ${playerTrendHTML(player)}
 
         <section class="player-component-section">
 
