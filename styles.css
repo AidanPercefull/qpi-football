@@ -6116,3 +6116,2202 @@ h3 {
    END PERCERA PLAYER TEAM CARD
    ========================================================== */
 
+
+
+/* ==========================================================
+   PERCERA HOMEPAGE
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   GENERAL
+   ---------------------------------------------------------- */
+
+#home-view {
+
+    padding-bottom:
+        40px;
+}
+
+
+.percera-home-brand-link {
+
+    cursor:
+        pointer;
+}
+
+
+.home-eyebrow,
+.home-section-kicker,
+.home-feature-kicker {
+
+    color:
+        #174A9C;
+
+    font-size:
+        9px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .12em;
+
+    text-transform:
+        uppercase;
+}
+
+
+/* ----------------------------------------------------------
+   HERO
+   ---------------------------------------------------------- */
+
+.percera-home-hero {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0, 1.12fr)
+        minmax(390px, .88fr);
+
+    gap:
+        52px;
+
+    align-items:
+        center;
+
+    min-height:
+        610px;
+
+    padding:
+        68px 0 64px;
+
+    border-bottom:
+        1px solid #dedad2;
+}
+
+
+.home-hero-copy {
+
+    max-width:
+        690px;
+}
+
+
+.home-hero-copy h1 {
+
+    margin:
+        15px 0 17px;
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        clamp(
+            58px,
+            6.4vw,
+            92px
+        );
+
+    font-weight:
+        900;
+
+    line-height:
+        .92;
+
+    letter-spacing:
+        -.065em;
+}
+
+
+.home-hero-description {
+
+    max-width:
+        650px;
+
+    margin:
+        0;
+
+    color:
+        #647185;
+
+    font-size:
+        16px;
+
+    line-height:
+        1.72;
+}
+
+
+.home-actions {
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        10px;
+
+    margin-top:
+        27px;
+}
+
+
+.home-action {
+
+    min-height:
+        43px;
+
+    padding:
+        0 17px;
+
+    border-radius:
+        5px;
+
+    font-family:
+        inherit;
+
+    font-size:
+        10px;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        .025em;
+
+    cursor:
+        pointer;
+
+    transition:
+        transform .12s ease,
+        box-shadow .12s ease,
+        border-color .12s ease;
+}
+
+
+.home-action:hover {
+
+    transform:
+        translateY(-1px);
+}
+
+
+.home-action-primary {
+
+    border:
+        1px solid #0B1F3B;
+
+    background:
+        #0B1F3B;
+
+    color:
+        #ffffff;
+
+    box-shadow:
+        0 7px 18px
+        rgba(11,31,59,.12);
+}
+
+
+.home-action-primary:hover {
+
+    box-shadow:
+        0 9px 22px
+        rgba(11,31,59,.17);
+}
+
+
+.home-action-secondary {
+
+    border:
+        1px solid #d7d4cd;
+
+    background:
+        #ffffff;
+
+    color:
+        #0B1F3B;
+}
+
+
+.home-model-meta {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        9px;
+
+    margin-top:
+        24px;
+
+    color:
+        #818b99;
+
+    font-size:
+        9px;
+
+    font-weight:
+        700;
+}
+
+
+.home-model-meta i {
+
+    width:
+        3px;
+
+    height:
+        3px;
+
+    border-radius:
+        50%;
+
+    background:
+        #C48B28;
+}
+
+
+/* ----------------------------------------------------------
+   FLAGSHIP MODEL CARD
+   ---------------------------------------------------------- */
+
+.home-cqi-feature {
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    min-height:
+        440px;
+
+    border:
+        1px solid #d9d6cf;
+
+    border-radius:
+        9px;
+
+    background:
+        #ffffff;
+
+    box-shadow:
+        0 20px 50px
+        rgba(11,31,59,.07);
+}
+
+
+.home-cqi-feature::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        0;
+
+    right:
+        0;
+
+    height:
+        4px;
+
+    background:
+        #C48B28;
+}
+
+
+.home-feature-top {
+
+    display:
+        flex;
+
+    align-items:
+        flex-start;
+
+    justify-content:
+        space-between;
+
+    gap:
+        20px;
+
+    padding:
+        28px 29px 24px;
+
+    border-bottom:
+        1px solid #e6e2da;
+}
+
+
+.home-feature-top h2 {
+
+    margin:
+        7px 0 0;
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        26px;
+
+    line-height:
+        1.02;
+
+    letter-spacing:
+        -.04em;
+}
+
+
+.home-version-mark {
+
+    color:
+        rgba(11,31,59,.08);
+
+    font-size:
+        46px;
+
+    font-weight:
+        900;
+
+    letter-spacing:
+        -.06em;
+}
+
+
+.home-current-leader {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(130px, .85fr)
+        minmax(180px, 1.15fr);
+
+    min-height:
+        292px;
+}
+
+
+.home-leader-visual {
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    display:
+        flex;
+
+    align-items:
+        flex-end;
+
+    justify-content:
+        center;
+
+    background:
+        color-mix(
+            in srgb,
+            var(--home-team-color)
+            8%,
+            #f4f5f7
+        );
+
+    border-right:
+        1px solid #e6e2da;
+}
+
+
+.home-leader-visual::after {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        0;
+
+    width:
+        100%;
+
+    height:
+        3px;
+
+    background:
+        var(--home-team-color);
+}
+
+
+.home-leader-headshot {
+
+    width:
+        100%;
+
+    max-height:
+        275px;
+
+    object-fit:
+        contain;
+
+    object-position:
+        center bottom;
+}
+
+
+.home-leader-fallback {
+
+    width:
+        62%;
+
+    height:
+        62%;
+
+    margin-bottom:
+        35px;
+
+    object-fit:
+        contain;
+}
+
+
+.home-leader-info {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        center;
+
+    padding:
+        26px;
+}
+
+
+.home-leader-label {
+
+    color:
+        #174A9C;
+
+    font-size:
+        8px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .11em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.home-leader-team {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        7px;
+
+    margin-top:
+        13px;
+
+    color:
+        #657185;
+
+    font-size:
+        10px;
+
+    font-weight:
+        700;
+}
+
+
+.home-leader-team img {
+
+    width:
+        23px;
+
+    height:
+        23px;
+
+    object-fit:
+        contain;
+}
+
+
+.home-leader-info h3 {
+
+    margin:
+        9px 0 0;
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        23px;
+
+    line-height:
+        1.05;
+
+    letter-spacing:
+        -.035em;
+}
+
+
+.home-leader-score {
+
+    display:
+        flex;
+
+    align-items:
+        baseline;
+
+    gap:
+        7px;
+
+    margin-top:
+        17px;
+}
+
+
+.home-leader-score strong {
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        42px;
+
+    line-height:
+        1;
+
+    letter-spacing:
+        -.05em;
+}
+
+
+.home-leader-score span {
+
+    color:
+        #6f7b8d;
+
+    font-size:
+        8px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .09em;
+}
+
+
+.home-profile-link,
+.home-validation-link {
+
+    align-self:
+        flex-start;
+
+    margin-top:
+        17px;
+
+    padding:
+        0;
+
+    border:
+        0;
+
+    background:
+        transparent;
+
+    color:
+        #174A9C;
+
+    font-family:
+        inherit;
+
+    font-size:
+        9px;
+
+    font-weight:
+        800;
+
+    cursor:
+        pointer;
+}
+
+
+/* ----------------------------------------------------------
+   CONTENT SECTIONS
+   ---------------------------------------------------------- */
+
+.home-section {
+
+    padding:
+        66px 0;
+
+    border-bottom:
+        1px solid #dedad2;
+}
+
+
+.home-section-heading {
+
+    display:
+        flex;
+
+    align-items:
+        flex-end;
+
+    justify-content:
+        space-between;
+
+    gap:
+        35px;
+
+    margin-bottom:
+        28px;
+}
+
+
+.home-section-heading h2,
+.home-validation h2,
+.home-bottom-cta h2 {
+
+    margin:
+        8px 0 0;
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        32px;
+
+    letter-spacing:
+        -.045em;
+}
+
+
+.home-section-heading > p {
+
+    max-width:
+        380px;
+
+    margin:
+        0 0 2px;
+
+    color:
+        #7c8796;
+
+    font-size:
+        11px;
+
+    line-height:
+        1.55;
+
+    text-align:
+        right;
+}
+
+
+/* ----------------------------------------------------------
+   THREE SIGNALS
+   ---------------------------------------------------------- */
+
+.home-signal-grid {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0, 1fr)
+        );
+
+    gap:
+        13px;
+}
+
+
+.home-signal-card {
+
+    position:
+        relative;
+
+    min-height:
+        208px;
+
+    padding:
+        22px;
+
+    border:
+        1px solid #dcd9d2;
+
+    border-radius:
+        7px;
+
+    background:
+        #ffffff;
+}
+
+
+.home-signal-card::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        0;
+
+    right:
+        0;
+
+    height:
+        2px;
+
+    background:
+        #174A9C;
+}
+
+
+.home-signal-number {
+
+    color:
+        #C48B28;
+
+    font-size:
+        8px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .08em;
+}
+
+
+.home-signal-card h3 {
+
+    margin:
+        36px 0 9px;
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        17px;
+
+    letter-spacing:
+        -.025em;
+}
+
+
+.home-signal-card p {
+
+    max-width:
+        280px;
+
+    margin:
+        0;
+
+    color:
+        #707c8e;
+
+    font-size:
+        11px;
+
+    line-height:
+        1.6;
+}
+
+
+/* ----------------------------------------------------------
+   VALIDATION
+   ---------------------------------------------------------- */
+
+.home-validation {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0, 1.25fr)
+        minmax(260px, .75fr);
+
+    gap:
+        70px;
+
+    align-items:
+        center;
+}
+
+
+.home-validation-copy {
+
+    max-width:
+        670px;
+}
+
+
+.home-validation-copy > p {
+
+    margin:
+        16px 0 0;
+
+    color:
+        #697587;
+
+    font-size:
+        12px;
+
+    line-height:
+        1.7;
+}
+
+
+.home-validation-stat {
+
+    padding:
+        26px 30px;
+
+    border-left:
+        3px solid #C48B28;
+
+    background:
+        rgba(255,255,255,.58);
+}
+
+
+.home-validation-stat span {
+
+    color:
+        #6f7b8d;
+
+    font-size:
+        8px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .1em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.home-validation-stat strong {
+
+    display:
+        block;
+
+    margin-top:
+        8px;
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        55px;
+
+    line-height:
+        1;
+
+    letter-spacing:
+        -.055em;
+}
+
+
+.home-validation-stat p {
+
+    margin:
+        8px 0 0;
+
+    color:
+        #788395;
+
+    font-size:
+        10px;
+}
+
+
+/* ----------------------------------------------------------
+   BOTTOM CTA
+   ---------------------------------------------------------- */
+
+.home-bottom-cta {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    gap:
+        30px;
+
+    padding:
+        54px 0 15px;
+}
+
+
+/* ----------------------------------------------------------
+   RESPONSIVE
+   ---------------------------------------------------------- */
+
+@media (
+    max-width: 900px
+) {
+
+    .percera-home-hero {
+
+        grid-template-columns:
+            1fr;
+
+        min-height:
+            auto;
+    }
+
+
+    .home-cqi-feature {
+
+        max-width:
+            620px;
+    }
+
+
+    .home-signal-grid {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .home-signal-card {
+
+        min-height:
+            auto;
+    }
+
+
+    .home-validation {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            30px;
+    }
+
+}
+
+
+@media (
+    max-width: 650px
+) {
+
+    .percera-home-hero {
+
+        padding:
+            45px 0;
+    }
+
+
+    .home-hero-copy h1 {
+
+        font-size:
+            53px;
+    }
+
+
+    .home-current-leader {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .home-leader-visual {
+
+        min-height:
+            220px;
+
+        border-right:
+            0;
+
+        border-bottom:
+            1px solid #e6e2da;
+    }
+
+
+    .home-section-heading {
+
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+    }
+
+
+    .home-section-heading > p {
+
+        text-align:
+            left;
+    }
+
+
+    .home-bottom-cta {
+
+        align-items:
+            flex-start;
+
+        flex-direction:
+            column;
+    }
+
+}
+
+
+/* ==========================================================
+   END PERCERA HOMEPAGE
+   ========================================================== */
+
+
+
+/* ==========================================================
+   PERCERA HOMEPAGE REFINEMENT
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   HOMEPAGE WIDTH
+
+   The rest of the site keeps its current readable width.
+
+   HOME intentionally breaks out wider on large screens.
+   ---------------------------------------------------------- */
+
+#home-view {
+
+    position:
+        relative;
+
+    width:
+        min(
+            1320px,
+            calc(100vw - 64px)
+        );
+
+    max-width:
+        none;
+
+    margin-left:
+        50%;
+
+    transform:
+        translateX(-50%);
+}
+
+
+
+/* ----------------------------------------------------------
+   LARGE HERO BRAND
+   ---------------------------------------------------------- */
+
+.home-hero-wordmark {
+
+    display:
+        block;
+
+    width:
+        clamp(
+            210px,
+            22vw,
+            310px
+        );
+
+    max-height:
+        76px;
+
+    margin:
+        0 0 24px;
+
+    object-fit:
+        contain;
+
+    object-position:
+        left center;
+}
+
+
+
+/* ----------------------------------------------------------
+   HERO SCALE
+   ---------------------------------------------------------- */
+
+#home-view .percera-home-hero {
+
+    grid-template-columns:
+        minmax(0, 1.18fr)
+        minmax(410px, .82fr);
+
+    gap:
+        70px;
+
+    min-height:
+        620px;
+
+    padding:
+        62px 0 58px;
+}
+
+
+#home-view .home-hero-copy {
+
+    max-width:
+        760px;
+}
+
+
+#home-view .home-hero-copy h1 {
+
+    font-size:
+        clamp(
+            62px,
+            6.2vw,
+            96px
+        );
+}
+
+
+#home-view .home-hero-description {
+
+    max-width:
+        700px;
+
+    font-size:
+        17px;
+
+    line-height:
+        1.7;
+}
+
+
+
+/* ----------------------------------------------------------
+   SECTION SPACING
+
+   Reduce the large blank bands from V1.
+   ---------------------------------------------------------- */
+
+#home-view .home-section {
+
+    padding:
+        50px 0;
+}
+
+
+#home-view .home-section-heading {
+
+    margin-bottom:
+        25px;
+}
+
+
+
+/* ----------------------------------------------------------
+   SECTION TYPOGRAPHY
+   ---------------------------------------------------------- */
+
+#home-view .home-section-heading h2 {
+
+    font-size:
+        38px;
+
+    line-height:
+        1;
+
+    letter-spacing:
+        -.045em;
+}
+
+
+#home-view .home-section-heading > p {
+
+    max-width:
+        440px;
+
+    font-size:
+        12px;
+
+    line-height:
+        1.65;
+}
+
+
+
+/* ----------------------------------------------------------
+   MODEL SIGNAL CARDS
+   ---------------------------------------------------------- */
+
+#home-view .home-signal-grid {
+
+    gap:
+        16px;
+}
+
+
+#home-view .home-signal-card {
+
+    min-height:
+        218px;
+
+    padding:
+        24px 25px 26px;
+
+    background:
+        linear-gradient(
+            150deg,
+            #ffffff 0%,
+            #ffffff 67%,
+            #f5f8fc 100%
+        );
+
+    box-shadow:
+        0 8px 22px
+        rgba(11,31,59,.035);
+}
+
+
+
+/* 01 / 02 / 03 become real visual elements */
+
+#home-view .home-signal-number {
+
+    display:
+        block;
+
+    color:
+        #C48B28;
+
+    font-size:
+        30px;
+
+    font-weight:
+        900;
+
+    line-height:
+        1;
+
+    letter-spacing:
+        -.055em;
+
+    opacity:
+        .92;
+}
+
+
+#home-view .home-signal-card h3 {
+
+    margin:
+        31px 0 11px;
+
+    font-size:
+        20px;
+
+    line-height:
+        1.1;
+}
+
+
+#home-view .home-signal-card p {
+
+    max-width:
+        330px;
+
+    color:
+        #5f6e82;
+
+    font-size:
+        12px;
+
+    line-height:
+        1.68;
+}
+
+
+
+/* restrained alternating accent */
+
+#home-view .home-signal-card:nth-child(1)::before {
+
+    height:
+        3px;
+
+    background:
+        #174A9C;
+}
+
+
+#home-view .home-signal-card:nth-child(2)::before {
+
+    height:
+        3px;
+
+    background:
+        #C48B28;
+}
+
+
+#home-view .home-signal-card:nth-child(3)::before {
+
+    height:
+        3px;
+
+    background:
+        #174A9C;
+}
+
+
+
+/* ----------------------------------------------------------
+   VALIDATION FEATURE PANEL
+   ---------------------------------------------------------- */
+
+#home-view .home-validation {
+
+    position:
+        relative;
+
+    margin:
+        44px 0;
+
+    padding:
+        48px 50px;
+
+    overflow:
+        hidden;
+
+    border:
+        1px solid #153456;
+
+    border-radius:
+        10px;
+
+    background:
+        linear-gradient(
+            130deg,
+            #081D38 0%,
+            #102E53 66%,
+            #163B67 100%
+        );
+
+    box-shadow:
+        0 20px 46px
+        rgba(11,31,59,.12);
+}
+
+
+#home-view .home-validation::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        0;
+
+    width:
+        100%;
+
+    height:
+        4px;
+
+    background:
+        #C48B28;
+}
+
+
+#home-view .home-validation
+.home-section-kicker {
+
+    color:
+        #E2AF50;
+}
+
+
+#home-view .home-validation h2 {
+
+    color:
+        #ffffff;
+
+    font-size:
+        36px;
+
+    line-height:
+        1.05;
+}
+
+
+#home-view .home-validation-copy > p {
+
+    max-width:
+        720px;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            .74
+        );
+
+    font-size:
+        13px;
+
+    line-height:
+        1.72;
+}
+
+
+#home-view .home-validation-link {
+
+    color:
+        #F0BE62;
+
+    font-size:
+        10px;
+}
+
+
+
+/* Stat tile */
+
+#home-view .home-validation-stat {
+
+    padding:
+        30px 32px;
+
+    border:
+        0;
+
+    border-radius:
+        8px;
+
+    background:
+        #ffffff;
+
+    box-shadow:
+        0 12px 28px
+        rgba(0,0,0,.12);
+}
+
+
+#home-view .home-validation-stat span {
+
+    color:
+        #174A9C;
+
+    font-size:
+        9px;
+
+    line-height:
+        1.45;
+}
+
+
+#home-view .home-validation-stat strong {
+
+    margin-top:
+        12px;
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        70px;
+
+    line-height:
+        .95;
+
+    letter-spacing:
+        -.06em;
+}
+
+
+#home-view .home-validation-stat p {
+
+    max-width:
+        225px;
+
+    margin-top:
+        11px;
+
+    color:
+        #687487;
+
+    font-size:
+        11px;
+
+    line-height:
+        1.5;
+}
+
+
+
+/* ----------------------------------------------------------
+   BOTTOM RANKINGS CTA
+
+   Avoid another giant white zone.
+   ---------------------------------------------------------- */
+
+#home-view .home-bottom-cta {
+
+    margin-top:
+        0;
+
+    padding:
+        32px 36px;
+
+    border:
+        1px solid
+        rgba(196,139,40,.30);
+
+    border-radius:
+        9px;
+
+    background:
+        linear-gradient(
+            105deg,
+            rgba(196,139,40,.12) 0%,
+            rgba(196,139,40,.045) 38%,
+            #ffffff 100%
+        );
+}
+
+
+#home-view .home-bottom-cta h2 {
+
+    font-size:
+        31px;
+}
+
+
+#home-view .home-bottom-cta
+.home-action-primary {
+
+    min-width:
+        195px;
+
+    min-height:
+        46px;
+}
+
+
+
+/* ----------------------------------------------------------
+   FLAGSHIP CARD SLIGHTLY LARGER ON WIDE HOME
+   ---------------------------------------------------------- */
+
+#home-view .home-cqi-feature {
+
+    min-height:
+        455px;
+}
+
+
+#home-view .home-feature-top {
+
+    padding:
+        30px 31px 25px;
+}
+
+
+#home-view .home-feature-top h2 {
+
+    font-size:
+        28px;
+}
+
+
+#home-view .home-current-leader {
+
+    min-height:
+        305px;
+}
+
+
+#home-view .home-leader-info h3 {
+
+    font-size:
+        25px;
+}
+
+
+#home-view .home-leader-score strong {
+
+    font-size:
+        46px;
+}
+
+
+
+/* ----------------------------------------------------------
+   RESPONSIVE
+   ---------------------------------------------------------- */
+
+@media (
+    max-width: 1100px
+) {
+
+    #home-view {
+
+        width:
+            calc(100vw - 42px);
+    }
+
+
+    #home-view .percera-home-hero {
+
+        gap:
+            42px;
+    }
+
+}
+
+
+@media (
+    max-width: 900px
+) {
+
+    #home-view .percera-home-hero {
+
+        grid-template-columns:
+            1fr;
+
+        min-height:
+            auto;
+    }
+
+
+    #home-view .home-cqi-feature {
+
+        max-width:
+            680px;
+    }
+
+
+    #home-view .home-validation {
+
+        padding:
+            38px 32px;
+    }
+
+}
+
+
+@media (
+    max-width: 650px
+) {
+
+    #home-view {
+
+        width:
+            calc(100vw - 24px);
+    }
+
+
+    .home-hero-wordmark {
+
+        width:
+            220px;
+
+        margin-bottom:
+            20px;
+    }
+
+
+    #home-view .percera-home-hero {
+
+        padding:
+            42px 0;
+    }
+
+
+    #home-view .home-hero-copy h1 {
+
+        font-size:
+            54px;
+    }
+
+
+    #home-view .home-section {
+
+        padding:
+            40px 0;
+    }
+
+
+    #home-view .home-section-heading h2 {
+
+        font-size:
+            32px;
+    }
+
+
+    #home-view .home-signal-number {
+
+        font-size:
+            25px;
+    }
+
+
+    #home-view .home-validation {
+
+        margin:
+            30px 0;
+
+        padding:
+            30px 22px;
+    }
+
+
+    #home-view .home-validation h2 {
+
+        font-size:
+            30px;
+    }
+
+
+    #home-view .home-validation-stat strong {
+
+        font-size:
+            60px;
+    }
+
+
+    #home-view .home-bottom-cta {
+
+        padding:
+            26px 24px;
+    }
+
+}
+
+
+/* ==========================================================
+   END PERCERA HOMEPAGE REFINEMENT
+   ========================================================== */
+
+
+
+/* ==========================================================
+   PERCERA HOMEPAGE SIGNAL BORDERS
+   ========================================================== */
+
+#home-view .home-signal-card::before,
+#home-view .home-signal-card:nth-child(1)::before,
+#home-view .home-signal-card:nth-child(2)::before,
+#home-view .home-signal-card:nth-child(3)::before {
+
+    height:
+        3px;
+
+    background:
+        #174A9C !important;
+}
+
+/* ==========================================================
+   END PERCERA HOMEPAGE SIGNAL BORDERS
+   ========================================================== */
+
+
+
+/* ==========================================================
+   PERCERA HOMEPAGE LEADER HEADSHOT
+   ========================================================== */
+
+
+/* Make the visual panel a proper image stage */
+
+#home-view .home-leader-visual {
+
+    position:
+        relative;
+
+    min-height:
+        305px;
+
+    overflow:
+        hidden;
+}
+
+
+/* Fill the vertical space instead of shrinking to panel width */
+
+#home-view .home-leader-headshot {
+
+    position:
+        absolute;
+
+    left:
+        50%;
+
+    bottom:
+        0;
+
+    transform:
+        translateX(-50%);
+
+    width:
+        auto !important;
+
+    height:
+        88%;
+
+    max-width:
+        none !important;
+
+    max-height:
+        none !important;
+
+    object-fit:
+        contain;
+
+    object-position:
+        center bottom;
+}
+
+
+/* Team-logo fallback should NOT use giant player sizing */
+
+#home-view .home-leader-headshot.home-leader-fallback {
+
+    position:
+        static;
+
+    transform:
+        none;
+
+    width:
+        62% !important;
+
+    height:
+        62%;
+
+    max-width:
+        150px !important;
+
+    margin:
+        auto;
+
+    object-fit:
+        contain;
+}
+
+
+@media (
+    max-width: 650px
+) {
+
+    #home-view .home-leader-headshot {
+
+        height:
+            92%;
+    }
+
+}
+
+
+/* ==========================================================
+   END PERCERA HOMEPAGE LEADER HEADSHOT
+   ========================================================== */
+
+
+
+/* ==========================================================
+   PERCERA HOMEPAGE TYPOGRAPHY
+   ========================================================== */
+
+
+/* ---------- SMALL LABELS / EYEBROWS ---------- */
+
+#home-view .home-eyebrow,
+#home-view .home-section-kicker,
+#home-view .home-feature-kicker {
+
+    font-size:
+        10px;
+}
+
+
+/* ---------- HERO ---------- */
+
+#home-view .home-hero-copy h1 {
+
+    font-size:
+        clamp(
+            66px,
+            6.35vw,
+            100px
+        );
+}
+
+
+#home-view .home-hero-description {
+
+    font-size:
+        18px;
+}
+
+
+#home-view .home-action {
+
+    font-size:
+        11px;
+}
+
+
+#home-view .home-model-meta {
+
+    font-size:
+        10px;
+}
+
+
+/* ---------- FLAGSHIP CQI CARD ---------- */
+
+#home-view .home-feature-top h2 {
+
+    font-size:
+        30px;
+}
+
+
+#home-view .home-version-mark {
+
+    font-size:
+        49px;
+}
+
+
+#home-view .home-leader-label {
+
+    font-size:
+        9px;
+}
+
+
+#home-view .home-leader-team {
+
+    font-size:
+        11px;
+}
+
+
+#home-view .home-leader-info h3 {
+
+    font-size:
+        27px;
+}
+
+
+#home-view .home-leader-score strong {
+
+    font-size:
+        49px;
+}
+
+
+#home-view .home-leader-score span {
+
+    font-size:
+        9px;
+}
+
+
+#home-view .home-profile-link {
+
+    font-size:
+        10px;
+}
+
+
+/* ---------- SECTION HEADINGS ---------- */
+
+#home-view .home-section-heading h2 {
+
+    font-size:
+        40px;
+}
+
+
+#home-view .home-section-heading > p {
+
+    font-size:
+        13px;
+}
+
+
+/* ---------- MODEL SIGNAL CARDS ---------- */
+
+#home-view .home-signal-number {
+
+    font-size:
+        32px;
+}
+
+
+#home-view .home-signal-card h3 {
+
+    font-size:
+        21px;
+}
+
+
+#home-view .home-signal-card p {
+
+    font-size:
+        13px;
+}
+
+
+/* ---------- VALIDATION ---------- */
+
+#home-view .home-validation h2 {
+
+    font-size:
+        38px;
+}
+
+
+#home-view .home-validation-copy > p {
+
+    font-size:
+        14px;
+}
+
+
+#home-view .home-validation-link {
+
+    font-size:
+        11px;
+}
+
+
+#home-view .home-validation-stat span {
+
+    font-size:
+        10px;
+}
+
+
+#home-view .home-validation-stat strong {
+
+    font-size:
+        72px;
+}
+
+
+#home-view .home-validation-stat p {
+
+    font-size:
+        12px;
+}
+
+
+/* ---------- BOTTOM CTA ---------- */
+
+#home-view .home-bottom-cta h2 {
+
+    font-size:
+        33px;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (
+    max-width: 650px
+) {
+
+    #home-view .home-hero-copy h1 {
+
+        font-size:
+            57px;
+    }
+
+
+    #home-view .home-section-heading h2 {
+
+        font-size:
+            34px;
+    }
+
+
+    #home-view .home-validation h2 {
+
+        font-size:
+            32px;
+    }
+
+
+    #home-view .home-validation-stat strong {
+
+        font-size:
+            63px;
+    }
+
+}
+
+
+/* ==========================================================
+   END PERCERA HOMEPAGE TYPOGRAPHY
+   ========================================================== */
+
