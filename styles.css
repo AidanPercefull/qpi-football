@@ -5565,3 +5565,137 @@ h3 {
    END PERCERA FINAL LEADERBOARD SORTING
    ========================================================== */
 
+
+
+/* ==========================================================
+   PERCERA SORT HEADER COLOR FIX
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   INACTIVE SORTABLE HEADERS
+
+   Match the normal leaderboard-header text:
+   bright white / near-white.
+
+   No background change.
+   ---------------------------------------------------------- */
+
+#leaderboard thead th.sortable-header {
+
+    color:
+        #ffffff !important;
+
+    background:
+        transparent !important;
+}
+
+
+/* Hover should NOT change text or background. */
+
+#leaderboard thead th.sortable-header:hover {
+
+    color:
+        #ffffff !important;
+
+    background:
+        transparent !important;
+}
+
+
+/* ----------------------------------------------------------
+   ACTIVE SORT HEADER
+
+   The active metric becomes Percera gold.
+   ---------------------------------------------------------- */
+
+#leaderboard thead th.sortable-header.sort-active {
+
+    color:
+        var(--accent) !important;
+
+    background:
+        transparent !important;
+}
+
+
+/* Preserve active gold on hover too. */
+
+#leaderboard thead th.sortable-header.sort-active:hover {
+
+    color:
+        var(--accent) !important;
+
+    background:
+        transparent !important;
+}
+
+
+/* ----------------------------------------------------------
+   INACTIVE SORT ICON
+
+   None.
+   ---------------------------------------------------------- */
+
+#leaderboard thead th.sortable-header:not(.sort-active)::after {
+
+    content:
+        "" !important;
+
+    border:
+        0 !important;
+}
+
+
+/* ----------------------------------------------------------
+   ACTIVE DESCENDING ▼
+   ---------------------------------------------------------- */
+
+#leaderboard thead th.sortable-header.sort-active.sort-desc::after {
+
+    content:
+        "" !important;
+
+    border-left:
+        5px solid transparent !important;
+
+    border-right:
+        5px solid transparent !important;
+
+    border-bottom:
+        0 !important;
+
+    border-top:
+        7px solid
+        var(--accent) !important;
+}
+
+
+/* ----------------------------------------------------------
+   ACTIVE ASCENDING ▲
+   ---------------------------------------------------------- */
+
+#leaderboard thead th.sortable-header.sort-active.sort-asc::after {
+
+    content:
+        "" !important;
+
+    border-left:
+        5px solid transparent !important;
+
+    border-right:
+        5px solid transparent !important;
+
+    border-top:
+        0 !important;
+
+    border-bottom:
+        7px solid
+        var(--accent) !important;
+}
+
+
+/* ==========================================================
+   END PERCERA SORT HEADER COLOR FIX
+   ========================================================== */
+
