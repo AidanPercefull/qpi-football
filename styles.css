@@ -5799,3 +5799,320 @@ h3 {
    END PERCERA ACTUAL GOLD SORT FIX
    ========================================================== */
 
+
+
+/* ==========================================================
+   PERCERA CQI PROFILE HEADING CLEANUP
+   ========================================================== */
+
+
+/*
+   The redundant "Three dimensions." heading has been removed.
+
+   Keep the CQI PROFILE kicker and explanatory note,
+   but reduce excess vertical space before the cards.
+*/
+
+#player-content .profile-section-header,
+#player-content .cqi-profile-header,
+#player-content .component-section-header {
+
+    margin-bottom:
+        14px;
+}
+
+
+/*
+   Generic safeguard for the section immediately above
+   the component grid.
+*/
+
+#player-content .component-grid {
+
+    margin-top:
+        14px;
+}
+
+
+/* ==========================================================
+   END PERCERA CQI PROFILE HEADING CLEANUP
+   ========================================================== */
+
+
+
+/* ==========================================================
+   PERCERA PLAYER TEAM CARD
+   ========================================================== */
+
+
+.percera-team-card {
+
+    position:
+        relative;
+
+    width:
+        100%;
+
+    margin:
+        30px 0 8px;
+
+    overflow:
+        hidden;
+
+    border:
+        1px solid #ddd9d1;
+
+    border-radius:
+        8px;
+
+    background:
+        #ffffff;
+
+    box-shadow:
+        0 8px 24px
+        rgba(11,31,59,.03);
+}
+
+
+/* School-color top edge */
+
+.percera-team-card::before {
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        0;
+
+    width:
+        100%;
+
+    height:
+        3px;
+
+    background:
+        var(
+            --team-card-color
+        );
+}
+
+
+/* ---------- TEAM ---------- */
+
+.team-card-header {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        14px;
+
+    padding:
+        20px 22px 17px;
+
+    border-bottom:
+        1px solid #ebe7df;
+}
+
+
+.team-card-logo {
+
+    width:
+        44px;
+
+    height:
+        44px;
+
+    object-fit:
+        contain;
+
+    flex:
+        0 0 auto;
+}
+
+
+.team-card-identity h3 {
+
+    margin:
+        0;
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        21px;
+
+    font-weight:
+        850;
+
+    line-height:
+        1.08;
+}
+
+
+.team-card-identity span {
+
+    display:
+        block;
+
+    margin-top:
+        4px;
+
+    color:
+        #788396;
+
+    font-size:
+        10px;
+
+    font-weight:
+        700;
+}
+
+
+/* ---------- FACTS ---------- */
+
+.team-card-facts {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0, .7fr)
+        minmax(0, 1.3fr);
+}
+
+
+.team-card-fact {
+
+    min-height:
+        92px;
+
+    padding:
+        17px 22px;
+
+    border-right:
+        1px solid #ebe7df;
+
+    background:
+        #fbfcfe;
+}
+
+
+.team-card-fact:last-child {
+
+    border-right:
+        0;
+}
+
+
+.team-card-label {
+
+    display:
+        block;
+
+    margin-bottom:
+        8px;
+
+    color:
+        #788396;
+
+    font-size:
+        8px;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .1em;
+
+    text-transform:
+        uppercase;
+}
+
+
+.team-card-fact strong {
+
+    display:
+        block;
+
+    color:
+        #0B1F3B;
+
+    font-size:
+        19px;
+
+    font-weight:
+        850;
+
+    line-height:
+        1.15;
+}
+
+
+.team-card-fact small {
+
+    display:
+        block;
+
+    margin-top:
+        5px;
+
+    color:
+        #7a8595;
+
+    font-size:
+        9px;
+
+    font-weight:
+        650;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (
+    max-width: 680px
+) {
+
+    .team-card-facts {
+
+        grid-template-columns:
+            1fr;
+    }
+
+
+    .team-card-fact {
+
+        min-height:
+            auto;
+
+        border-right:
+            0;
+
+        border-bottom:
+            1px solid #ebe7df;
+    }
+
+
+    .team-card-fact:last-child {
+
+        border-bottom:
+            0;
+    }
+
+}
+
+
+/* ==========================================================
+   END PERCERA PLAYER TEAM CARD
+   ========================================================== */
+
