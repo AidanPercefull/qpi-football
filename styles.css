@@ -3425,3 +3425,51 @@ h3 {
    ========================================================== */
 
 
+
+
+
+/* ==========================================================
+   PERCERA PLAYER TEXT CLEANUP
+   ========================================================== */
+
+.player-profile-hero .eyebrow {
+
+    letter-spacing: .075em;
+
+    font-size: 10px;
+
+    line-height: 1.3;
+}
+
+
+.player-profile-hero .player-header p {
+
+    letter-spacing: 0;
+
+    word-spacing: 0;
+
+    line-height: 1.6;
+
+    font-size: 13px;
+}
+
+
+.profile-team-row {
+
+    letter-spacing: 0;
+
+    word-spacing: 0;
+}
+
+
+.score-card span {
+
+    letter-spacing: .075em;
+}
+
+
+.component-head span {
+
+    letter-spacing: .045em;
+}
+
