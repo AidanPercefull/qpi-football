@@ -4305,3 +4305,543 @@ h3 {
    END CQI FINAL PROFILE LABEL
    ========================================================== */
 
+
+
+/* ==========================================================
+   PERCERA FINAL HEADER + TOP 3 FIX
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   HEADER / BRAND
+   ---------------------------------------------------------- */
+
+.site-header {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding:
+        18px 5vw;
+
+    min-height:
+        82px;
+
+    background:
+        rgba(251, 250, 247, .97);
+
+    border-bottom:
+        1px solid var(--border);
+
+    box-shadow:
+        0 2px 10px
+        rgba(11, 31, 58, .035);
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 30;
+
+    backdrop-filter:
+        blur(14px);
+}
+
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    color:
+        inherit;
+
+    text-decoration:
+        none;
+}
+
+
+.brand-wordmark {
+
+    display: block;
+
+    width: 225px;
+
+    max-width: 30vw;
+
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+.brand-subtitle {
+
+    color:
+        #4f5f73;
+
+    font-size:
+        14px;
+
+    font-weight:
+        500;
+
+    white-space:
+        nowrap;
+}
+
+
+.site-header nav {
+
+    display: flex;
+
+    gap: 20px;
+}
+
+
+/* ----------------------------------------------------------
+   TOP THREE LAYOUT
+   ---------------------------------------------------------- */
+
+.top-three {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.65fr)
+        minmax(320px, .85fr);
+
+    grid-template-rows:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    gap: 16px;
+
+    align-items: stretch;
+
+    margin:
+        36px 0
+        38px;
+}
+
+
+/* ----------------------------------------------------------
+   #1 FEATURED CARD
+   ---------------------------------------------------------- */
+
+.top-three
+.leader-card:nth-child(1) {
+
+    grid-column: 1;
+
+    grid-row:
+        1 / span 2;
+
+    min-height:
+        365px;
+
+    max-height:
+        390px;
+
+    display: grid;
+
+    grid-template-columns:
+        46% 54%;
+
+    overflow: hidden;
+}
+
+
+.top-three
+.leader-card:nth-child(1)
+.leader-visual {
+
+    width: 100%;
+
+    min-width: 0;
+
+    height: 100%;
+
+    position: relative;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    overflow: hidden;
+
+    padding: 0;
+}
+
+
+.top-three
+.leader-card:nth-child(1)
+.leader-headshot {
+
+    width: 100%;
+
+    height: 100%;
+
+    max-height: none;
+
+    object-fit: contain;
+
+    object-position:
+        center bottom;
+
+    transform:
+        scale(1.14);
+
+    transform-origin:
+        center bottom;
+}
+
+
+.top-three
+.leader-card:nth-child(1)
+.leader-info {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding:
+        31px 32px;
+}
+
+
+.top-three
+.leader-card:nth-child(1)
+.leader-card-rank {
+
+    top: 17px;
+
+    right: 20px;
+
+    font-size: 92px;
+}
+
+
+.top-three
+.leader-card:nth-child(1)
+.leader-info h3 {
+
+    font-size:
+        clamp(
+            34px,
+            3.2vw,
+            48px
+        );
+
+    line-height:
+        .98;
+}
+
+
+.top-three
+.leader-card:nth-child(1)
+.leader-card-score {
+
+    margin-top: 25px;
+}
+
+
+.top-three
+.leader-card:nth-child(1)
+.leader-card-score strong {
+
+    font-size: 65px;
+}
+
+
+/* NATIONAL LEADER badge */
+
+.top-three
+.leader-card:nth-child(1)::after {
+
+    content:
+        "NATIONAL LEADER";
+
+    position: absolute;
+
+    bottom: 15px;
+
+    right: 15px;
+
+    padding:
+        7px 11px;
+
+    background:
+        var(--brand-navy);
+
+    color:
+        white;
+
+    border-radius:
+        5px;
+
+    font-size:
+        8px;
+
+    line-height: 1;
+
+    font-weight:
+        850;
+
+    letter-spacing:
+        .12em;
+
+    box-shadow:
+        0 3px 9px
+        rgba(11, 31, 58, .12);
+}
+
+
+/* ----------------------------------------------------------
+   #2 AND #3
+   ---------------------------------------------------------- */
+
+.top-three
+.leader-card:nth-child(2),
+
+.top-three
+.leader-card:nth-child(3) {
+
+    min-height:
+        174px;
+
+    max-height:
+        187px;
+
+    display: grid;
+
+    grid-template-columns:
+        40% 60%;
+
+    overflow: hidden;
+}
+
+
+.top-three
+.leader-card:nth-child(2)
+.leader-visual,
+
+.top-three
+.leader-card:nth-child(3)
+.leader-visual {
+
+    width: 100%;
+
+    min-width: 0;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    padding: 0;
+
+    overflow: hidden;
+}
+
+
+.top-three
+.leader-card:nth-child(2)
+.leader-headshot,
+
+.top-three
+.leader-card:nth-child(3)
+.leader-headshot {
+
+    width: 100%;
+
+    height: 100%;
+
+    max-height: none;
+
+    object-fit: contain;
+
+    object-position:
+        center bottom;
+
+    transform:
+        scale(1.13);
+
+    transform-origin:
+        center bottom;
+}
+
+
+.top-three
+.leader-card:nth-child(2)
+.leader-info,
+
+.top-three
+.leader-card:nth-child(3)
+.leader-info {
+
+    padding:
+        17px 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.top-three
+.leader-card:nth-child(2)
+.leader-card-rank,
+
+.top-three
+.leader-card:nth-child(3)
+.leader-card-rank {
+
+    top: 8px;
+
+    right: 11px;
+
+    font-size: 46px;
+}
+
+
+.top-three
+.leader-card:nth-child(2)
+.leader-info h3,
+
+.top-three
+.leader-card:nth-child(3)
+.leader-info h3 {
+
+    margin-top: 9px;
+
+    font-size: 20px;
+
+    line-height: 1.04;
+}
+
+
+.top-three
+.leader-card:nth-child(2)
+.leader-team-row,
+
+.top-three
+.leader-card:nth-child(3)
+.leader-team-row {
+
+    margin-top: 9px;
+}
+
+
+.top-three
+.leader-card:nth-child(2)
+.leader-card-score,
+
+.top-three
+.leader-card:nth-child(3)
+.leader-card-score {
+
+    margin-top: 14px;
+}
+
+
+.top-three
+.leader-card:nth-child(2)
+.leader-card-score strong,
+
+.top-three
+.leader-card:nth-child(3)
+.leader-card-score strong {
+
+    font-size: 34px;
+}
+
+
+/* ----------------------------------------------------------
+   MOBILE / TABLET
+   ---------------------------------------------------------- */
+
+@media (
+    max-width: 900px
+) {
+
+    .brand-wordmark {
+
+        width: 180px;
+    }
+
+
+    .brand-subtitle {
+
+        display: none;
+    }
+
+
+    .top-three {
+
+        grid-template-columns:
+            1fr;
+
+        grid-template-rows:
+            auto;
+
+    }
+
+
+    .top-three
+    .leader-card:nth-child(1),
+
+    .top-three
+    .leader-card:nth-child(2),
+
+    .top-three
+    .leader-card:nth-child(3) {
+
+        grid-column: auto;
+
+        grid-row: auto;
+
+        max-height: none;
+    }
+
+
+    .top-three
+    .leader-card:nth-child(1) {
+
+        min-height: 330px;
+    }
+
+
+    .top-three
+    .leader-card:nth-child(2),
+
+    .top-three
+    .leader-card:nth-child(3) {
+
+        min-height: 180px;
+    }
+
+}
+
+
+/* ==========================================================
+   END PERCERA FINAL HEADER + TOP 3 FIX
+   ========================================================== */
+
