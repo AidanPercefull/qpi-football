@@ -5699,3 +5699,103 @@ h3 {
    END PERCERA SORT HEADER COLOR FIX
    ========================================================== */
 
+
+
+/* ==========================================================
+   PERCERA ACTUAL GOLD SORT FIX
+   ========================================================== */
+
+
+/* Inactive sortable headers remain normal white. */
+
+#leaderboard thead th.sortable-header {
+
+    color:
+        #ffffff !important;
+
+    background:
+        transparent !important;
+}
+
+
+#leaderboard thead th.sortable-header:hover {
+
+    color:
+        #ffffff !important;
+
+    background:
+        transparent !important;
+}
+
+
+/* No icon unless this is the active sort column. */
+
+#leaderboard thead th.sortable-header:not(.sort-active)::after {
+
+    content:
+        "" !important;
+
+    border:
+        0 !important;
+}
+
+
+/* Active sorted header = Percera gold. */
+
+#leaderboard thead th.sortable-header.sort-active,
+#leaderboard thead th.sortable-header.sort-active:hover {
+
+    color:
+        #C48B28 !important;
+
+    background:
+        transparent !important;
+}
+
+
+/* Active descending ▼ */
+
+#leaderboard thead th.sortable-header.sort-active.sort-desc::after {
+
+    content:
+        "" !important;
+
+    border-left:
+        5px solid transparent !important;
+
+    border-right:
+        5px solid transparent !important;
+
+    border-bottom:
+        0 !important;
+
+    border-top:
+        7px solid #C48B28 !important;
+}
+
+
+/* Active ascending ▲ */
+
+#leaderboard thead th.sortable-header.sort-active.sort-asc::after {
+
+    content:
+        "" !important;
+
+    border-left:
+        5px solid transparent !important;
+
+    border-right:
+        5px solid transparent !important;
+
+    border-top:
+        0 !important;
+
+    border-bottom:
+        7px solid #C48B28 !important;
+}
+
+
+/* ==========================================================
+   END PERCERA ACTUAL GOLD SORT FIX
+   ========================================================== */
+
