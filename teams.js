@@ -23,6 +23,40 @@
         [];
 
 
+
+    // -------------------------------------------------------
+    // CTSI — CONTEXTUAL TEAM STRENGTH INDEX
+    // -------------------------------------------------------
+
+    const ctsiRows =
+        Array.isArray(
+            window.PERCERA_CTSI
+        )
+            ? window.PERCERA_CTSI
+            : [];
+
+
+    const ctsiByTeam =
+        new Map(
+            ctsiRows.map(
+                row => [
+                    String(
+                        row.team || ""
+                    ).trim(),
+                    row
+                ]
+            )
+        );
+
+
+    let teamSortKey =
+        "team";
+
+
+    let teamSortDirection =
+        "asc";
+
+
     const rankingsView =
         document.getElementById(
             "rankings-view"
@@ -380,6 +414,22 @@
                                 CQI
                             </th>
 
+
+                            <th
+                                id="teams-ctsi-header"
+                                class="teams-native-sortable"
+                            >
+                                <span class="teams-ctsi-heading">
+                                    <span class="teams-ctsi-title">
+                                        CTSI
+                                    </span>
+
+                                    <span class="teams-ctsi-subtitle">
+                                        NEUTRAL FIELD
+                                    </span>
+                                </span>
+                            </th>
+
                         </tr>
 
                     </thead>
@@ -465,6 +515,336 @@
     // TEAM ROWS
     // -------------------------------------------------------
 
+
+    // -------------------------------------------------------
+    // CTSI DISPLAY
+    // -------------------------------------------------------
+
+    function signedCTSI(
+        value
+    ) {
+
+        const number =
+            Number(value);
+
+
+        if (
+            !Number.isFinite(
+                number
+            )
+        ) {
+
+            return "—";
+        }
+
+
+        return (
+            number > 0
+                ? "+"
+                : ""
+        )
+        +
+        number.toFixed(2);
+    }
+
+
+    function ctsiForTeam(
+        teamName
+    ) {
+
+        return (
+            ctsiByTeam.get(
+                String(
+                    teamName || ""
+                ).trim()
+            )
+            ||
+            null
+        );
+    }
+
+
+    function ctsiCellHTML(
+        teamName
+    ) {
+
+        const info =
+            ctsiForTeam(
+                teamName
+            );
+
+
+        if (!info) {
+
+            return `
+                <span class="teams-ctsi-empty">
+                    —
+                </span>
+            `;
+        }
+
+
+        if (!info.eligible) {
+
+            return `
+                <span class="teams-ctsi-content">
+
+                    <span class="teams-ctsi-value">
+                        ${signedCTSI(
+                            info.ctsi
+                        )}
+                    </span>
+
+                    <span
+                        class="teams-ctsi-provisional"
+                        title="Provisional — fewer than two qualifying FBS games"
+                    >
+                        PROV.
+                    </span>
+
+                </span>
+            `;
+        }
+
+
+        return `
+            <span class="teams-ctsi-content">
+
+                <span class="teams-ctsi-rank">
+                    #${info.rank}
+                </span>
+
+                <span class="teams-ctsi-value">
+                    ${signedCTSI(
+                        info.ctsi
+                    )}
+                </span>
+
+            </span>
+        `;
+    }
+
+
+    // -------------------------------------------------------
+    // NATIVE TEAM SORTING
+    // -------------------------------------------------------
+
+    function compareTeams(
+        a,
+        b
+    ) {
+
+        if (
+            teamSortKey === "team"
+        ) {
+
+            const result =
+                clean(
+                    a.team
+                )
+                .localeCompare(
+                    clean(
+                        b.team
+                    ),
+                    undefined,
+                    {
+                        sensitivity:
+                            "base",
+                        numeric:
+                            true
+                    }
+                );
+
+
+            return (
+                teamSortDirection
+                ===
+                "asc"
+                    ? result
+                    : -result
+            );
+        }
+
+
+        if (
+            teamSortKey === "ctsi"
+        ) {
+
+            const aInfo =
+                ctsiForTeam(
+                    a.team
+                );
+
+            const bInfo =
+                ctsiForTeam(
+                    b.team
+                );
+
+
+            const aValue =
+                aInfo
+                    ? Number(
+                        aInfo.ctsi
+                    )
+                    : null;
+
+
+            const bValue =
+                bInfo
+                    ? Number(
+                        bInfo.ctsi
+                    )
+                    : null;
+
+
+            // Missing ratings always appear last.
+
+            if (
+                aValue === null
+                &&
+                bValue === null
+            ) {
+
+                return clean(
+                    a.team
+                ).localeCompare(
+                    clean(
+                        b.team
+                    )
+                );
+            }
+
+
+            if (
+                aValue === null
+            ) {
+
+                return 1;
+            }
+
+
+            if (
+                bValue === null
+            ) {
+
+                return -1;
+            }
+
+
+            let result =
+                aValue
+                -
+                bValue;
+
+
+            if (
+                result === 0
+            ) {
+
+                result =
+                    clean(
+                        a.team
+                    )
+                    .localeCompare(
+                        clean(
+                            b.team
+                        )
+                    );
+            }
+
+
+            return (
+                teamSortDirection
+                ===
+                "asc"
+                    ? result
+                    : -result
+            );
+        }
+
+
+        return 0;
+    }
+
+
+    function updateTeamSortIndicators() {
+
+        const table =
+            teamsView.querySelector(
+                ".teams-table"
+            );
+
+
+        if (!table) {
+            return;
+        }
+
+
+        const headers =
+            Array.from(
+                table.querySelectorAll(
+                    "thead th"
+                )
+            );
+
+
+        const teamHeader =
+            headers[0];
+
+
+        const ctsiHeader =
+            teamsView.querySelector(
+                "#teams-ctsi-header"
+            );
+
+
+        [
+            teamHeader,
+            ctsiHeader
+        ]
+        .forEach(
+            header => {
+
+                if (!header) {
+                    return;
+                }
+
+
+                header.classList.remove(
+                    "sort-active",
+                    "sort-asc",
+                    "sort-desc"
+                );
+            }
+        );
+
+
+        const activeHeader =
+            teamSortKey === "team"
+                ? teamHeader
+                : ctsiHeader;
+
+
+        if (!activeHeader) {
+            return;
+        }
+
+
+        activeHeader.classList.add(
+            "sort-active"
+        );
+
+
+        activeHeader.classList.add(
+            teamSortDirection
+            ===
+            "asc"
+                ? "sort-asc"
+                : "sort-desc"
+        );
+    }
+
+
     function renderTeams() {
 
         const query =
@@ -511,8 +891,17 @@
             );
 
 
+        const ordered =
+            [
+                ...filtered
+            ]
+            .sort(
+                compareTeams
+            );
+
+
         tbody.innerHTML =
-            filtered
+            ordered
             .map(
                 team => {
 
@@ -652,6 +1041,47 @@
                 }
             )
             .join("");
+
+
+        // ---------------------------------------------------
+        // CTSI CELLS
+        // ---------------------------------------------------
+
+        tbody
+            .querySelectorAll(
+                ".team-directory-row"
+            )
+            .forEach(
+                row => {
+
+                    const teamName =
+                        row.dataset.team;
+
+
+                    const cell =
+                        document.createElement(
+                            "td"
+                        );
+
+
+                    cell.className =
+                        "teams-ctsi-cell";
+
+
+                    cell.innerHTML =
+                        ctsiCellHTML(
+                            teamName
+                        );
+
+
+                    row.appendChild(
+                        cell
+                    );
+                }
+            );
+
+
+        updateTeamSortIndicators();
 
 
         tbody
@@ -928,6 +1358,48 @@
             null;
 
 
+
+
+        // PERCERA_SECONDARY_WATERMARK_V1
+
+
+        const watermarkLogo =
+
+
+            (
+
+
+                window.PERCERA_SECONDARY_LOGOS
+
+
+                &&
+
+
+                window.PERCERA_SECONDARY_LOGOS[
+
+
+                    teamName
+
+
+                ]
+
+
+            )
+
+
+            ||
+
+
+            team.logo
+
+
+            ||
+
+
+            null;
+
+
+
         detail.innerHTML = `
 
             <button
@@ -944,11 +1416,11 @@
             >
 
                 ${
-                    team.logo
+                    watermarkLogo
                     ?
                     `
                         <img
-                            src="${team.logo}"
+                            src="${watermarkLogo}"
                             alt=""
                             aria-hidden="true"
                             class="team-detail-watermark"
@@ -1537,6 +2009,102 @@
                 );
             }
         );
+
+
+    // -------------------------------------------------------
+    // TEAM DIRECTORY SORTING
+    // -------------------------------------------------------
+
+    const teamHeader =
+        teamsView.querySelector(
+            ".teams-table thead th:first-child"
+        );
+
+
+    const ctsiHeader =
+        teamsView.querySelector(
+            "#teams-ctsi-header"
+        );
+
+
+    if (teamHeader) {
+
+        teamHeader.classList.add(
+            "teams-native-sortable"
+        );
+
+
+        teamHeader.addEventListener(
+            "click",
+            () => {
+
+                if (
+                    teamSortKey
+                    ===
+                    "team"
+                ) {
+
+                    teamSortDirection =
+                        teamSortDirection
+                        ===
+                        "asc"
+                            ? "desc"
+                            : "asc";
+
+                } else {
+
+                    teamSortKey =
+                        "team";
+
+
+                    teamSortDirection =
+                        "asc";
+                }
+
+
+                renderTeams();
+            }
+        );
+    }
+
+
+    if (ctsiHeader) {
+
+        ctsiHeader.addEventListener(
+            "click",
+            () => {
+
+                if (
+                    teamSortKey
+                    ===
+                    "ctsi"
+                ) {
+
+                    teamSortDirection =
+                        teamSortDirection
+                        ===
+                        "desc"
+                            ? "asc"
+                            : "desc";
+
+                } else {
+
+                    teamSortKey =
+                        "ctsi";
+
+
+                    // First click:
+                    // strongest → weakest.
+
+                    teamSortDirection =
+                        "desc";
+                }
+
+
+                renderTeams();
+            }
+        );
+    }
 
 
     // -------------------------------------------------------
